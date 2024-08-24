@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uZj7gK2TuqQ=",
+  "dgSpecHash": "dJLpbqaYYSM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Source\\Repos\\EmailNotification\\EmailNotification\\EmailNotification.API.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification\\EmailNotification.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\microsoft.visualstudio.azure.containers.tools.targets.1.21.0.nupkg.sha512"
   ],

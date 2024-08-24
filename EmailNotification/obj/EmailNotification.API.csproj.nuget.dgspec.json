@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Source\\Repos\\EmailNotification\\EmailNotification\\EmailNotification.API.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification\\EmailNotification.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Source\\Repos\\EmailNotification\\EmailNotification\\EmailNotification.API.csproj": {
+    "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification\\EmailNotification.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Source\\Repos\\EmailNotification\\EmailNotification\\EmailNotification.API.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification\\EmailNotification.API.csproj",
         "projectName": "EmailNotification.API",
-        "projectPath": "C:\\Users\\Admin\\Source\\Repos\\EmailNotification\\EmailNotification\\EmailNotification.API.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification\\EmailNotification.API.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Source\\Repos\\EmailNotification\\EmailNotification\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

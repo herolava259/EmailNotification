@@ -9,14 +9,14 @@ services:
       target: base
       labels:
         com.microsoft.created-by: "visual-studio"
-        com.microsoft.visual-studio.project-name: "EmailNotification"
+        com.microsoft.visual-studio.project-name: "EmailNotification.API"
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=
     volumes:
-      - C:\Users\Admin\Source\Repos\EmailNotification\EmailNotification:/app:rw
-      - C:\Users\Admin\Source\Repos\EmailNotification:/src:rw
+      - C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\EmailNotification:/app:rw
+      - C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification:/src:rw
       - C:\Users\Admin\vsdbg\vs2017u5:/remote_debugger:rw
       - C:\Users\Admin\.nuget\packages:/.nuget/packages:ro
       - C:\Users\Admin\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
@@ -29,7 +29,7 @@ services:
     entrypoint: "dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --wait"
     labels:
       com.microsoft.visualstudio.debuggee.program: "dotnet"
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /.nuget/packages  \"/app/bin/Debug/net8.0/EmailNotification.dll\""
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /.nuget/packages  \"/app/bin/Debug/net8.0/EmailNotification.API.dll\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --stop dotnet"
     tty: true

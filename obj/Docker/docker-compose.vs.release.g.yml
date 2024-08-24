@@ -7,7 +7,7 @@ services:
         BUILD_CONFIGURATION: Debug
       labels:
         com.microsoft.created-by: "visual-studio"
-        com.microsoft.visual-studio.project-name: "EmailNotification"
+        com.microsoft.visual-studio.project-name: "EmailNotification.API"
     volumes:
       - C:\Users\Admin\vsdbg\vs2017u5:/remote_debugger:rw
       - C:\Users\Admin\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
@@ -20,8 +20,8 @@ services:
     entrypoint: "dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --wait"
     labels:
       com.microsoft.visualstudio.debuggee.program: "dotnet"
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /.nuget/packages  \"/app/EmailNotification.dll\""
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /.nuget/packages  \"/app/EmailNotification.API.dll\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --stop dotnet"
-      com.microsoft.visual-studio.project-name: "EmailNotification"
+      com.microsoft.visual-studio.project-name: "EmailNotification.API"
     tty: true
