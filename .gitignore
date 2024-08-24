@@ -1,2 +1,3 @@
 /.vs/EmailNotification/FileContentIndex/*.vsidx
 *.vsidx
+/BaseService/obj/Debug/net8.0/Common.BaseService.AssemblyInfoInputs.cache
