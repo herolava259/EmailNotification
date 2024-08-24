@@ -9,9 +9,21 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailNotification.Core", "EmailNotification.Core\EmailNotification.Core.csproj", "{A1BE9BEF-2696-4D0B-8436-0BDAE7ECCB17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailNotification.Infrastructure", "EmailNotification.Infrastructure\EmailNotification.Infrastructure.csproj", "{8C54E026-4E95-46C4-BACA-F3C8A4C54C61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailNotification.Infrastructure", "EmailNotification.Infrastructure\EmailNotification.Infrastructure.csproj", "{8C54E026-4E95-46C4-BACA-F3C8A4C54C61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailNotification.Application", "EmailNotification.Application\EmailNotification.Application.csproj", "{ED6C17FC-1BC9-4564-8C55-0837FDC926B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailNotification.Application", "EmailNotification.Application\EmailNotification.Application.csproj", "{ED6C17FC-1BC9-4564-8C55-0837FDC926B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailNotification.EmailService", "EmailNotification.EmailService\EmailNotification.EmailService.csproj", "{97487578-A198-4532-A74E-9AF3A223E1D1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailNotification.CronJobWorker", "EmailNotification.CronJobWorker\EmailNotification.CronJobWorker.csproj", "{560EAC85-94AC-48F5-851E-32D1680E7A41}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Account", "Account", "{F3B4D753-FA1A-433C-86D7-CAF37A57A2A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Timer", "Timer", "{AB5DF907-6F59-476C-B718-BA5F86D2598D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commons", "Commons", "{14F4A126-4EB5-4D61-9848-7F59CA1E3982}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.BaseService", "BaseService\Common.BaseService.csproj", "{B21BE443-6729-4259-A553-4C8ABA3E68F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,9 +51,29 @@ Global
 		{ED6C17FC-1BC9-4564-8C55-0837FDC926B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED6C17FC-1BC9-4564-8C55-0837FDC926B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED6C17FC-1BC9-4564-8C55-0837FDC926B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97487578-A198-4532-A74E-9AF3A223E1D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97487578-A198-4532-A74E-9AF3A223E1D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97487578-A198-4532-A74E-9AF3A223E1D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97487578-A198-4532-A74E-9AF3A223E1D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{560EAC85-94AC-48F5-851E-32D1680E7A41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{560EAC85-94AC-48F5-851E-32D1680E7A41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{560EAC85-94AC-48F5-851E-32D1680E7A41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{560EAC85-94AC-48F5-851E-32D1680E7A41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B21BE443-6729-4259-A553-4C8ABA3E68F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B21BE443-6729-4259-A553-4C8ABA3E68F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B21BE443-6729-4259-A553-4C8ABA3E68F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B21BE443-6729-4259-A553-4C8ABA3E68F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FCF68B70-89EE-4088-B3A9-BB71C183B1C0} = {F3B4D753-FA1A-433C-86D7-CAF37A57A2A0}
+		{A1BE9BEF-2696-4D0B-8436-0BDAE7ECCB17} = {F3B4D753-FA1A-433C-86D7-CAF37A57A2A0}
+		{8C54E026-4E95-46C4-BACA-F3C8A4C54C61} = {F3B4D753-FA1A-433C-86D7-CAF37A57A2A0}
+		{ED6C17FC-1BC9-4564-8C55-0837FDC926B1} = {F3B4D753-FA1A-433C-86D7-CAF37A57A2A0}
+		{560EAC85-94AC-48F5-851E-32D1680E7A41} = {AB5DF907-6F59-476C-B718-BA5F86D2598D}
+		{B21BE443-6729-4259-A553-4C8ABA3E68F8} = {14F4A126-4EB5-4D61-9848-7F59CA1E3982}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {700D4573-6F29-4AF9-9FF5-454C6376FB81}
