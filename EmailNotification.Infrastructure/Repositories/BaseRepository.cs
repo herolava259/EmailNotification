@@ -9,7 +9,7 @@ namespace EmailNotification.Infrastructure.Repositories
     public class BaseRepository<T> : IBaseRepository<T>
         where T : BaseEntity
     {
-        private readonly EmailNotificationDBContext _dbContext;
+        protected readonly EmailNotificationDBContext _dbContext;
 
         public BaseRepository(EmailNotificationDBContext dbContext)
         {

@@ -1,8 +1,9 @@
-﻿using MediatR;
+﻿using EmailNotification.Application.Responses;
+using MediatR;
 
 namespace EmailNotification.Application.Commamds;
 
-public class RemindChangePasswordCommand : IRequest<Unit>
+public class RemindChangePasswordCommand : IRequest<RemindChangePasswordResponse>
 {
-    public DateTimeOffset AfterDate { get; set; }
+    public DateTimeOffset ExpireDate { get; set; }
 }
