@@ -1,17 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace EmailNotification.Core.Entities
+
+namespace EmailNotification.Core.Entities;
+
+public class Profile : BaseEntity
 {
-    public class Profile : BaseEntity
-    {
-        public string FirstName { get; set; }
+    [Required]
+    [MinLength(2)]
+    [MaxLength(50)]
+    public string FirstName { get; set; }
 
-        public string LastName { get; set; }
+    [Required]
+    [MinLength(2)]
+    [MaxLength(50)]
+    public string LastName { get; set; }
 
-        public string Address { get; set; }
-    }
+    [Required]
+    [MinLength(2)]
+    [MaxLength(256)]
+    public string Address { get; set; }
+
+    [ForeignKey("UserAccount")]
+    public Guid UserAccountId { get; set; }
+    public UserAccount UserAccount { get; set; } = null!;
 }

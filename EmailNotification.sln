@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailNotification.Core", "E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailNotification.Infrastructure", "EmailNotification.Infrastructure\EmailNotification.Infrastructure.csproj", "{8C54E026-4E95-46C4-BACA-F3C8A4C54C61}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailNotification.Application", "EmailNotification.Application\EmailNotification.Application.csproj", "{ED6C17FC-1BC9-4564-8C55-0837FDC926B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{8C54E026-4E95-46C4-BACA-F3C8A4C54C61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C54E026-4E95-46C4-BACA-F3C8A4C54C61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C54E026-4E95-46C4-BACA-F3C8A4C54C61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED6C17FC-1BC9-4564-8C55-0837FDC926B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED6C17FC-1BC9-4564-8C55-0837FDC926B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED6C17FC-1BC9-4564-8C55-0837FDC926B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED6C17FC-1BC9-4564-8C55-0837FDC926B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

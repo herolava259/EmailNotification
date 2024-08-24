@@ -13,4 +13,9 @@
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EmailNotification.Application\EmailNotification.Application.csproj" />
+    <ProjectReference Include="..\EmailNotification.Infrastructure\EmailNotification.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

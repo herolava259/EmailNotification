@@ -1,18 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using EStatus = EmailNotification.Core.Enums.UserAccountEnum.EStatus;
 
-namespace EmailNotification.Core.Entities
+
+namespace EmailNotification.Core.Entities;
+
+public class UserAccount: BaseEntity
 {
-    public class UserAccount: BaseEntity
-    {
-        public string Email { get; set; }
+    [Required]
+    [EmailAddress]
+    public string Email { get; set; }
 
-        public int MyProperty { get; set; }
-        public Guid ProfileId { get; set; }
+    [Required]
+    public EStatus Status { get; set; }
 
-        public Profile Profile { get; set; }
-    }
+    [Required]
+    public DateTimeOffset LastUpdatePassword { get; set; }
+
+    public Profile? Profile { get; set; } 
 }
