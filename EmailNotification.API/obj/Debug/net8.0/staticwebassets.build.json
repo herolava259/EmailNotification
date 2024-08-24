@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "qa4Cs0vPQcJ/wxt/RGkpnebItaP//dYqnYhoy5pCccY=",
+  "Source": "EmailNotification.API",
+  "BasePath": "_content/EmailNotification.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

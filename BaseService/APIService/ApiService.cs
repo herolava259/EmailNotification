@@ -28,6 +28,7 @@ namespace BaseService.APIService
                 HttpRequestMessage message = new HttpRequestMessage();
                 message.Headers.Add("Accept", "application/json");
                 message.RequestUri = new Uri(apiRequest.Url);
+                responseModel.Result = default;
                 if (apiRequest.Data != null)
                 {
                     message.Content = new StringContent(JsonConvert.SerializeObject(apiRequest.Data), Encoding.UTF8,
@@ -65,7 +66,7 @@ namespace BaseService.APIService
                        apiResponse.StatusCode == HttpStatusCode.BadGateway)
                     {
                         responseModel.IsSuccess = false;
-                        responseModel.Result = null;
+                        
                         responseModel.StatusCode = apiResponse.StatusCode;
                     }
                     else
@@ -81,7 +82,7 @@ namespace BaseService.APIService
                 catch (Exception ex)
                 {
                     responseModel.IsSuccess = false;
-                    responseModel.Result = null;
+                    
                     responseModel.ErrorMessages = new() { ex.ToString() };
                     
                 }
@@ -91,7 +92,7 @@ namespace BaseService.APIService
             catch (Exception ex)
             {
                 responseModel.IsSuccess = false;
-                responseModel.Result = null;
+                
                 responseModel.ErrorMessages = new() { ex.ToString() };
                 return responseModel;
             }

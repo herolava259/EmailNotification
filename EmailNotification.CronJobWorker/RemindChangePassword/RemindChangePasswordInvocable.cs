@@ -6,11 +6,11 @@ namespace EmailNotification.CronJobWorker.RemindChangePassword
 {
     public class RemindChangePasswordInvocable : IInvocable
     {
-        private readonly IApiService<object, bool> _apiService;
+        private readonly IApiService<object, RemindChangePasswordResponse> _apiService;
         private readonly string? _url ;
         private readonly ILogger<RemindChangePasswordInvocable> _logger;    
 
-        public RemindChangePasswordInvocable(IApiService<object,bool> apiService, 
+        public RemindChangePasswordInvocable(IApiService<object,RemindChangePasswordResponse> apiService, 
                                              IConfiguration configuration,
                                              ILogger<RemindChangePasswordInvocable> logger)
         {
@@ -24,17 +24,17 @@ namespace EmailNotification.CronJobWorker.RemindChangePassword
             var apiRequest = new ApiRequest<object>
             {
                 ApiType = APIEnum.ApiType.GET,
-                Url = $"{this._url}/api/useraccount/remindchangepassword"
+                Url = $"{this._url}/api/v1/useraccount/remindchangepassword/{DateTimeOffset.UtcNow.ToString()}"
             };
 
             var response = await _apiService.SendAsync(apiRequest);
 
-            if(response == null || !response.IsSuccess || !response.Result)
+            if(response == null || !response.IsSuccess || !response.Result!.Result)
             {
                 _logger.LogError($"Something went wrong while send request remind change password. {String.Join('\n', response!.ErrorMessages)}");
             }
 
-            _logger.LogInformation("Complete remind change password request");
+            _logger.LogInformation("Complete RemindChangePassword request");
 
         }
     }

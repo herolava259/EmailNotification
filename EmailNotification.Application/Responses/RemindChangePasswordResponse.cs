@@ -12,6 +12,5 @@ namespace EmailNotification.Application.Responses
 
         public int TotalOfReminder { get; set; } = 0;
 
-
     }
 }

@@ -40,9 +40,12 @@ namespace EmailNotification.Application.Handlers
             }
             var accountsNotChange = await _userAccountRepository.GetUserAccountsNeedToChangePassword(request.ExpireDate);
 
-            var result = await _userAccountRepository.RequireToChangePassword(accountsNotChange);
+            
+            var remindedAccounts = await SendRemindingChangePwdEmail(accountsNotChange);
 
-            if(!result)
+            var result = await _userAccountRepository.RequireToChangePassword(remindedAccounts);
+
+            if (!result)
             {
                 _logger.LogDebug("End handle method of RemindChangePasswordHandler");
                 return new()
@@ -51,26 +54,24 @@ namespace EmailNotification.Application.Handlers
                     TotalOfReminder = 0
                 };
             }
-            var totalOfReminder = await SendRemindingChangePwdEmail(accountsNotChange);
-            
             _logger.LogDebug("End handle method of RemindChangePasswordHandler");
 
             return new()
             {
-                Result = accountsNotChange.Count == totalOfReminder,
-                TotalOfReminder = totalOfReminder
+                Result = accountsNotChange.Count == remindedAccounts.Count,
+                TotalOfReminder = remindedAccounts.Count
             };
         }
 
-        private async Task<int> SendRemindingChangePwdEmail(IEnumerable<UserAccount> accounts)
+        private async Task<List<UserAccount>> SendRemindingChangePwdEmail(IEnumerable<UserAccount> accounts)
         {
-            int totalOfReminder = 0;
+            List<UserAccount> remindedAccounts = new();
             foreach(var chunk in accounts.Chunk(10))
             {
                 List<Task<bool>> sendingEmailTasks = chunk.Select(c =>
                 {
                     var message = new Message(to: new string[] { c.Email}, 
-                        subject: "Your Account need to be changed password",
+                        subject: "Your Account need to be changed password as soon as possible because security reason",
                         content: $"Hi {c.Profile!.FirstName} {c.Profile!.LastName}, you need to change password because account password's exired");
 
                     return _emailService.SendEmailAsync(message);
@@ -94,13 +95,13 @@ namespace EmailNotification.Application.Handlers
                         _logger.LogInformation(@$"sending change password reminder to 
                                              {item.Second.Profile!.FirstName} {item.Second.Profile!.LastName}
                                             has email {item.Second.Email} is successful");
-                        totalOfReminder++;
+                        remindedAccounts.Add(item.Second);
                     }
                 }
 
             }
 
-            return totalOfReminder;
+            return remindedAccounts;
         }
     }
 }

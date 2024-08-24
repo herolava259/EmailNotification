@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35219.272
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailNotification.API", "EmailNotification\EmailNotification.API.csproj", "{FCF68B70-89EE-4088-B3A9-BB71C183B1C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailNotification.API", "EmailNotification.API\EmailNotification.API.csproj", "{FCF68B70-89EE-4088-B3A9-BB71C183B1C0}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{FDDAD9D5-763B-461B-9B03-3E49ABF8DE5D}"
 EndProject
