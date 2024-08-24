@@ -1,0 +1,182 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Source\\Repos\\EmailNotification\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A1BE9BEF-2696-4D0B-8436-0BDAE7ECCB17}|EmailNotification.Core\\EmailNotification.Core.csproj|c:\\users\\admin\\source\\repos\\emailnotification\\emailnotification.core\\repositories\\iprofilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1BE9BEF-2696-4D0B-8436-0BDAE7ECCB17}|EmailNotification.Core\\EmailNotification.Core.csproj|solutionrelative:emailnotification.core\\repositories\\iprofilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1BE9BEF-2696-4D0B-8436-0BDAE7ECCB17}|EmailNotification.Core\\EmailNotification.Core.csproj|c:\\users\\admin\\source\\repos\\emailnotification\\emailnotification.core\\entities\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1BE9BEF-2696-4D0B-8436-0BDAE7ECCB17}|EmailNotification.Core\\EmailNotification.Core.csproj|solutionrelative:emailnotification.core\\entities\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1BE9BEF-2696-4D0B-8436-0BDAE7ECCB17}|EmailNotification.Core\\EmailNotification.Core.csproj|c:\\users\\admin\\source\\repos\\emailnotification\\emailnotification.core\\repositories\\iuseraccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1BE9BEF-2696-4D0B-8436-0BDAE7ECCB17}|EmailNotification.Core\\EmailNotification.Core.csproj|solutionrelative:emailnotification.core\\repositories\\iuseraccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1BE9BEF-2696-4D0B-8436-0BDAE7ECCB17}|EmailNotification.Core\\EmailNotification.Core.csproj|c:\\users\\admin\\source\\repos\\emailnotification\\emailnotification.core\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1BE9BEF-2696-4D0B-8436-0BDAE7ECCB17}|EmailNotification.Core\\EmailNotification.Core.csproj|solutionrelative:emailnotification.core\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1BE9BEF-2696-4D0B-8436-0BDAE7ECCB17}|EmailNotification.Core\\EmailNotification.Core.csproj|c:\\users\\admin\\source\\repos\\emailnotification\\emailnotification.core\\repositories\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1BE9BEF-2696-4D0B-8436-0BDAE7ECCB17}|EmailNotification.Core\\EmailNotification.Core.csproj|solutionrelative:emailnotification.core\\repositories\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1BE9BEF-2696-4D0B-8436-0BDAE7ECCB17}|EmailNotification.Core\\EmailNotification.Core.csproj|c:\\users\\admin\\source\\repos\\emailnotification\\emailnotification.core\\entities\\useraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1BE9BEF-2696-4D0B-8436-0BDAE7ECCB17}|EmailNotification.Core\\EmailNotification.Core.csproj|solutionrelative:emailnotification.core\\entities\\useraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1BE9BEF-2696-4D0B-8436-0BDAE7ECCB17}|EmailNotification.Core\\EmailNotification.Core.csproj|c:\\users\\admin\\source\\repos\\emailnotification\\emailnotification.core\\enums\\useraccountenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1BE9BEF-2696-4D0B-8436-0BDAE7ECCB17}|EmailNotification.Core\\EmailNotification.Core.csproj|solutionrelative:emailnotification.core\\enums\\useraccountenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDDAD9D5-763B-461B-9B03-3E49ABF8DE5D}|docker-compose.dcproj|c:\\users\\admin\\source\\repos\\emailnotification\\docker-compose.dcproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FDDAD9D5-763B-461B-9B03-3E49ABF8DE5D}|docker-compose.dcproj|solutionrelative:docker-compose.dcproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 669,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 405,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IProfileRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Source\\Repos\\EmailNotification\\EmailNotification.Core\\Repositories\\IProfileRepository.cs",
+              "RelativeDocumentMoniker": "EmailNotification.Core\\Repositories\\IProfileRepository.cs",
+              "ToolTip": "C:\\Users\\Admin\\Source\\Repos\\EmailNotification\\EmailNotification.Core\\Repositories\\IProfileRepository.cs",
+              "RelativeToolTip": "EmailNotification.Core\\Repositories\\IProfileRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T02:00:55.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IUserAccountRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Source\\Repos\\EmailNotification\\EmailNotification.Core\\Repositories\\IUserAccountRepository.cs",
+              "RelativeDocumentMoniker": "EmailNotification.Core\\Repositories\\IUserAccountRepository.cs",
+              "ToolTip": "C:\\Users\\Admin\\Source\\Repos\\EmailNotification\\EmailNotification.Core\\Repositories\\IUserAccountRepository.cs",
+              "RelativeToolTip": "EmailNotification.Core\\Repositories\\IUserAccountRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T01:53:01.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IBaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Source\\Repos\\EmailNotification\\EmailNotification.Core\\Repositories\\IBaseRepository.cs",
+              "RelativeDocumentMoniker": "EmailNotification.Core\\Repositories\\IBaseRepository.cs",
+              "ToolTip": "C:\\Users\\Admin\\Source\\Repos\\EmailNotification\\EmailNotification.Core\\Repositories\\IBaseRepository.cs",
+              "RelativeToolTip": "EmailNotification.Core\\Repositories\\IBaseRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T01:43:14.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserAccountEnum.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Source\\Repos\\EmailNotification\\EmailNotification.Core\\Enums\\UserAccountEnum.cs",
+              "RelativeDocumentMoniker": "EmailNotification.Core\\Enums\\UserAccountEnum.cs",
+              "ToolTip": "C:\\Users\\Admin\\Source\\Repos\\EmailNotification\\EmailNotification.Core\\Enums\\UserAccountEnum.cs",
+              "RelativeToolTip": "EmailNotification.Core\\Enums\\UserAccountEnum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T01:37:50.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserAccount.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Source\\Repos\\EmailNotification\\EmailNotification.Core\\Entities\\UserAccount.cs",
+              "RelativeDocumentMoniker": "EmailNotification.Core\\Entities\\UserAccount.cs",
+              "ToolTip": "C:\\Users\\Admin\\Source\\Repos\\EmailNotification\\EmailNotification.Core\\Entities\\UserAccount.cs",
+              "RelativeToolTip": "EmailNotification.Core\\Entities\\UserAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T01:32:50.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Profile.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Source\\Repos\\EmailNotification\\EmailNotification.Core\\Entities\\Profile.cs",
+              "RelativeDocumentMoniker": "EmailNotification.Core\\Entities\\Profile.cs",
+              "ToolTip": "C:\\Users\\Admin\\Source\\Repos\\EmailNotification\\EmailNotification.Core\\Entities\\Profile.cs",
+              "RelativeToolTip": "EmailNotification.Core\\Entities\\Profile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T01:30:23.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Source\\Repos\\EmailNotification\\EmailNotification.Core\\Entities\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "EmailNotification.Core\\Entities\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\Admin\\Source\\Repos\\EmailNotification\\EmailNotification.Core\\Entities\\BaseEntity.cs",
+              "RelativeToolTip": "EmailNotification.Core\\Entities\\BaseEntity.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwBIAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T01:26:48.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "docker-compose",
+              "DocumentMoniker": "C:\\Users\\Admin\\Source\\Repos\\EmailNotification\\docker-compose.dcproj",
+              "RelativeDocumentMoniker": "docker-compose.dcproj",
+              "ToolTip": "C:\\Users\\Admin\\Source\\Repos\\EmailNotification\\docker-compose.dcproj",
+              "RelativeToolTip": "docker-compose.dcproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-08-24T01:21:24.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
