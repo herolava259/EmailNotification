@@ -14,4 +14,8 @@
     <Folder Include="Queries\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Cart\Cart.Core\Cart.Core.csproj" />
+  </ItemGroup>
+
 </Project>
