@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{560EAC85-94AC-48F5-851E-32D1680E7A41}|EmailNotification.CronJobWorker\\EmailNotification.CronJobWorker.csproj|solutionrelative:emailnotification.cronjobworker\\remindchangepassword\\remindchangepasswordinvocable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCF68B70-89EE-4088-B3A9-BB71C183B1C0}|EmailNotification.API\\EmailNotification.API.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\emailnotification.api\\controllers\\emailnotificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCF68B70-89EE-4088-B3A9-BB71C183B1C0}|EmailNotification.API\\EmailNotification.API.csproj|solutionrelative:emailnotification.api\\controllers\\emailnotificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{ED6C17FC-1BC9-4564-8C55-0837FDC926B1}|EmailNotification.Application\\EmailNotification.Application.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\emailnotification.application\\handlers\\remindchangepasswordhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ED6C17FC-1BC9-4564-8C55-0837FDC926B1}|EmailNotification.Application\\EmailNotification.Application.csproj|solutionrelative:emailnotification.application\\handlers\\remindchangepasswordhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCF68B70-89EE-4088-B3A9-BB71C183B1C0}|EmailNotification.API\\EmailNotification.API.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\emailnotification.api\\controllers\\emailnotificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCF68B70-89EE-4088-B3A9-BB71C183B1C0}|EmailNotification.API\\EmailNotification.API.csproj|solutionrelative:emailnotification.api\\controllers\\emailnotificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FDDAD9D5-763B-461B-9B03-3E49ABF8DE5D}|docker-compose.dcproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\docker-compose.override.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -79,8 +79,8 @@
           ]
         },
         {
-          "DockedWidth": 100,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 524,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -92,15 +92,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "EmailNotificationController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.API\\Controllers\\EmailNotificationController.cs",
               "RelativeDocumentMoniker": "EmailNotification.API\\Controllers\\EmailNotificationController.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.API\\Controllers\\EmailNotificationController.cs",
               "RelativeToolTip": "EmailNotification.API\\Controllers\\EmailNotificationController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAewBkAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAewBoAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-25T03:02:54.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RemindChangePasswordHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.Application\\Handlers\\RemindChangePasswordHandler.cs",
+              "RelativeDocumentMoniker": "EmailNotification.Application\\Handlers\\RemindChangePasswordHandler.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.Application\\Handlers\\RemindChangePasswordHandler.cs",
+              "RelativeToolTip": "EmailNotification.Application\\Handlers\\RemindChangePasswordHandler.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAWwBsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T03:02:54.803Z",
               "EditorCaption": ""
             },
             {
@@ -110,19 +123,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RemindChangePasswordHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.Application\\Handlers\\RemindChangePasswordHandler.cs",
-              "RelativeDocumentMoniker": "EmailNotification.Application\\Handlers\\RemindChangePasswordHandler.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.Application\\Handlers\\RemindChangePasswordHandler.cs",
-              "RelativeToolTip": "EmailNotification.Application\\Handlers\\RemindChangePasswordHandler.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAjwD8AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T03:02:54.803Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -257,7 +257,7 @@
           ]
         },
         {
-          "DockedWidth": 709,
+          "DockedWidth": 285,
           "SelectedChildIndex": 0,
           "Children": [
             {
@@ -266,9 +266,9 @@
               "Title": "RemindChangePasswordInvocable.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.CronJobWorker\\RemindChangePassword\\RemindChangePasswordInvocable.cs",
               "RelativeDocumentMoniker": "EmailNotification.CronJobWorker\\RemindChangePassword\\RemindChangePasswordInvocable.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.CronJobWorker\\RemindChangePassword\\RemindChangePasswordInvocable.cs*",
-              "RelativeToolTip": "EmailNotification.CronJobWorker\\RemindChangePassword\\RemindChangePasswordInvocable.cs*",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwBUAAAAiAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.CronJobWorker\\RemindChangePassword\\RemindChangePasswordInvocable.cs",
+              "RelativeToolTip": "EmailNotification.CronJobWorker\\RemindChangePassword\\RemindChangePasswordInvocable.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-24T20:43:02.184Z",
               "EditorCaption": ""

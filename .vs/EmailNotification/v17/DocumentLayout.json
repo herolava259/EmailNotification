@@ -3,60 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{560EAC85-94AC-48F5-851E-32D1680E7A41}|EmailNotification.CronJobWorker\\EmailNotification.CronJobWorker.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\emailnotification.cronjobworker\\remindchangepassword\\remindchangepasswordinvocable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{560EAC85-94AC-48F5-851E-32D1680E7A41}|EmailNotification.CronJobWorker\\EmailNotification.CronJobWorker.csproj|solutionrelative:emailnotification.cronjobworker\\remindchangepassword\\remindchangepasswordinvocable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1A03A0E9-D6B9-42BA-8051-3CE01A8BD7BF}|Microservices\\Cart\\Cart.Infrastructure\\Cart.Infrastructure.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\cart\\cart.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A03A0E9-D6B9-42BA-8051-3CE01A8BD7BF}|Microservices\\Cart\\Cart.Infrastructure\\Cart.Infrastructure.csproj|solutionrelative:microservices\\cart\\cart.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED6C17FC-1BC9-4564-8C55-0837FDC926B1}|EmailNotification.Application\\EmailNotification.Application.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\emailnotification.application\\handlers\\remindchangepasswordhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED6C17FC-1BC9-4564-8C55-0837FDC926B1}|EmailNotification.Application\\EmailNotification.Application.csproj|solutionrelative:emailnotification.application\\handlers\\remindchangepasswordhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCF68B70-89EE-4088-B3A9-BB71C183B1C0}|EmailNotification.API\\EmailNotification.API.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\emailnotification.api\\controllers\\emailnotificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCF68B70-89EE-4088-B3A9-BB71C183B1C0}|EmailNotification.API\\EmailNotification.API.csproj|solutionrelative:emailnotification.api\\controllers\\emailnotificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FDDAD9D5-763B-461B-9B03-3E49ABF8DE5D}|docker-compose.dcproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\docker-compose.override.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{FDDAD9D5-763B-461B-9B03-3E49ABF8DE5D}|docker-compose.dcproj|solutionrelative:docker-compose.override.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCF68B70-89EE-4088-B3A9-BB71C183B1C0}|EmailNotification.API\\EmailNotification.API.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\emailnotification.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCF68B70-89EE-4088-B3A9-BB71C183B1C0}|EmailNotification.API\\EmailNotification.API.csproj|solutionrelative:emailnotification.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCF68B70-89EE-4088-B3A9-BB71C183B1C0}|EmailNotification.API\\EmailNotification.API.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\emailnotification.api\\controllers\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCF68B70-89EE-4088-B3A9-BB71C183B1C0}|EmailNotification.API\\EmailNotification.API.csproj|solutionrelative:emailnotification.api\\controllers\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCF68B70-89EE-4088-B3A9-BB71C183B1C0}|EmailNotification.API\\EmailNotification.API.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\emailnotification.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{FCF68B70-89EE-4088-B3A9-BB71C183B1C0}|EmailNotification.API\\EmailNotification.API.csproj|solutionrelative:emailnotification.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCF68B70-89EE-4088-B3A9-BB71C183B1C0}|EmailNotification.API\\EmailNotification.API.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\emailnotification.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{FCF68B70-89EE-4088-B3A9-BB71C183B1C0}|EmailNotification.API\\EmailNotification.API.csproj|solutionrelative:emailnotification.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCF68B70-89EE-4088-B3A9-BB71C183B1C0}|EmailNotification.API\\EmailNotification.API.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\emailnotification.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCF68B70-89EE-4088-B3A9-BB71C183B1C0}|EmailNotification.API\\EmailNotification.API.csproj|solutionrelative:emailnotification.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{560EAC85-94AC-48F5-851E-32D1680E7A41}|EmailNotification.CronJobWorker\\EmailNotification.CronJobWorker.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\emailnotification.cronjobworker\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{560EAC85-94AC-48F5-851E-32D1680E7A41}|EmailNotification.CronJobWorker\\EmailNotification.CronJobWorker.csproj|solutionrelative:emailnotification.cronjobworker\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FDDAD9D5-763B-461B-9B03-3E49ABF8DE5D}|docker-compose.dcproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{FDDAD9D5-763B-461B-9B03-3E49ABF8DE5D}|docker-compose.dcproj|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{560EAC85-94AC-48F5-851E-32D1680E7A41}|EmailNotification.CronJobWorker\\EmailNotification.CronJobWorker.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\emailnotification.cronjobworker\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{560EAC85-94AC-48F5-851E-32D1680E7A41}|EmailNotification.CronJobWorker\\EmailNotification.CronJobWorker.csproj|solutionrelative:emailnotification.cronjobworker\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B21BE443-6729-4259-A553-4C8ABA3E68F8}|BaseService\\Common.BaseService.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\baseservice\\apiservice\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B21BE443-6729-4259-A553-4C8ABA3E68F8}|BaseService\\Common.BaseService.csproj|solutionrelative:baseservice\\apiservice\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{560EAC85-94AC-48F5-851E-32D1680E7A41}|EmailNotification.CronJobWorker\\EmailNotification.CronJobWorker.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\emailnotification.cronjobworker\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{560EAC85-94AC-48F5-851E-32D1680E7A41}|EmailNotification.CronJobWorker\\EmailNotification.CronJobWorker.csproj|solutionrelative:emailnotification.cronjobworker\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{C4FE7FAC-C6C0-44B9-823F-359F801BF132}|Microservices\\Cart\\Cart.Application\\Cart.Application.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\cart\\cart.application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4FE7FAC-C6C0-44B9-823F-359F801BF132}|Microservices\\Cart\\Cart.Application\\Cart.Application.csproj|solutionrelative:microservices\\cart\\cart.application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 669,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -75,12 +27,38 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Cart\\Cart.Infrastructure\\Class1.cs",
+              "RelativeDocumentMoniker": "Microservices\\Cart\\Cart.Infrastructure\\Class1.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Cart\\Cart.Infrastructure\\Class1.cs",
+              "RelativeToolTip": "Microservices\\Cart\\Cart.Infrastructure\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T05:39:09.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Cart\\Cart.Application\\Class1.cs",
+              "RelativeDocumentMoniker": "Microservices\\Cart\\Cart.Application\\Class1.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Cart\\Cart.Application\\Class1.cs",
+              "RelativeToolTip": "Microservices\\Cart\\Cart.Application\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T05:38:29.475Z",
+              "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 288,
-          "SelectedChildIndex": 3,
+          "DockedWidth": 524,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -89,201 +67,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EmailNotificationController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.API\\Controllers\\EmailNotificationController.cs",
-              "RelativeDocumentMoniker": "EmailNotification.API\\Controllers\\EmailNotificationController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.API\\Controllers\\EmailNotificationController.cs",
-              "RelativeToolTip": "EmailNotification.API\\Controllers\\EmailNotificationController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAewBoAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T03:02:54.773Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RemindChangePasswordHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.Application\\Handlers\\RemindChangePasswordHandler.cs",
-              "RelativeDocumentMoniker": "EmailNotification.Application\\Handlers\\RemindChangePasswordHandler.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.Application\\Handlers\\RemindChangePasswordHandler.cs",
-              "RelativeToolTip": "EmailNotification.Application\\Handlers\\RemindChangePasswordHandler.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAWwBsAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T03:02:54.803Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "docker-compose.override.yml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\docker-compose.override.yml",
-              "RelativeDocumentMoniker": "docker-compose.override.yml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\docker-compose.override.yml",
-              "RelativeToolTip": "docker-compose.override.yml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2024-08-25T02:56:09.548Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ApiController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.API\\Controllers\\ApiController.cs",
-              "RelativeDocumentMoniker": "EmailNotification.API\\Controllers\\ApiController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.API\\Controllers\\ApiController.cs",
-              "RelativeToolTip": "EmailNotification.API\\Controllers\\ApiController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T04:51:01.845Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.API\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "EmailNotification.API\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.API\\Properties\\launchSettings.json",
-              "RelativeToolTip": "EmailNotification.API\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-25T02:45:48.929Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.CronJobWorker\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "EmailNotification.CronJobWorker\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.CronJobWorker\\Properties\\launchSettings.json",
-              "RelativeToolTip": "EmailNotification.CronJobWorker\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAkAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-25T03:06:40.04Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Startup.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.API\\Startup.cs",
-              "RelativeDocumentMoniker": "EmailNotification.API\\Startup.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.API\\Startup.cs",
-              "RelativeToolTip": "EmailNotification.API\\Startup.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACQAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T03:33:05.74Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.API\\Dockerfile",
-              "RelativeDocumentMoniker": "EmailNotification.API\\Dockerfile",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.API\\Dockerfile",
-              "RelativeToolTip": "EmailNotification.API\\Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-25T03:20:39.523Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "docker-compose.yml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\docker-compose.yml",
-              "RelativeDocumentMoniker": "docker-compose.yml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\docker-compose.yml",
-              "RelativeToolTip": "docker-compose.yml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2024-08-25T03:12:38.594Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ApiService.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\BaseService\\APIService\\ApiService.cs",
-              "RelativeDocumentMoniker": "BaseService\\APIService\\ApiService.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\BaseService\\APIService\\ApiService.cs",
-              "RelativeToolTip": "BaseService\\APIService\\ApiService.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAgwA0AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T03:11:36.095Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.API\\Program.cs",
-              "RelativeDocumentMoniker": "EmailNotification.API\\Program.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.API\\Program.cs",
-              "RelativeToolTip": "EmailNotification.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T03:32:55.58Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.CronJobWorker\\Dockerfile",
-              "RelativeDocumentMoniker": "EmailNotification.CronJobWorker\\Dockerfile",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.CronJobWorker\\Dockerfile",
-              "RelativeToolTip": "EmailNotification.CronJobWorker\\Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-25T03:24:17.541Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 521,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RemindChangePasswordInvocable.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.CronJobWorker\\RemindChangePassword\\RemindChangePasswordInvocable.cs",
-              "RelativeDocumentMoniker": "EmailNotification.CronJobWorker\\RemindChangePassword\\RemindChangePasswordInvocable.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.CronJobWorker\\RemindChangePassword\\RemindChangePasswordInvocable.cs",
-              "RelativeToolTip": "EmailNotification.CronJobWorker\\RemindChangePassword\\RemindChangePasswordInvocable.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwBoAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T20:43:02.184Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.CronJobWorker\\appsettings.json",
-              "RelativeDocumentMoniker": "EmailNotification.CronJobWorker\\appsettings.json",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.CronJobWorker\\appsettings.json",
-              "RelativeToolTip": "EmailNotification.CronJobWorker\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-24T20:39:32.405Z"
             }
           ]
         }
