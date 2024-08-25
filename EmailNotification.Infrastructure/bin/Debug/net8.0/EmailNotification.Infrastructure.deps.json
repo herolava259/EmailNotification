@@ -1074,6 +1074,7 @@
           "MailKit": "4.7.1.1",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Options": "8.0.0",
           "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {

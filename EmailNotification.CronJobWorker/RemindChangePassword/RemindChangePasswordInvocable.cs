@@ -1,16 +1,17 @@
 ﻿using BaseService.APIService;
-using BaseService.HttpService;
+using BaseService.ApiService;
 using Coravel.Invocable;
+using System.Web;
 
 namespace EmailNotification.CronJobWorker.RemindChangePassword
 {
     public class RemindChangePasswordInvocable : IInvocable
     {
-        private readonly IApiService<object, RemindChangePasswordResponse> _apiService;
+        private readonly IRemindChangePasswordService _apiService;
         private readonly string? _url ;
         private readonly ILogger<RemindChangePasswordInvocable> _logger;    
 
-        public RemindChangePasswordInvocable(IApiService<object,RemindChangePasswordResponse> apiService, 
+        public RemindChangePasswordInvocable(IRemindChangePasswordService apiService, 
                                              IConfiguration configuration,
                                              ILogger<RemindChangePasswordInvocable> logger)
         {
@@ -20,13 +21,17 @@ namespace EmailNotification.CronJobWorker.RemindChangePassword
         }
         public async Task Invoke()
         {
+            
+            var url = $"{this._url}/api/v1/EmailNotification/remindchangepassword/{HttpUtility.UrlEncode(DateTimeOffset.UtcNow.ToString("MM/dd/yyyy"))}";
             _logger.LogInformation("Begin RemindChangePasswordJob");
+            
+            _logger.LogInformation(url);
             var apiRequest = new ApiRequest<object>
             {
                 ApiType = APIEnum.ApiType.GET,
-                Url = $"{this._url}/api/v1/useraccount/remindchangepassword/{DateTimeOffset.UtcNow.ToString()}"
+                Url = url
             };
-
+            //{DateTimeOffset.UtcNow.ToString("MM/dd/yyyy")}
             var response = await _apiService.SendAsync(apiRequest);
 
             if(response == null || !response.IsSuccess || !response.Result!.Result)

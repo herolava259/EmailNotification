@@ -28,7 +28,7 @@ namespace EmailNotification.Application.Handlers
         public async Task<RemindChangePasswordResponse> Handle(RemindChangePasswordCommand request, CancellationToken cancellationToken)
         {
             _logger.LogDebug("begin handle method of RemindChangePasswordHandler");
-            if (!(await _userAccountRepository.AnyAsync(c => c.LastUpdatePassword < request.ExpireDate.AddMonths(6)
+                if (!(await _userAccountRepository.AnyAsync(c => c.LastUpdatePassword < request.ExpireDate.AddMonths(-6)
                                                             && c.Status == EStatus.Normal)))
             {
                 _logger.LogDebug("End handle method of RemindChangePasswordHandler");

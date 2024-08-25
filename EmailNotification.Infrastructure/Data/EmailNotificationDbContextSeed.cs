@@ -39,7 +39,7 @@ public static class EmailNotificationDbContextSeed
                 Id = new Guid("a6904b79-28ac-45b8-9e85-5ec2a8e7994f"),
                 Email = "chopperman249@gmail.com",
                 Status = EStatus.Normal,
-                LastUpdatePassword = DateTimeOffset.UtcNow.AddDays(-90)
+                LastUpdatePassword = DateTimeOffset.UtcNow.AddMonths(-9)
 
             }
         };
@@ -55,7 +55,8 @@ public static class EmailNotificationDbContextSeed
                 FirstName = "Farrer",
                 LastName = "Le",
                 Address = "Vietnam",
-                UserAccountId = new Guid("a6904b79-28ac-45b8-9e85-5ec2a8e7994f")
+                UserAccountId = new Guid("a6904b79-28ac-45b8-9e85-5ec2a8e7994f"),
+                
             }
         };
     }

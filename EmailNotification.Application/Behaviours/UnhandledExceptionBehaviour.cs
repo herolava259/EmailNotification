@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using EmailNotification.Application.Responses;
+using MediatR;
 using Microsoft.Extensions.Logging;
 
 namespace EmailNotification.Application.Behaviours

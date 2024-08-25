@@ -1,6 +1,15 @@
 services:
-  emailnotification:
+  emailnotification.api:
     image: ${DOCKER_REGISTRY-}emailnotification
     build:
       context: .
-      dockerfile: EmailNotification/Dockerfile
+      dockerfile: EmailNotification.API/Dockerfile
+
+  emailnotificationdb:
+    image: mcr.microsoft.com/mssql/server:2017-latest 
+  
+  timerjob:
+    image: ${DOCKER_REGISTRY-}timerjob
+    build:
+      context: .
+      dockerfile: EmailNotification.CronJobWorker/Dockerfile

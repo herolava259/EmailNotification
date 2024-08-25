@@ -1,11 +1,10 @@
 ﻿using BaseService.APIService;
 
-namespace BaseService.HttpService
-{
-    public interface IApiService<TData, TResult>
-    {
-        ApiResponse<TResult> responseModel { get; set; }
+namespace BaseService.ApiService;
 
-        Task<ApiResponse<TResult>> SendAsync(ApiRequest<TData> apiRequest);
-    }
+public interface IApiService<TData, TResult>
+{
+    ApiResponse<TResult> responseModel { get; set; }
+
+    Task<ApiResponse<TResult>> SendAsync(ApiRequest<TData> apiRequest);
 }

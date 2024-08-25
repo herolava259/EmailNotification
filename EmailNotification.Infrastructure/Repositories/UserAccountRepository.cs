@@ -17,7 +17,7 @@ namespace EmailNotification.Infrastructure.Repositories
         }
         public async Task<List<UserAccount>> GetUserAccountsNeedToChangePassword(DateTimeOffset expiredDate)
         {
-            var accountQuery = _dbContext.UserAccounts.AsNoTracking().Where(c => c.LastUpdatePassword < expiredDate.AddMonths(6)
+            var accountQuery = _dbContext.UserAccounts.AsNoTracking().Where(c => c.LastUpdatePassword < expiredDate.AddMonths(-6)
                                                                                 && c.Status == EStatus.Normal);
             return await accountQuery.Include(c => c.Profile).ToListAsync();
         }

@@ -1,6 +1,7 @@
 ﻿using MailKit.Net.Smtp;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using MimeKit;
 using Newtonsoft.Json;
 
@@ -11,10 +12,9 @@ namespace EmailNotification.EmailService
         private readonly EmailConfiguration _emailConfig;
         private readonly ILogger<EmailService> _logger;
 
-        public EmailService(IConfiguration configuration, ILogger<EmailService> logger)
+        public EmailService(IOptions<EmailConfiguration> options, ILogger<EmailService> logger)
         {
-            this._emailConfig = JsonConvert.DeserializeObject<EmailConfiguration>
-                                        (configuration.GetSection("EmailConfiguration").Value!)!;
+            this._emailConfig = options.Value;
             this._logger = logger;
         }
         public async Task<bool> SendEmailAsync(Message message)

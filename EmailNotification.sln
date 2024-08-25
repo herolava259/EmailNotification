@@ -23,7 +23,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Timer", "Timer", "{AB5DF907
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commons", "Commons", "{14F4A126-4EB5-4D61-9848-7F59CA1E3982}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.BaseService", "BaseService\Common.BaseService.csproj", "{B21BE443-6729-4259-A553-4C8ABA3E68F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.BaseService", "BaseService\Common.BaseService.csproj", "{B21BE443-6729-4259-A553-4C8ABA3E68F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -13,6 +13,7 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["EmailNotification.CronJobWorker/EmailNotification.CronJobWorker.csproj", "EmailNotification.CronJobWorker/"]
+COPY ["EmailNotification.BaseService/Common.BaseService.csproj", "EmailNotification.BaseService/"]
 RUN dotnet restore "./EmailNotification.CronJobWorker/EmailNotification.CronJobWorker.csproj"
 COPY . .
 WORKDIR "/src/EmailNotification.CronJobWorker"

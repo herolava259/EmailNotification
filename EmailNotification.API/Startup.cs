@@ -4,6 +4,7 @@ using Microsoft.OpenApi.Models;
 using EmailNotification.Application.Extensions;
 using EmailNotification.Infrastructure.Extentions;
 using EmailNotification.Infrastructure.Data;
+using EmailNotification.EmailService;
 
 namespace EmailNotification.API
 {
@@ -20,6 +21,18 @@ namespace EmailNotification.API
         {
             services.AddControllers();
             services.AddApiVersioning();
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy", policy =>
+                {
+                    policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
+                });
+            }).AddVersionedApiExplorer(
+                options =>
+                {
+                    options.GroupNameFormat = "'v'VVV";
+                    options.SubstituteApiVersionInUrl = true;
+                });
             services.AddApplicationService();
             services.AddInfrastructureService(configuration: Configuration);
             services.AddAutoMapper(typeof(Startup));
@@ -34,7 +47,8 @@ namespace EmailNotification.API
 
             services.AddHealthChecks().Services.AddDbContext<EmailNotificationDBContext>();
 
-
+            services.AddScoped<IEmailService, EmailService.EmailService>();
+            services.Configure<EmailConfiguration>(Configuration.GetSection("EmailConfiguration"));
         }
 
         public void Configure(IApplicationBuilder appBuilder, IWebHostEnvironment env)
@@ -47,7 +61,9 @@ namespace EmailNotification.API
             }
 
             appBuilder.UseRouting();
+            appBuilder.UseCors("CorsPolicy");
             appBuilder.UseAuthorization();
+            appBuilder.UseAuthentication();
             appBuilder.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

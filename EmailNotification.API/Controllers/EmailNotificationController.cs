@@ -3,6 +3,7 @@ using EmailNotification.Application.Commamds;
 using EmailNotification.Application.Responses;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using System.Web;
 
 namespace EmailNotification.API.Controllers;
 
@@ -22,10 +23,12 @@ public class EmailNotificationController: ApiController
     [ProducesResponseType(StatusCodes.Status200OK)]
     public async Task<ActionResult<RemindChangePasswordResponse>> RemindChangePassword(string simulateTime)
     {
+        simulateTime = HttpUtility.UrlDecode(simulateTime);
         var check = DateTimeOffset.TryParse(simulateTime, out var expiredDate);
 
         if(!check)
         {
+            _logger.LogError("parameter query is invalid");
             return BadRequest(new RemindChangePasswordResponse { Result = false, TotalOfReminder = 0 });
         }
         var cmd = new RemindChangePasswordCommand

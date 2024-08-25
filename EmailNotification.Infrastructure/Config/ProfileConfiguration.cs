@@ -10,7 +10,7 @@ public class ProfileConfiguration : IEntityTypeConfiguration<Profile>
 {
     public void Configure(EntityTypeBuilder<Profile> builder)
     {
-        builder.ToTable("UserAccount");
+        builder.ToTable("Profile");
         builder.HasKey(c => c.Id);
         builder.Property(c => c.CreatedDate).IsRequired();
         builder.Property(c => c.UpdatedDate).IsRequired();

@@ -1,12 +1,37 @@
+
+
 services:
-  emailnotification:
+
+  emailnotification.api:
+    container_name: emailnotification.api
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_HTTP_PORTS=8080
-      - ASPNETCORE_HTTPS_PORTS=8081
+      - "ConnectionStrings__DatabaseConnectionString=Server=emailnotificationdb;Database=UserDb;User Id=sa;Password=1qaz2wsx;TrustServerCertificate=True"
+#      - ASPNETCORE_URLS=http://*:8003
+    depends_on:
+      - emailnotificationdb
     ports:
-      - "8080"
-      - "8081"
-    volumes:
-      - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
-      - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
+      - "8003:8080"
+      
+  emailnotificationdb:
+    container_name: emailnotificationdb
+    environment:
+      SA_PASSWORD: "1qaz2wsx"
+      ACCEPT_EULA: "Y"
+    restart: always
+    ports: 
+      - "1533:1533"
+  timerjob:
+    container_name: timerjob
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "ServiceUrls__EmailNotification=http://emailnotification.api:8080"
+    ports:
+      - "8002:8080"
+    depends_on:
+      - emailnotification.api
+
+  
+    
+  
