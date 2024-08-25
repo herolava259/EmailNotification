@@ -31,25 +31,29 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cart", "Cart", "{941C9478-4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Product", "Product", "{1BFAC351-F44B-42D4-B88F-CD4516E0EE67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product.API", "Microservices\Product\Product.API\Product.API.csproj", "{1D8B480D-B6CB-4274-ADFF-623837FAC344}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Product.API", "Microservices\Product\Product.API\Product.API.csproj", "{1D8B480D-B6CB-4274-ADFF-623837FAC344}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product.Core", "Microservices\Product\Product.Core\Product.Core.csproj", "{5563FED2-808A-43AA-BE3E-916F6B38AEB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Product.Core", "Microservices\Product\Product.Core\Product.Core.csproj", "{5563FED2-808A-43AA-BE3E-916F6B38AEB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product.Application", "Microservices\Product\Product.Application\Product.Application.csproj", "{76A649B3-791F-454B-984C-E33C929F5541}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Product.Application", "Microservices\Product\Product.Application\Product.Application.csproj", "{76A649B3-791F-454B-984C-E33C929F5541}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product.Infrastructure", "Microservices\Product\Product.Infrastructure\Product.Infrastructure.csproj", "{A9966593-B588-489B-91F9-3672A31ACEE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Product.Infrastructure", "Microservices\Product\Product.Infrastructure\Product.Infrastructure.csproj", "{A9966593-B588-489B-91F9-3672A31ACEE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cart.API", "Microservices\Cart\Cart.API\Cart.API.csproj", "{D8090CC8-4B95-4F15-AB50-8E77E0A5AB11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cart.API", "Microservices\Cart\Cart.API\Cart.API.csproj", "{D8090CC8-4B95-4F15-AB50-8E77E0A5AB11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cart.Core", "Microservices\Cart\Cart.Core\Cart.Core.csproj", "{14C3004E-A308-4F61-A60A-A092A487EBB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cart.Core", "Microservices\Cart\Cart.Core\Cart.Core.csproj", "{14C3004E-A308-4F61-A60A-A092A487EBB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cart.Application", "Microservices\Cart\Cart.Application\Cart.Application.csproj", "{C4FE7FAC-C6C0-44B9-823F-359F801BF132}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cart.Application", "Microservices\Cart\Cart.Application\Cart.Application.csproj", "{C4FE7FAC-C6C0-44B9-823F-359F801BF132}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cart.Infrastructure", "Microservices\Cart\Cart.Infrastructure\Cart.Infrastructure.csproj", "{1A03A0E9-D6B9-42BA-8051-3CE01A8BD7BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cart.Infrastructure", "Microservices\Cart\Cart.Infrastructure\Cart.Infrastructure.csproj", "{1A03A0E9-D6B9-42BA-8051-3CE01A8BD7BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cart.UnitTests", "Microservices\Cart\Cart.UnitTests\Cart.UnitTests.csproj", "{496A7796-20AC-4A65-82FF-A44F6E8A6F62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cart.UnitTests", "Microservices\Cart\Cart.UnitTests\Cart.UnitTests.csproj", "{496A7796-20AC-4A65-82FF-A44F6E8A6F62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product.UnitTests", "Microservices\Product\Product.UnitTests\Product.UnitTests.csproj", "{DAF5F199-CB08-40F6-A76D-B6CE4A766950}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Product.UnitTests", "Microservices\Product\Product.UnitTests\Product.UnitTests.csproj", "{DAF5F199-CB08-40F6-A76D-B6CE4A766950}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NotificationSystem", "NotificationSystem", "{EBE38069-170B-4FB0-9712-3E96FA7D9ABE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationSystem", "NotificationSystem\NotificationSystem\NotificationSystem.csproj", "{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +133,10 @@ Global
 		{DAF5F199-CB08-40F6-A76D-B6CE4A766950}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DAF5F199-CB08-40F6-A76D-B6CE4A766950}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DAF5F199-CB08-40F6-A76D-B6CE4A766950}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -152,6 +160,7 @@ Global
 		{1A03A0E9-D6B9-42BA-8051-3CE01A8BD7BF} = {941C9478-43D5-4B03-AE92-ECCCDCCFACC7}
 		{496A7796-20AC-4A65-82FF-A44F6E8A6F62} = {941C9478-43D5-4B03-AE92-ECCCDCCFACC7}
 		{DAF5F199-CB08-40F6-A76D-B6CE4A766950} = {1BFAC351-F44B-42D4-B88F-CD4516E0EE67}
+		{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C} = {EBE38069-170B-4FB0-9712-3E96FA7D9ABE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {700D4573-6F29-4AF9-9FF5-454C6376FB81}

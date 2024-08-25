@@ -1,15 +1,60 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\notificationsystem\\notificationsystem\\behaviours\\notificationsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|solutionrelative:notificationsystem\\notificationsystem\\behaviours\\notificationsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\notificationsystem\\notificationsystem\\interfaces\\imediator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|solutionrelative:notificationsystem\\notificationsystem\\interfaces\\imediator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\notificationsystem\\notificationsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|solutionrelative:notificationsystem\\notificationsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\notificationsystem\\notificationsystem\\behaviours\\subcriber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|solutionrelative:notificationsystem\\notificationsystem\\behaviours\\subcriber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\notificationsystem\\notificationsystem\\interfaces\\ipublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|solutionrelative:notificationsystem\\notificationsystem\\interfaces\\ipublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\notificationsystem\\notificationsystem\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|solutionrelative:notificationsystem\\notificationsystem\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\notificationsystem\\notificationsystem\\behaviours\\publisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|solutionrelative:notificationsystem\\notificationsystem\\behaviours\\publisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\notificationsystem\\notificationsystem\\models\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|solutionrelative:notificationsystem\\notificationsystem\\models\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\notificationsystem\\notificationsystem\\interfaces\\iobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|solutionrelative:notificationsystem\\notificationsystem\\interfaces\\iobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\notificationsystem\\notificationsystem\\interfaces\\isubcriber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|solutionrelative:notificationsystem\\notificationsystem\\interfaces\\isubcriber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\notificationsystem\\notificationsystem\\interfaces\\iregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|solutionrelative:notificationsystem\\notificationsystem\\interfaces\\iregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 387,
-          "SelectedChildIndex": -1,
+          "DockedWidth": 683,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -18,11 +63,154 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Models\\User.cs",
+              "RelativeDocumentMoniker": "NotificationSystem\\NotificationSystem\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Models\\User.cs",
+              "RelativeToolTip": "NotificationSystem\\NotificationSystem\\Models\\User.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T17:20:17.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IUser.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Models\\IUser.cs",
+              "RelativeDocumentMoniker": "NotificationSystem\\NotificationSystem\\Models\\IUser.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Models\\IUser.cs",
+              "RelativeToolTip": "NotificationSystem\\NotificationSystem\\Models\\IUser.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwAkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T17:16:05.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Program.cs",
+              "RelativeDocumentMoniker": "NotificationSystem\\NotificationSystem\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Program.cs",
+              "RelativeToolTip": "NotificationSystem\\NotificationSystem\\Program.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T17:14:47.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Publisher.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Behaviours\\Publisher.cs",
+              "RelativeDocumentMoniker": "NotificationSystem\\NotificationSystem\\Behaviours\\Publisher.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Behaviours\\Publisher.cs",
+              "RelativeToolTip": "NotificationSystem\\NotificationSystem\\Behaviours\\Publisher.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T17:08:01.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NotificationSystem.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Behaviours\\NotificationSystem.cs",
+              "RelativeDocumentMoniker": "NotificationSystem\\NotificationSystem\\Behaviours\\NotificationSystem.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Behaviours\\NotificationSystem.cs*",
+              "RelativeToolTip": "NotificationSystem\\NotificationSystem\\Behaviours\\NotificationSystem.cs*",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T17:07:09.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Subcriber.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Behaviours\\Subcriber.cs",
+              "RelativeDocumentMoniker": "NotificationSystem\\NotificationSystem\\Behaviours\\Subcriber.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Behaviours\\Subcriber.cs",
+              "RelativeToolTip": "NotificationSystem\\NotificationSystem\\Behaviours\\Subcriber.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowDEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T17:10:39.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IObserver.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Interfaces\\IObserver.cs",
+              "RelativeDocumentMoniker": "NotificationSystem\\NotificationSystem\\Interfaces\\IObserver.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Interfaces\\IObserver.cs",
+              "RelativeToolTip": "NotificationSystem\\NotificationSystem\\Interfaces\\IObserver.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T17:12:17.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IMediator.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Interfaces\\IMediator.cs",
+              "RelativeDocumentMoniker": "NotificationSystem\\NotificationSystem\\Interfaces\\IMediator.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Interfaces\\IMediator.cs*",
+              "RelativeToolTip": "NotificationSystem\\NotificationSystem\\Interfaces\\IMediator.cs*",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwA8AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T17:05:01.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IPublisher.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Interfaces\\IPublisher.cs",
+              "RelativeDocumentMoniker": "NotificationSystem\\NotificationSystem\\Interfaces\\IPublisher.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Interfaces\\IPublisher.cs",
+              "RelativeToolTip": "NotificationSystem\\NotificationSystem\\Interfaces\\IPublisher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T17:04:49.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IRegister.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Interfaces\\IRegister.cs",
+              "RelativeDocumentMoniker": "NotificationSystem\\NotificationSystem\\Interfaces\\IRegister.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Interfaces\\IRegister.cs",
+              "RelativeToolTip": "NotificationSystem\\NotificationSystem\\Interfaces\\IRegister.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T17:04:43.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ISubcriber.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Interfaces\\ISubcriber.cs",
+              "RelativeDocumentMoniker": "NotificationSystem\\NotificationSystem\\Interfaces\\ISubcriber.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Interfaces\\ISubcriber.cs",
+              "RelativeToolTip": "NotificationSystem\\NotificationSystem\\Interfaces\\ISubcriber.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T17:03:50.345Z",
+              "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 391,
+          "DockedWidth": 95,
           "SelectedChildIndex": -1,
           "Children": [
             {
@@ -35,11 +223,11 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }

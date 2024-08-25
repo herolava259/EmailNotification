@@ -1,0 +1,15 @@
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\NotificationSystem\NotificationSystem\obj\Debug\net8.0\NotificationSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\NotificationSystem\NotificationSystem\obj\Debug\net8.0\NotificationSystem.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\NotificationSystem\NotificationSystem\obj\Debug\net8.0\NotificationSystem.AssemblyInfo.cs
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\NotificationSystem\NotificationSystem\obj\Debug\net8.0\NotificationSystem.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\NotificationSystem\NotificationSystem\obj\Debug\net8.0\NotificationSystem.sourcelink.json
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\NotificationSystem\NotificationSystem\bin\Debug\net8.0\NotificationSystem.exe
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\NotificationSystem\NotificationSystem\bin\Debug\net8.0\NotificationSystem.deps.json
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\NotificationSystem\NotificationSystem\bin\Debug\net8.0\NotificationSystem.runtimeconfig.json
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\NotificationSystem\NotificationSystem\bin\Debug\net8.0\NotificationSystem.dll
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\NotificationSystem\NotificationSystem\bin\Debug\net8.0\NotificationSystem.pdb
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\NotificationSystem\NotificationSystem\obj\Debug\net8.0\NotificationSystem.dll
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\NotificationSystem\NotificationSystem\obj\Debug\net8.0\refint\NotificationSystem.dll
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\NotificationSystem\NotificationSystem\obj\Debug\net8.0\NotificationSystem.pdb
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\NotificationSystem\NotificationSystem\obj\Debug\net8.0\NotificationSystem.genruntimeconfig.cache
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\NotificationSystem\NotificationSystem\obj\Debug\net8.0\ref\NotificationSystem.dll

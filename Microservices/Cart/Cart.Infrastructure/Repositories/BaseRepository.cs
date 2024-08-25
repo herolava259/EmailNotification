@@ -89,6 +89,8 @@ public class BaseRepository<T> : IBaseRepository<T>
 
     public async Task<bool> PartialUpdateAsync(T entity, List<string> modifyParams)
     {
+        entity.UpdatedDate = DateTimeOffset.UtcNow;
+        modifyParams.Add("UpdatedDate");
         _dbContext.Attach(entity);
         var entry = _dbContext.Entry(entity);
         modifyParams.ForEach(c =>
@@ -103,6 +105,13 @@ public class BaseRepository<T> : IBaseRepository<T>
     public async Task<bool> RemoveAsync(T entity)
     {
         _dbContext.Set<T>().Remove(entity);
+
+        return await _dbContext.SaveChangesAsync() > 0;
+    }
+
+    public async Task<bool> UpdateAsync(T entity)
+    {
+        _dbContext.Set<T>().Update(entity);
 
         return await _dbContext.SaveChangesAsync() > 0;
     }

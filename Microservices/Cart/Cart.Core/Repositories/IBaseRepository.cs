@@ -17,6 +17,7 @@ public interface IBaseRepository<T> where T : BaseEntity
     Task<bool> AnyAsync(Expression<Func<T, bool>> condition);
     Task<bool> RemoveAsync(T entity);
 
+    Task<bool> UpdateAsync(T entity);
     Task SaveAsync();
 
     Task<bool> PartialUpdateAsync(T entity, List<string> modifyParams);
