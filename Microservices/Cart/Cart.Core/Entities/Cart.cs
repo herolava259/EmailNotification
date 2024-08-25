@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Cart.Application.Entities
+namespace Cart.Core.Entities
 {
     public class Cart: BaseEntity
     {

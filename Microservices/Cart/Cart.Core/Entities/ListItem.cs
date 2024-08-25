@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Cart.Application.Entities;
+namespace Cart.Core.Entities;
 
 public class ListItem: BaseEntity
 {

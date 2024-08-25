@@ -1,17 +1,18 @@
-﻿using EmailNotification.Core.Entities;
-using EmailNotification.Core.Repositories;
-using EmailNotification.Infrastructure.Data;
+﻿using Cart.Core.Entities;
+using Cart.Core.Repositories;
+using Cart.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
-namespace EmailNotification.Infrastructure.Repositories;
+
+namespace Cart.Infrastructure.Repositories;
 
 public class BaseRepository<T> : IBaseRepository<T>
     where T : BaseEntity
 {
-    protected readonly EmailNotificationDBContext _dbContext;
+    protected readonly ProductDBContext _dbContext;
 
-    public BaseRepository(EmailNotificationDBContext dbContext)
+    public BaseRepository(ProductDBContext dbContext)
     {
         _dbContext = dbContext;
     }
@@ -27,7 +28,7 @@ public class BaseRepository<T> : IBaseRepository<T>
 
         _dbContext.Set<T>().Add(entity);
 
-        if((await _dbContext.SaveChangesAsync()) > 0)
+        if ((await _dbContext.SaveChangesAsync()) > 0)
         {
             return entity.Id;
         }
@@ -39,7 +40,7 @@ public class BaseRepository<T> : IBaseRepository<T>
     {
         var entityQuery = _dbContext.Set<T>().AsNoTracking();
 
-        if(filter != null)
+        if (filter != null)
         {
             entityQuery = entityQuery.Where(filter);
         }
@@ -97,7 +98,7 @@ public class BaseRepository<T> : IBaseRepository<T>
 
         return await _dbContext.SaveChangesAsync() > 0;
     }
-    
+
 
     public async Task<bool> RemoveAsync(T entity)
     {

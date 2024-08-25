@@ -237,6 +237,9 @@
             "projectReferences": {
               "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Cart\\Cart.Application\\Cart.Application.csproj": {
                 "projectPath": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Cart\\Cart.Application\\Cart.Application.csproj"
+              },
+              "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Cart\\Cart.Core\\Cart.Core.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Cart\\Cart.Core\\Cart.Core.csproj"
               }
             }
           }

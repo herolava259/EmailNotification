@@ -1,10 +1,10 @@
-﻿using Cart.Application.Entities;
+﻿using Cart.Core.Entities;
 using System;
 
 using System.Linq.Expressions;
 
 
-namespace Cart.Application.Repositories;
+namespace Cart.Core.Repositories;
 
 public interface IBaseRepository<T> where T : BaseEntity
 {

@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using Cart.Core.Entities;
 
-namespace Cart.Application.Repositories
+namespace Cart.Core.Repositories;
+
+public interface IListItemRepository: IBaseRepository<ListItem>
 {
-    internal interface IListItemRepository
-    {
-    }
 }

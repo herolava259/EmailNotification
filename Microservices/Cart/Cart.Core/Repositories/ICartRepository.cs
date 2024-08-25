@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CartEntity = Cart.Core.Entities.Cart;
 
-namespace Cart.Application.Repositories
+namespace Cart.Core.Repositories;
+
+public interface ICartRepository: IBaseRepository<CartEntity>
 {
-    internal interface ICartRepository
-    {
-    }
 }

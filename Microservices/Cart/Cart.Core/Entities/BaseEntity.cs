@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Cart.Application.Entities;
+namespace Cart.Core.Entities;
 
 public abstract class BaseEntity
 {
