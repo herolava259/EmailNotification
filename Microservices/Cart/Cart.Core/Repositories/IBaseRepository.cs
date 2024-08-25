@@ -1,11 +1,12 @@
-﻿using EmailNotification.Core.Entities;
+﻿using Cart.Application.Entities;
+using System;
 
 using System.Linq.Expressions;
 
 
-namespace EmailNotification.Core.Repositories;
+namespace Cart.Application.Repositories;
 
-public interface IBaseRepository<T> where T: BaseEntity
+public interface IBaseRepository<T> where T : BaseEntity
 {
     Task<List<T>> GetAllAsync(Expression<Func<T, bool>> filter = null, string? includeProperties = null,
         int pageSize = 0, int pageNumber = 1);
@@ -20,5 +21,5 @@ public interface IBaseRepository<T> where T: BaseEntity
 
     Task<bool> PartialUpdateAsync(T entity, List<string> modifyParams);
 
-    
+
 }
