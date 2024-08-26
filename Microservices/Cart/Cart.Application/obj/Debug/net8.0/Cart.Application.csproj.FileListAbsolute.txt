@@ -1,0 +1,16 @@
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\Microservices\Cart\Cart.Application\bin\Debug\net8.0\Cart.Application.deps.json
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\Microservices\Cart\Cart.Application\bin\Debug\net8.0\Cart.Application.dll
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\Microservices\Cart\Cart.Application\bin\Debug\net8.0\Cart.Application.pdb
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\Microservices\Cart\Cart.Application\bin\Debug\net8.0\Cart.Core.dll
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\Microservices\Cart\Cart.Application\bin\Debug\net8.0\Cart.Core.pdb
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\Microservices\Cart\Cart.Application\obj\Debug\net8.0\Cart.Application.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\Microservices\Cart\Cart.Application\obj\Debug\net8.0\Cart.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\Microservices\Cart\Cart.Application\obj\Debug\net8.0\Cart.Application.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\Microservices\Cart\Cart.Application\obj\Debug\net8.0\Cart.Application.AssemblyInfo.cs
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\Microservices\Cart\Cart.Application\obj\Debug\net8.0\Cart.Application.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\Microservices\Cart\Cart.Application\obj\Debug\net8.0\Cart.Application.sourcelink.json
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\Microservices\Cart\Cart.Application\obj\Debug\net8.0\Cart.App.F2FBA5F4.Up2Date
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\Microservices\Cart\Cart.Application\obj\Debug\net8.0\Cart.Application.dll
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\Microservices\Cart\Cart.Application\obj\Debug\net8.0\refint\Cart.Application.dll
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\Microservices\Cart\Cart.Application\obj\Debug\net8.0\Cart.Application.pdb
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\Microservices\Cart\Cart.Application\obj\Debug\net8.0\ref\Cart.Application.dll

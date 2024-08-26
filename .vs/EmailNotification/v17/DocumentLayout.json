@@ -3,36 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C4FE7FAC-C6C0-44B9-823F-359F801BF132}|Microservices\\Cart\\Cart.Application\\Cart.Application.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\cart\\cart.application\\extensions\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4FE7FAC-C6C0-44B9-823F-359F801BF132}|Microservices\\Cart\\Cart.Application\\Cart.Application.csproj|solutionrelative:microservices\\cart\\cart.application\\extensions\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4FE7FAC-C6C0-44B9-823F-359F801BF132}|Microservices\\Cart\\Cart.Application\\Cart.Application.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\cart\\cart.application\\protos\\product.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{C4FE7FAC-C6C0-44B9-823F-359F801BF132}|Microservices\\Cart\\Cart.Application\\Cart.Application.csproj|solutionrelative:microservices\\cart\\cart.application\\protos\\product.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4FE7FAC-C6C0-44B9-823F-359F801BF132}|Microservices\\Cart\\Cart.Application\\Cart.Application.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\cart\\cart.application\\cart.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{C4FE7FAC-C6C0-44B9-823F-359F801BF132}|Microservices\\Cart\\Cart.Application\\Cart.Application.csproj|solutionrelative:microservices\\cart\\cart.application\\cart.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{1D8B480D-B6CB-4274-ADFF-623837FAC344}|Microservices\\Product\\Product.API\\Product.API.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\product\\product.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D8B480D-B6CB-4274-ADFF-623837FAC344}|Microservices\\Product\\Product.API\\Product.API.csproj|solutionrelative:microservices\\product\\product.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED6C17FC-1BC9-4564-8C55-0837FDC926B1}|EmailNotification.Application\\EmailNotification.Application.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\emailnotification.application\\behaviours\\unhandledexceptionbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED6C17FC-1BC9-4564-8C55-0837FDC926B1}|EmailNotification.Application\\EmailNotification.Application.csproj|solutionrelative:emailnotification.application\\behaviours\\unhandledexceptionbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D8B480D-B6CB-4274-ADFF-623837FAC344}|Microservices\\Product\\Product.API\\Product.API.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\product\\product.api\\controllers\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D8B480D-B6CB-4274-ADFF-623837FAC344}|Microservices\\Product\\Product.API\\Product.API.csproj|solutionrelative:microservices\\product\\product.api\\controllers\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4FE7FAC-C6C0-44B9-823F-359F801BF132}|Microservices\\Cart\\Cart.Application\\Cart.Application.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\cart\\cart.application\\behaviours\\validationbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4FE7FAC-C6C0-44B9-823F-359F801BF132}|Microservices\\Cart\\Cart.Application\\Cart.Application.csproj|solutionrelative:microservices\\cart\\cart.application\\behaviours\\validationbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D8B480D-B6CB-4274-ADFF-623837FAC344}|Microservices\\Product\\Product.API\\Product.API.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\product\\product.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D8B480D-B6CB-4274-ADFF-623837FAC344}|Microservices\\Product\\Product.API\\Product.API.csproj|solutionrelative:microservices\\product\\product.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED6C17FC-1BC9-4564-8C55-0837FDC926B1}|EmailNotification.Application\\EmailNotification.Application.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\emailnotification.application\\behaviours\\validationbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED6C17FC-1BC9-4564-8C55-0837FDC926B1}|EmailNotification.Application\\EmailNotification.Application.csproj|solutionrelative:emailnotification.application\\behaviours\\validationbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4FE7FAC-C6C0-44B9-823F-359F801BF132}|Microservices\\Cart\\Cart.Application\\Cart.Application.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\cart\\cart.application\\behaviours\\unhandledexceptionbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4FE7FAC-C6C0-44B9-823F-359F801BF132}|Microservices\\Cart\\Cart.Application\\Cart.Application.csproj|solutionrelative:microservices\\cart\\cart.application\\behaviours\\unhandledexceptionbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED6C17FC-1BC9-4564-8C55-0837FDC926B1}|EmailNotification.Application\\EmailNotification.Application.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\emailnotification.application\\extensions\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED6C17FC-1BC9-4564-8C55-0837FDC926B1}|EmailNotification.Application\\EmailNotification.Application.csproj|solutionrelative:emailnotification.application\\extensions\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A9966593-B588-489B-91F9-3672A31ACEE9}|Microservices\\Product\\Product.Infrastructure\\Product.Infrastructure.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\product\\product.infrastructure\\extensions\\dbextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A9966593-B588-489B-91F9-3672A31ACEE9}|Microservices\\Product\\Product.Infrastructure\\Product.Infrastructure.csproj|solutionrelative:microservices\\product\\product.infrastructure\\extensions\\dbextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D8B480D-B6CB-4274-ADFF-623837FAC344}|Microservices\\Product\\Product.API\\Product.API.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\product\\product.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D8B480D-B6CB-4274-ADFF-623837FAC344}|Microservices\\Product\\Product.API\\Product.API.csproj|solutionrelative:microservices\\product\\product.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{76A649B3-791F-454B-984C-E33C929F5541}|Microservices\\Product\\Product.Application\\Product.Application.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\product\\product.application\\extensions\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,8 +33,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 1194,
-          "SelectedChildIndex": 10,
+          "DockedWidth": 971,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,112 +50,86 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Cart.Application",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Cart\\Cart.Application\\Cart.Application.csproj",
-              "RelativeDocumentMoniker": "Microservices\\Cart\\Cart.Application\\Cart.Application.csproj",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Cart\\Cart.Application\\Cart.Application.csproj",
-              "RelativeToolTip": "Microservices\\Cart\\Cart.Application\\Cart.Application.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-26T03:55:09.547Z",
+              "DocumentIndex": 0,
+              "Title": "product.proto",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Cart\\Cart.Application\\Protos\\product.proto",
+              "RelativeDocumentMoniker": "Microservices\\Cart\\Cart.Application\\Protos\\product.proto",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Cart\\Cart.Application\\Protos\\product.proto",
+              "RelativeToolTip": "Microservices\\Cart\\Cart.Application\\Protos\\product.proto",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
+              "WhenOpened": "2024-08-26T05:50:56.451Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ValidationBehaviour.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.Application\\Behaviours\\ValidationBehaviour.cs",
-              "RelativeDocumentMoniker": "EmailNotification.Application\\Behaviours\\ValidationBehaviour.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.Application\\Behaviours\\ValidationBehaviour.cs",
-              "RelativeToolTip": "EmailNotification.Application\\Behaviours\\ValidationBehaviour.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAACoAAAABAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.API\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Microservices\\Product\\Product.API\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.API\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Microservices\\Product\\Product.API\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T03:54:16.983Z",
+              "WhenOpened": "2024-08-26T05:30:11.671Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UnhandledExceptionBehaviour.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.Application\\Behaviours\\UnhandledExceptionBehaviour.cs",
-              "RelativeDocumentMoniker": "EmailNotification.Application\\Behaviours\\UnhandledExceptionBehaviour.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.Application\\Behaviours\\UnhandledExceptionBehaviour.cs",
-              "RelativeToolTip": "EmailNotification.Application\\Behaviours\\UnhandledExceptionBehaviour.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "Title": "ApiController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.API\\Controllers\\ApiController.cs",
+              "RelativeDocumentMoniker": "Microservices\\Product\\Product.API\\Controllers\\ApiController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.API\\Controllers\\ApiController.cs",
+              "RelativeToolTip": "Microservices\\Product\\Product.API\\Controllers\\ApiController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T03:52:59.37Z",
+              "WhenOpened": "2024-08-26T05:29:44.445Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ValidationBehaviour.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Cart\\Cart.Application\\Behaviours\\ValidationBehaviour.cs",
-              "RelativeDocumentMoniker": "Microservices\\Cart\\Cart.Application\\Behaviours\\ValidationBehaviour.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Cart\\Cart.Application\\Behaviours\\ValidationBehaviour.cs",
-              "RelativeToolTip": "Microservices\\Cart\\Cart.Application\\Behaviours\\ValidationBehaviour.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAIwCoAAAABAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.API\\Program.cs",
+              "RelativeDocumentMoniker": "Microservices\\Product\\Product.API\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.API\\Program.cs",
+              "RelativeToolTip": "Microservices\\Product\\Product.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T03:52:36.877Z",
+              "WhenOpened": "2024-08-26T05:28:58.049Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "UnhandledExceptionBehaviour.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Cart\\Cart.Application\\Behaviours\\UnhandledExceptionBehaviour.cs",
-              "RelativeDocumentMoniker": "Microservices\\Cart\\Cart.Application\\Behaviours\\UnhandledExceptionBehaviour.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Cart\\Cart.Application\\Behaviours\\UnhandledExceptionBehaviour.cs",
-              "RelativeToolTip": "Microservices\\Cart\\Cart.Application\\Behaviours\\UnhandledExceptionBehaviour.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T03:52:11.789Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ServiceRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Cart\\Cart.Application\\Extensions\\ServiceRegistration.cs",
-              "RelativeDocumentMoniker": "Microservices\\Cart\\Cart.Application\\Extensions\\ServiceRegistration.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Cart\\Cart.Application\\Extensions\\ServiceRegistration.cs",
-              "RelativeToolTip": "Microservices\\Cart\\Cart.Application\\Extensions\\ServiceRegistration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T03:49:18.726Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DbExtension.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Infrastructure\\Extensions\\DbExtension.cs",
-              "RelativeDocumentMoniker": "Microservices\\Product\\Product.Infrastructure\\Extensions\\DbExtension.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Infrastructure\\Extensions\\DbExtension.cs",
-              "RelativeToolTip": "Microservices\\Product\\Product.Infrastructure\\Extensions\\DbExtension.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T03:46:39.259Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "ServiceRegistration.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\Extensions\\ServiceRegistration.cs",
               "RelativeDocumentMoniker": "Microservices\\Product\\Product.Application\\Extensions\\ServiceRegistration.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\Extensions\\ServiceRegistration.cs",
               "RelativeToolTip": "Microservices\\Product\\Product.Application\\Extensions\\ServiceRegistration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABsAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T03:44:06.746Z",
+              "WhenOpened": "2024-08-26T05:25:57.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.API\\Startup.cs",
+              "RelativeDocumentMoniker": "Microservices\\Product\\Product.API\\Startup.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.API\\Startup.cs",
+              "RelativeToolTip": "Microservices\\Product\\Product.API\\Startup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T05:20:26.834Z",
               "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 158,
+          "DockedWidth": 382,
           "SelectedChildIndex": -1,
           "Children": [
             {
@@ -184,45 +146,11 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "b94aefe4-2818-475c-a827-5edfca3e0acd",
-        "Display": 0,
-        "X": 676,
-        "Y": 122,
-        "Width": 1318,
-        "Height": 740,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ServiceRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.Application\\Extensions\\ServiceRegistration.cs",
-              "RelativeDocumentMoniker": "EmailNotification.Application\\Extensions\\ServiceRegistration.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\EmailNotification.Application\\Extensions\\ServiceRegistration.cs",
-              "RelativeToolTip": "EmailNotification.Application\\Extensions\\ServiceRegistration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T03:40:51.12Z",
-              "EditorCaption": ""
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }
