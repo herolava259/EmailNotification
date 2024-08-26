@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Product.Grpc.Protos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,5 +16,16 @@ namespace Product.Application.Responses
         public decimal Price { get; set; }
 
         public int Quantity { get; set; }
+
+        public static implicit operator ProductModel(ProductResponse response)
+            => response.ToProductModel();
+        public ProductModel ToProductModel()
+            => new ProductModel
+            {
+                Id = Id.ToString(),
+                ProductName = ProductName,
+                Price = Price,
+                Quantity = Quantity
+            };
     }
 }

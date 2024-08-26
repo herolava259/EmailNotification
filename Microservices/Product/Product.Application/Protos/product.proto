@@ -1,0 +1,48 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "Product.Grpc.Protos";
+
+service ProductProtoService{
+	rpc GetProduct(GetProductRequest) returns (ProductModel);
+	rpc CreateProduct(CreateProductRequest) returns (ProductModel);
+	rpc UpdateProduct(UpdateProductRequest) returns (ProductModel);
+	rpc DeleteProduct(DeleteProductRequest) returns (DeleteProductResponse);
+
+}
+
+message GetProductRequest{
+	string productId = 1;
+}
+
+message ProductModel{
+	string id = 1;
+	string productName = 2;
+	DecimalValue price = 3;
+	int32 quantity = 4;
+}
+message DecimalValue {
+
+    // Whole units part of the amount
+    int64 units = 1;
+
+    // Nano units of the amount (10^-9)
+    // Must be same sign as units
+    sfixed32 nanos = 2;
+}
+message CreateProductRequest
+{
+	ProductModel product = 1;
+}
+
+message UpdateProductRequest
+{
+	ProductModel product = 1;
+}
+
+message DeleteProductRequest {
+	string productId = 1;
+}
+
+message DeleteProductResponse {
+	bool success = 1;
+}

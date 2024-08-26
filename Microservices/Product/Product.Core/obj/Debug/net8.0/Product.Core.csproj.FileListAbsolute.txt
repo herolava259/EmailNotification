@@ -1,0 +1,12 @@
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\Microservices\Product\Product.Core\bin\Debug\net8.0\Product.Core.deps.json
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\Microservices\Product\Product.Core\bin\Debug\net8.0\Product.Core.dll
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\Microservices\Product\Product.Core\bin\Debug\net8.0\Product.Core.pdb
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\Microservices\Product\Product.Core\obj\Debug\net8.0\Product.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\Microservices\Product\Product.Core\obj\Debug\net8.0\Product.Core.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\Microservices\Product\Product.Core\obj\Debug\net8.0\Product.Core.AssemblyInfo.cs
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\Microservices\Product\Product.Core\obj\Debug\net8.0\Product.Core.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\Microservices\Product\Product.Core\obj\Debug\net8.0\Product.Core.sourcelink.json
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\Microservices\Product\Product.Core\obj\Debug\net8.0\Product.Core.dll
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\Microservices\Product\Product.Core\obj\Debug\net8.0\refint\Product.Core.dll
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\Microservices\Product\Product.Core\obj\Debug\net8.0\Product.Core.pdb
+C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\Microservices\Product\Product.Core\obj\Debug\net8.0\ref\Product.Core.dll

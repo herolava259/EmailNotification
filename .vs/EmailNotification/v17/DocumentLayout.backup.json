@@ -3,48 +3,68 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\notificationsystem\\notificationsystem\\behaviours\\notificationsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|solutionrelative:notificationsystem\\notificationsystem\\behaviours\\notificationsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D8B480D-B6CB-4274-ADFF-623837FAC344}|Microservices\\Product\\Product.API\\Product.API.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\product\\product.api\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D8B480D-B6CB-4274-ADFF-623837FAC344}|Microservices\\Product\\Product.API\\Product.API.csproj|solutionrelative:microservices\\product\\product.api\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\notificationsystem\\notificationsystem\\interfaces\\imediator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|solutionrelative:notificationsystem\\notificationsystem\\interfaces\\imediator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{76A649B3-791F-454B-984C-E33C929F5541}|Microservices\\Product\\Product.Application\\Product.Application.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\product\\product.application\\protocustomtypes\\decimalvalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76A649B3-791F-454B-984C-E33C929F5541}|Microservices\\Product\\Product.Application\\Product.Application.csproj|solutionrelative:microservices\\product\\product.application\\protocustomtypes\\decimalvalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\notificationsystem\\notificationsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|solutionrelative:notificationsystem\\notificationsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{76A649B3-791F-454B-984C-E33C929F5541}|Microservices\\Product\\Product.Application\\Product.Application.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\product\\product.application\\protos\\product.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{76A649B3-791F-454B-984C-E33C929F5541}|Microservices\\Product\\Product.Application\\Product.Application.csproj|solutionrelative:microservices\\product\\product.application\\protos\\product.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\notificationsystem\\notificationsystem\\behaviours\\subcriber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|solutionrelative:notificationsystem\\notificationsystem\\behaviours\\subcriber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{76A649B3-791F-454B-984C-E33C929F5541}|Microservices\\Product\\Product.Application\\Product.Application.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\product\\product.application\\product.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{76A649B3-791F-454B-984C-E33C929F5541}|Microservices\\Product\\Product.Application\\Product.Application.csproj|solutionrelative:microservices\\product\\product.application\\product.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\notificationsystem\\notificationsystem\\interfaces\\ipublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|solutionrelative:notificationsystem\\notificationsystem\\interfaces\\ipublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5563FED2-808A-43AA-BE3E-916F6B38AEB8}|Microservices\\Product\\Product.Core\\Product.Core.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\product\\product.core\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5563FED2-808A-43AA-BE3E-916F6B38AEB8}|Microservices\\Product\\Product.Core\\Product.Core.csproj|solutionrelative:microservices\\product\\product.core\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\notificationsystem\\notificationsystem\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|solutionrelative:notificationsystem\\notificationsystem\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A9966593-B588-489B-91F9-3672A31ACEE9}|Microservices\\Product\\Product.Infrastructure\\Product.Infrastructure.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\product\\product.infrastructure\\extensions\\dbextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9966593-B588-489B-91F9-3672A31ACEE9}|Microservices\\Product\\Product.Infrastructure\\Product.Infrastructure.csproj|solutionrelative:microservices\\product\\product.infrastructure\\extensions\\dbextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\notificationsystem\\notificationsystem\\behaviours\\publisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|solutionrelative:notificationsystem\\notificationsystem\\behaviours\\publisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{76A649B3-791F-454B-984C-E33C929F5541}|Microservices\\Product\\Product.Application\\Product.Application.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\product\\product.application\\handlers\\updateproductcommandandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76A649B3-791F-454B-984C-E33C929F5541}|Microservices\\Product\\Product.Application\\Product.Application.csproj|solutionrelative:microservices\\product\\product.application\\handlers\\updateproductcommandandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\notificationsystem\\notificationsystem\\models\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|solutionrelative:notificationsystem\\notificationsystem\\models\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{76A649B3-791F-454B-984C-E33C929F5541}|Microservices\\Product\\Product.Application\\Product.Application.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\product\\product.application\\mappers\\productmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76A649B3-791F-454B-984C-E33C929F5541}|Microservices\\Product\\Product.Application\\Product.Application.csproj|solutionrelative:microservices\\product\\product.application\\mappers\\productmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\notificationsystem\\notificationsystem\\interfaces\\iobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|solutionrelative:notificationsystem\\notificationsystem\\interfaces\\iobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{76A649B3-791F-454B-984C-E33C929F5541}|Microservices\\Product\\Product.Application\\Product.Application.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\product\\product.application\\commands\\updateproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76A649B3-791F-454B-984C-E33C929F5541}|Microservices\\Product\\Product.Application\\Product.Application.csproj|solutionrelative:microservices\\product\\product.application\\commands\\updateproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\notificationsystem\\notificationsystem\\interfaces\\isubcriber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|solutionrelative:notificationsystem\\notificationsystem\\interfaces\\isubcriber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{76A649B3-791F-454B-984C-E33C929F5541}|Microservices\\Product\\Product.Application\\Product.Application.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\product\\product.application\\handlers\\removeproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76A649B3-791F-454B-984C-E33C929F5541}|Microservices\\Product\\Product.Application\\Product.Application.csproj|solutionrelative:microservices\\product\\product.application\\handlers\\removeproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\notificationsystem\\notificationsystem\\interfaces\\iregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BDA6CE8-0D55-4DEC-9CD3-5807A17CE92C}|NotificationSystem\\NotificationSystem\\NotificationSystem.csproj|solutionrelative:notificationsystem\\notificationsystem\\interfaces\\iregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{76A649B3-791F-454B-984C-E33C929F5541}|Microservices\\Product\\Product.Application\\Product.Application.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\product\\product.application\\commands\\removeproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76A649B3-791F-454B-984C-E33C929F5541}|Microservices\\Product\\Product.Application\\Product.Application.csproj|solutionrelative:microservices\\product\\product.application\\commands\\removeproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76A649B3-791F-454B-984C-E33C929F5541}|Microservices\\Product\\Product.Application\\Product.Application.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\product\\product.application\\handlers\\createproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76A649B3-791F-454B-984C-E33C929F5541}|Microservices\\Product\\Product.Application\\Product.Application.csproj|solutionrelative:microservices\\product\\product.application\\handlers\\createproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76A649B3-791F-454B-984C-E33C929F5541}|Microservices\\Product\\Product.Application\\Product.Application.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\product\\product.application\\commands\\createproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76A649B3-791F-454B-984C-E33C929F5541}|Microservices\\Product\\Product.Application\\Product.Application.csproj|solutionrelative:microservices\\product\\product.application\\commands\\createproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76A649B3-791F-454B-984C-E33C929F5541}|Microservices\\Product\\Product.Application\\Product.Application.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\product\\product.application\\handlers\\getproductbynamequeryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76A649B3-791F-454B-984C-E33C929F5541}|Microservices\\Product\\Product.Application\\Product.Application.csproj|solutionrelative:microservices\\product\\product.application\\handlers\\getproductbynamequeryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76A649B3-791F-454B-984C-E33C929F5541}|Microservices\\Product\\Product.Application\\Product.Application.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\product\\product.application\\handlers\\getproductbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76A649B3-791F-454B-984C-E33C929F5541}|Microservices\\Product\\Product.Application\\Product.Application.csproj|solutionrelative:microservices\\product\\product.application\\handlers\\getproductbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76A649B3-791F-454B-984C-E33C929F5541}|Microservices\\Product\\Product.Application\\Product.Application.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\product\\product.application\\queries\\getproductbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76A649B3-791F-454B-984C-E33C929F5541}|Microservices\\Product\\Product.Application\\Product.Application.csproj|solutionrelative:microservices\\product\\product.application\\queries\\getproductbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -53,8 +73,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 683,
-          "SelectedChildIndex": 6,
+          "DockedWidth": 974,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -65,154 +85,231 @@
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Models\\User.cs",
-              "RelativeDocumentMoniker": "NotificationSystem\\NotificationSystem\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Models\\User.cs",
-              "RelativeToolTip": "NotificationSystem\\NotificationSystem\\Models\\User.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T17:20:17.411Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IUser.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Models\\IUser.cs",
-              "RelativeDocumentMoniker": "NotificationSystem\\NotificationSystem\\Models\\IUser.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Models\\IUser.cs",
-              "RelativeToolTip": "NotificationSystem\\NotificationSystem\\Models\\IUser.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAuwAkAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T17:16:05.927Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Program.cs",
-              "RelativeDocumentMoniker": "NotificationSystem\\NotificationSystem\\Program.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Program.cs",
-              "RelativeToolTip": "NotificationSystem\\NotificationSystem\\Program.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwCAAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T17:14:47.48Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Publisher.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Behaviours\\Publisher.cs",
-              "RelativeDocumentMoniker": "NotificationSystem\\NotificationSystem\\Behaviours\\Publisher.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Behaviours\\Publisher.cs",
-              "RelativeToolTip": "NotificationSystem\\NotificationSystem\\Behaviours\\Publisher.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T17:08:01.743Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "NotificationSystem.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Behaviours\\NotificationSystem.cs",
-              "RelativeDocumentMoniker": "NotificationSystem\\NotificationSystem\\Behaviours\\NotificationSystem.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Behaviours\\NotificationSystem.cs*",
-              "RelativeToolTip": "NotificationSystem\\NotificationSystem\\Behaviours\\NotificationSystem.cs*",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwCUAAAAMAAAAAAAAAA==",
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.API\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "Microservices\\Product\\Product.API\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.API\\Services\\ProductService.cs*",
+              "RelativeToolTip": "Microservices\\Product\\Product.API\\Services\\ProductService.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T17:07:09.749Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Subcriber.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Behaviours\\Subcriber.cs",
-              "RelativeDocumentMoniker": "NotificationSystem\\NotificationSystem\\Behaviours\\Subcriber.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Behaviours\\Subcriber.cs",
-              "RelativeToolTip": "NotificationSystem\\NotificationSystem\\Behaviours\\Subcriber.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAowDEAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T17:10:39.652Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IObserver.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Interfaces\\IObserver.cs",
-              "RelativeDocumentMoniker": "NotificationSystem\\NotificationSystem\\Interfaces\\IObserver.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Interfaces\\IObserver.cs",
-              "RelativeToolTip": "NotificationSystem\\NotificationSystem\\Interfaces\\IObserver.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T17:12:17.043Z",
+              "WhenOpened": "2024-08-26T02:53:11.871Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IMediator.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Interfaces\\IMediator.cs",
-              "RelativeDocumentMoniker": "NotificationSystem\\NotificationSystem\\Interfaces\\IMediator.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Interfaces\\IMediator.cs*",
-              "RelativeToolTip": "NotificationSystem\\NotificationSystem\\Interfaces\\IMediator.cs*",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAuwA8AAAAQAAAAAAAAAA==",
+              "Title": "DecimalValue.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\ProtoCustomTypes\\DecimalValue.cs",
+              "RelativeDocumentMoniker": "Microservices\\Product\\Product.Application\\ProtoCustomTypes\\DecimalValue.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\ProtoCustomTypes\\DecimalValue.cs*",
+              "RelativeToolTip": "Microservices\\Product\\Product.Application\\ProtoCustomTypes\\DecimalValue.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T17:05:01.261Z",
+              "WhenOpened": "2024-08-26T02:47:26.497Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IPublisher.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Interfaces\\IPublisher.cs",
-              "RelativeDocumentMoniker": "NotificationSystem\\NotificationSystem\\Interfaces\\IPublisher.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Interfaces\\IPublisher.cs",
-              "RelativeToolTip": "NotificationSystem\\NotificationSystem\\Interfaces\\IPublisher.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T17:04:49.883Z",
+              "DocumentIndex": 3,
+              "Title": "Product.Application",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\Product.Application.csproj",
+              "RelativeDocumentMoniker": "Microservices\\Product\\Product.Application\\Product.Application.csproj",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\Product.Application.csproj*",
+              "RelativeToolTip": "Microservices\\Product\\Product.Application\\Product.Application.csproj*",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-26T02:42:22.76Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IRegister.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Interfaces\\IRegister.cs",
-              "RelativeDocumentMoniker": "NotificationSystem\\NotificationSystem\\Interfaces\\IRegister.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Interfaces\\IRegister.cs",
-              "RelativeToolTip": "NotificationSystem\\NotificationSystem\\Interfaces\\IRegister.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "product.proto",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\Protos\\product.proto",
+              "RelativeDocumentMoniker": "Microservices\\Product\\Product.Application\\Protos\\product.proto",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\Protos\\product.proto",
+              "RelativeToolTip": "Microservices\\Product\\Product.Application\\Protos\\product.proto",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
+              "WhenOpened": "2024-08-26T02:07:54.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DbExtension.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Infrastructure\\Extensions\\DbExtension.cs",
+              "RelativeDocumentMoniker": "Microservices\\Product\\Product.Infrastructure\\Extensions\\DbExtension.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Infrastructure\\Extensions\\DbExtension.cs",
+              "RelativeToolTip": "Microservices\\Product\\Product.Infrastructure\\Extensions\\DbExtension.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T17:04:43.077Z",
+              "WhenOpened": "2024-08-26T02:02:13.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UpdateProductCommandandler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\Handlers\\UpdateProductCommandandler.cs",
+              "RelativeDocumentMoniker": "Microservices\\Product\\Product.Application\\Handlers\\UpdateProductCommandandler.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\Handlers\\UpdateProductCommandandler.cs",
+              "RelativeToolTip": "Microservices\\Product\\Product.Application\\Handlers\\UpdateProductCommandandler.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T01:57:35.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductMappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\Mappers\\ProductMappingProfile.cs",
+              "RelativeDocumentMoniker": "Microservices\\Product\\Product.Application\\Mappers\\ProductMappingProfile.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\Mappers\\ProductMappingProfile.cs",
+              "RelativeToolTip": "Microservices\\Product\\Product.Application\\Mappers\\ProductMappingProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T01:56:42.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UpdateProductCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\Commands\\UpdateProductCommand.cs",
+              "RelativeDocumentMoniker": "Microservices\\Product\\Product.Application\\Commands\\UpdateProductCommand.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\Commands\\UpdateProductCommand.cs",
+              "RelativeToolTip": "Microservices\\Product\\Product.Application\\Commands\\UpdateProductCommand.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAsAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T01:54:05.979Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "ISubcriber.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Interfaces\\ISubcriber.cs",
-              "RelativeDocumentMoniker": "NotificationSystem\\NotificationSystem\\Interfaces\\ISubcriber.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\NotificationSystem\\NotificationSystem\\Interfaces\\ISubcriber.cs",
-              "RelativeToolTip": "NotificationSystem\\NotificationSystem\\Interfaces\\ISubcriber.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAXAAAAAAAAAA==",
+              "Title": "RemoveProductCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\Handlers\\RemoveProductCommandHandler.cs",
+              "RelativeDocumentMoniker": "Microservices\\Product\\Product.Application\\Handlers\\RemoveProductCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\Handlers\\RemoveProductCommandHandler.cs",
+              "RelativeToolTip": "Microservices\\Product\\Product.Application\\Handlers\\RemoveProductCommandHandler.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T17:03:50.345Z",
+              "WhenOpened": "2024-08-26T01:52:06.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Core\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "Microservices\\Product\\Product.Core\\Entities\\Product.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Core\\Entities\\Product.cs",
+              "RelativeToolTip": "Microservices\\Product\\Product.Core\\Entities\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T01:43:55.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RemoveProductCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\Commands\\RemoveProductCommand.cs",
+              "RelativeDocumentMoniker": "Microservices\\Product\\Product.Application\\Commands\\RemoveProductCommand.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\Commands\\RemoveProductCommand.cs",
+              "RelativeToolTip": "Microservices\\Product\\Product.Application\\Commands\\RemoveProductCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T01:50:45.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CreateProductCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\Handlers\\CreateProductCommandHandler.cs",
+              "RelativeDocumentMoniker": "Microservices\\Product\\Product.Application\\Handlers\\CreateProductCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\Handlers\\CreateProductCommandHandler.cs",
+              "RelativeToolTip": "Microservices\\Product\\Product.Application\\Handlers\\CreateProductCommandHandler.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB8AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T01:45:46.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CreateProductCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\Commands\\CreateProductCommand.cs",
+              "RelativeDocumentMoniker": "Microservices\\Product\\Product.Application\\Commands\\CreateProductCommand.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\Commands\\CreateProductCommand.cs",
+              "RelativeToolTip": "Microservices\\Product\\Product.Application\\Commands\\CreateProductCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T01:43:01.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GetProductByNameQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\Handlers\\GetProductByNameQueryHandler.cs",
+              "RelativeDocumentMoniker": "Microservices\\Product\\Product.Application\\Handlers\\GetProductByNameQueryHandler.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\Handlers\\GetProductByNameQueryHandler.cs",
+              "RelativeToolTip": "Microservices\\Product\\Product.Application\\Handlers\\GetProductByNameQueryHandler.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBMAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T01:33:34.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GetProductByIdQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\Handlers\\GetProductByIdQueryHandler.cs",
+              "RelativeDocumentMoniker": "Microservices\\Product\\Product.Application\\Handlers\\GetProductByIdQueryHandler.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\Handlers\\GetProductByIdQueryHandler.cs",
+              "RelativeToolTip": "Microservices\\Product\\Product.Application\\Handlers\\GetProductByIdQueryHandler.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T01:30:20.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "GetProductByIdQuery.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\Queries\\GetProductByIdQuery.cs",
+              "RelativeDocumentMoniker": "Microservices\\Product\\Product.Application\\Queries\\GetProductByIdQuery.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\Queries\\GetProductByIdQuery.cs",
+              "RelativeToolTip": "Microservices\\Product\\Product.Application\\Queries\\GetProductByIdQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T01:30:19.055Z",
               "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 95,
+          "DockedWidth": 379,
           "SelectedChildIndex": -1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -220,10 +317,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Bookmark",
