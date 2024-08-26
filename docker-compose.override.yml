@@ -2,35 +2,60 @@
 
 services:
 
-  emailnotification.api:
-    container_name: emailnotification.api
+  product.api:
+    container_name: product.api
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_HTTP_PORTS=8080
-      - "ConnectionStrings__DatabaseConnectionString=Server=emailnotificationdb;Database=UserDb;User Id=sa;Password=1qaz2wsx;TrustServerCertificate=True"
+#      - ASPNETCORE_HTTP_PORTS=8080
 #      - ASPNETCORE_URLS=http://*:8003
+      - "DatabaseSettings__ConnectionString=Server=productdb;Port=5431;Database=ProductDb;User Id=admin;Password=admin1234;"  
     depends_on:
-      - emailnotificationdb
+      - productdb
     ports:
-      - "8003:8080"
-      
-  emailnotificationdb:
-    container_name: emailnotificationdb
+      - "8007:8080"
+  cart.api:
+    container_name: cart.api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+#      - ASPNETCORE_HTTP_PORTS=8080
+      - "ConnectionStrings__DatabaseConnectionString=Server=cartdb;Database=CartDb;User Id=sa;Password=1qaz2wsx;TrustServerCertificate=True"
+#      - ASPNETCORE_URLS=http://*:8003
+      - "GrpcSettings__ProductUrl=http://product.api"
+    depends_on:
+      - cartdb
+    ports:
+      - "8008:8080"
+  cartdb:
+    container_name: cartdb
     environment:
       SA_PASSWORD: "1qaz2wsx"
       ACCEPT_EULA: "Y"
     restart: always
     ports: 
-      - "1533:1533"
-  timerjob:
-    container_name: timerjob
+      - "1733:1733"
+
+  productdb:
+    container_name: productdb
     environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-      - "ServiceUrls__EmailNotification=http://emailnotification.api:8080"
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin1234
+      - POSTGRES_DB=ProductDb
+    restart: always
     ports:
-      - "8002:8080"
-    depends_on:
-      - emailnotification.api
+      - "5431:5431"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+
+  pgdbadmin:
+    container_name: pgdbadmin
+    environment: 
+      - PGADMIN_DEFAULT_EMAIL=admin@eCommerce.net
+      - PGADMIN_DEFAULT_PASSWORD=admin1234
+    restart: always
+    ports:
+      - "5051:80"
+    volumes:
+      - pgadmin_data:/root/.pgadmin
 
   
     
