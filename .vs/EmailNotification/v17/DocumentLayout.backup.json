@@ -73,7 +73,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 974,
+          "DockedWidth": 1164,
           "SelectedChildIndex": 3,
           "Children": [
             {
@@ -96,7 +96,7 @@
               "RelativeDocumentMoniker": "Microservices\\Product\\Product.API\\Services\\ProductService.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.API\\Services\\ProductService.cs*",
               "RelativeToolTip": "Microservices\\Product\\Product.API\\Services\\ProductService.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-26T02:53:11.871Z",
               "EditorCaption": ""
@@ -107,8 +107,8 @@
               "Title": "DecimalValue.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\ProtoCustomTypes\\DecimalValue.cs",
               "RelativeDocumentMoniker": "Microservices\\Product\\Product.Application\\ProtoCustomTypes\\DecimalValue.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\ProtoCustomTypes\\DecimalValue.cs*",
-              "RelativeToolTip": "Microservices\\Product\\Product.Application\\ProtoCustomTypes\\DecimalValue.cs*",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\ProtoCustomTypes\\DecimalValue.cs",
+              "RelativeToolTip": "Microservices\\Product\\Product.Application\\ProtoCustomTypes\\DecimalValue.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-26T02:47:26.497Z",
@@ -120,8 +120,8 @@
               "Title": "Product.Application",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\Product.Application.csproj",
               "RelativeDocumentMoniker": "Microservices\\Product\\Product.Application\\Product.Application.csproj",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\Product.Application.csproj*",
-              "RelativeToolTip": "Microservices\\Product\\Product.Application\\Product.Application.csproj*",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\Product.Application.csproj",
+              "RelativeToolTip": "Microservices\\Product\\Product.Application\\Product.Application.csproj",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-08-26T02:42:22.76Z",
@@ -299,13 +299,9 @@
           ]
         },
         {
-          "DockedWidth": 379,
+          "DockedWidth": 188,
           "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
@@ -321,6 +317,10 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }
