@@ -11,7 +11,8 @@ public sealed partial class DecimalValue
         Nanos = nanos;
     }
 
-    public static implicit operator decimal(DecimalValue decimalValue) => decimalValue.ToDecimal();
+    public static implicit operator decimal(DecimalValue decimalValue) 
+        => decimalValue.ToDecimal();
 
     public static implicit operator DecimalValue(decimal value) => FromDecimal(value);
 

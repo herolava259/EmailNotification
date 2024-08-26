@@ -18,7 +18,7 @@ namespace Product.Application.Responses
         public int Quantity { get; set; }
 
         public static implicit operator ProductModel(ProductResponse response)
-            => response.ToProductModel();
+            => response == null ? default : response.ToProductModel();
         public ProductModel ToProductModel()
             => new ProductModel
             {

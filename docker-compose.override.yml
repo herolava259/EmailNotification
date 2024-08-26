@@ -20,7 +20,7 @@ services:
 #      - ASPNETCORE_HTTP_PORTS=8080
       - "ConnectionStrings__DatabaseConnectionString=Server=cartdb;Database=CartDb;User Id=sa;Password=1qaz2wsx;TrustServerCertificate=True;"
 #      - ASPNETCORE_URLS=http://*:8003
-      - "GrpcSettings__ProductUrl=http://product.api"
+      - "GrpcSettings__ProductUrl=http://product.api:8080"
     depends_on:
       - cartdb
     ports:

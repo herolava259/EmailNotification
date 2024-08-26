@@ -25,7 +25,7 @@ namespace Cart.Application.Handlers
         public async Task<ListItemResponse> Handle(GetListItemByIdQuery request, CancellationToken cancellationToken)
         {
             var entity = await _listItemRepository.GetAsync(c => c.Id == request.Id, tracked: false,
-                                            includeProperties: "ListItems");
+                                            includeProperties: "");
             if (entity is null) return default!;
             return _mapper.Map<ListItemResponse>(entity);
         }
