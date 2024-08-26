@@ -33,7 +33,7 @@ public class Startup
                 options.GroupNameFormat = "'v'VVV";
                 options.SubstituteApiVersionInUrl = true;
             });
-        services.AddApplicationService();
+        services.AddApplicationService(Configuration);
         services.AddInfrastructureService(configuration: Configuration);
         services.AddAutoMapper(typeof(Startup));
         services.AddSwaggerGen(c =>
