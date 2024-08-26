@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Product.Application.Commands;
 using Product.Application.Responses;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,8 @@ namespace Product.Application.Mappers
         public ProductMappingProfile()
         {
             CreateMap<ProductEntity, ProductResponse>().ReverseMap();
+
+            CreateMap<UpdateProductCommand, ProductEntity>();
         }
     }
 }
