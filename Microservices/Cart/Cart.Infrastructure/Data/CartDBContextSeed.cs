@@ -6,9 +6,9 @@ using CartEntity = Cart.Core.Entities.Cart;
 
 namespace Cart.Infrastructure.Data;
 
-public static class ProductDBContextSeed
+public static class CartDBContextSeed
 {
-    public static async Task SeedAsync(ProductDBContext dbContext, ILogger<ProductDBContext> logger)
+    public static async Task SeedAsync(CartDBContext dbContext, ILogger<CartDBContext> logger)
     {
 
         if (!(await dbContext.Carts.AnyAsync()))

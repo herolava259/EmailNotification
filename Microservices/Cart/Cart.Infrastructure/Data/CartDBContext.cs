@@ -7,13 +7,13 @@ using CartEntity = Cart.Core.Entities.Cart;
 
 namespace Cart.Infrastructure.Data;
 
-public class ProductDBContext: DbContext
+public class CartDBContext: DbContext
 {
     public DbSet<CartEntity> Carts { get; set; }
 
     public DbSet<ListItem> ListItems { get; set; }
 
-    public ProductDBContext(DbContextOptions<ProductDBContext> options) : base(options)
+    public CartDBContext(DbContextOptions<CartDBContext> options) : base(options)
     { }
 
     public override Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken cancellationToken = default)

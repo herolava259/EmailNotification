@@ -1,12 +1,12 @@
 ﻿using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.OpenApi.Models;
-using EmailNotification.Application.Extensions;
-using EmailNotification.Infrastructure.Extentions;
-using EmailNotification.Infrastructure.Data;
-using EmailNotification.EmailService;
+using Cart.Application.Extensions;
+using Cart.Infrastructure.Extensions;
+using Cart.Infrastructure.Data;
 
-namespace EmailNotification.API;
+namespace Cart.API;
+
 
 public class Startup
 {
@@ -40,15 +40,14 @@ public class Startup
         {
             c.SwaggerDoc("v1", new OpenApiInfo
             {
-                Title = "EmailNotification.API",
+                Title = "Cart.API",
                 Version = "v1"
             });
         });
 
-        services.AddHealthChecks().Services.AddDbContext<EmailNotificationDBContext>();
+        services.AddHealthChecks().Services.AddDbContext<CartDBContext>();
 
-        services.AddScoped<IEmailService, EmailService.EmailService>();
-        services.Configure<EmailConfiguration>(Configuration.GetSection("EmailConfiguration"));
+        
     }
 
     public void Configure(IApplicationBuilder appBuilder, IWebHostEnvironment env)
@@ -57,7 +56,7 @@ public class Startup
         {
             appBuilder.UseDeveloperExceptionPage();
             appBuilder.UseSwagger();
-            appBuilder.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "EmailNotification.API v1"));
+            appBuilder.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Cart.API v1"));
         }
 
         appBuilder.UseRouting();

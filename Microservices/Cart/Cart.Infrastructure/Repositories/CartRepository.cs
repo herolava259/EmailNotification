@@ -5,7 +5,7 @@ namespace Cart.Infrastructure.Repositories
 {
     public class CartRepository : BaseRepository<CartEntity>, ICartRepository
     {
-        public CartRepository(ProductDBContext dbContext) : base(dbContext)
+        public CartRepository(CartDBContext dbContext) : base(dbContext)
         {
         }
     }

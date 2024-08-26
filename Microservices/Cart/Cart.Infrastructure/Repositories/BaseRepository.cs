@@ -10,9 +10,9 @@ namespace Cart.Infrastructure.Repositories;
 public class BaseRepository<T> : IBaseRepository<T>
     where T : BaseEntity
 {
-    protected readonly ProductDBContext _dbContext;
+    protected readonly CartDBContext _dbContext;
 
-    public BaseRepository(ProductDBContext dbContext)
+    public BaseRepository(CartDBContext dbContext)
     {
         _dbContext = dbContext;
     }

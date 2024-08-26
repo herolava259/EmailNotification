@@ -7,7 +7,7 @@ namespace Cart.Infrastructure.Repositories;
 
 public class ListItemRepository : BaseRepository<ListItem>, IListItemRepository
 {
-    public ListItemRepository(ProductDBContext dbContext) : base(dbContext)
+    public ListItemRepository(CartDBContext dbContext) : base(dbContext)
     {
     }
 
