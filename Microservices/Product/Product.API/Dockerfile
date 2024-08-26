@@ -5,7 +5,7 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 USER app
 WORKDIR /app
 EXPOSE 8080
-EXPOSE 8081
+EXPOSE 443
 
 
 # This stage is used to build the service project
@@ -13,6 +13,9 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["Microservices/Product/Product.API/Product.API.csproj", "Microservices/Product/Product.API/"]
+COPY ["Microservices/Product/Product.Application/Product.Application.csproj", "Microservices/Product/Product.Application/"]
+COPY ["Microservices/Product/Product.Infrastructure/Product.Infrastructure.csproj", "Microservices/Product/Product.Infrastructure/"]
+COPY ["Microservices/Product/Product.Core/Product.Core.csproj", "Microservices/Product/Product.Core/"]
 RUN dotnet restore "./Microservices/Product/Product.API/Product.API.csproj"
 COPY . .
 WORKDIR "/src/Microservices/Product/Product.API"
