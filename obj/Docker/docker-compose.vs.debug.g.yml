@@ -1,6 +1,6 @@
 services:
-  emailnotification.api:
-    image: emailnotification:dev
+  cart.api:
+    image: cartapi:dev
     build:
       args:
         LAUNCHING_FROM_VS: true
@@ -8,13 +8,13 @@ services:
       target: base
       labels:
         com.microsoft.created-by: "visual-studio"
-        com.microsoft.visual-studio.project-name: "EmailNotification.API"
+        com.microsoft.visual-studio.project-name: "Cart.API"
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=
     volumes:
-      - C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\EmailNotification.API:/app:rw
+      - C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\Microservices\Cart\Cart.API:/app:rw
       - C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification:/src:rw
       - C:\Users\Admin\vsdbg\vs2017u5:/remote_debugger:rw
       - C:\Users\Admin\.nuget\packages:/.nuget/packages:ro
@@ -28,12 +28,12 @@ services:
     entrypoint: "dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --wait"
     labels:
       com.microsoft.visualstudio.debuggee.program: "dotnet"
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /.nuget/packages  \"/app/bin/Debug/net8.0/EmailNotification.API.dll\""
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /.nuget/packages  \"/app/bin/Debug/net8.0/Cart.API.dll\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --stop dotnet"
     tty: true
-  timerjob:
-    image: timerjob:dev
+  product.api:
+    image: productapi:dev
     build:
       args:
         LAUNCHING_FROM_VS: true
@@ -41,13 +41,13 @@ services:
       target: base
       labels:
         com.microsoft.created-by: "visual-studio"
-        com.microsoft.visual-studio.project-name: "EmailNotification.CronJobWorker"
+        com.microsoft.visual-studio.project-name: "Product.API"
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=
     volumes:
-      - C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\EmailNotification.CronJobWorker:/app:rw
+      - C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification\Microservices\Product\Product.API:/app:rw
       - C:\Users\Admin\Desktop\EmailNotificationRepo\EmailNotification:/src:rw
       - C:\Users\Admin\vsdbg\vs2017u5:/remote_debugger:rw
       - C:\Users\Admin\.nuget\packages:/.nuget/packages:ro
@@ -61,7 +61,7 @@ services:
     entrypoint: "dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --wait"
     labels:
       com.microsoft.visualstudio.debuggee.program: "dotnet"
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /.nuget/packages  \"/app/bin/Debug/net8.0/EmailNotification.CronJobWorker.dll\""
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /.nuget/packages  \"/app/bin/Debug/net8.0/Product.API.dll\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --stop dotnet"
     tty: true

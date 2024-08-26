@@ -8,7 +8,7 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
 #      - ASPNETCORE_HTTP_PORTS=8080
 #      - ASPNETCORE_URLS=http://*:8003
-      - "DatabaseSettings__ConnectionString=Server=productdb;Port=5431;Database=ProductDb;User Id=admin;Password=admin1234;"  
+      - "DatabaseSettings__ConnectionString=Server=productdb;Port=5432;Database=ProductDb;User Id=admin;Password=admin1234;"  
     depends_on:
       - productdb
     ports:
@@ -18,7 +18,7 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
 #      - ASPNETCORE_HTTP_PORTS=8080
-      - "ConnectionStrings__DatabaseConnectionString=Server=cartdb;Database=CartDb;User Id=sa;Password=1qaz2wsx;TrustServerCertificate=True"
+      - "ConnectionStrings__DatabaseConnectionString=Server=cartdb;Database=CartDb;User Id=sa;Password=1qaz2wsx;TrustServerCertificate=True;"
 #      - ASPNETCORE_URLS=http://*:8003
       - "GrpcSettings__ProductUrl=http://product.api"
     depends_on:
@@ -42,7 +42,7 @@ services:
       - POSTGRES_DB=ProductDb
     restart: always
     ports:
-      - "5431:5431"
+      - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data/
 

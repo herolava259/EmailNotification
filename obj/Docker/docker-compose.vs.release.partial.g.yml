@@ -1,12 +1,12 @@
 services:
-  emailnotification.api:
+  cart.api:
     build:
       args:
         LAUNCHING_FROM_VS: true
         BUILD_CONFIGURATION: Debug
       labels:
         com.microsoft.created-by: "visual-studio"
-        com.microsoft.visual-studio.project-name: "EmailNotification.API"
+        com.microsoft.visual-studio.project-name: "Cart.API"
     volumes:
       - C:\Users\Admin\vsdbg\vs2017u5:/remote_debugger:rw
       - C:\Users\Admin\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
@@ -19,19 +19,19 @@ services:
     entrypoint: "dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --wait"
     labels:
       com.microsoft.visualstudio.debuggee.program: "dotnet"
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /.nuget/packages  \"/app/EmailNotification.API.dll\""
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /.nuget/packages  \"/app/Cart.API.dll\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --stop dotnet"
-      com.microsoft.visual-studio.project-name: "EmailNotification.API"
+      com.microsoft.visual-studio.project-name: "Cart.API"
     tty: true
-  timerjob:
+  product.api:
     build:
       args:
         LAUNCHING_FROM_VS: true
         BUILD_CONFIGURATION: Debug
       labels:
         com.microsoft.created-by: "visual-studio"
-        com.microsoft.visual-studio.project-name: "EmailNotification.CronJobWorker"
+        com.microsoft.visual-studio.project-name: "Product.API"
     volumes:
       - C:\Users\Admin\vsdbg\vs2017u5:/remote_debugger:rw
       - C:\Users\Admin\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
@@ -44,8 +44,8 @@ services:
     entrypoint: "dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --wait"
     labels:
       com.microsoft.visualstudio.debuggee.program: "dotnet"
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /.nuget/packages  \"/app/EmailNotification.CronJobWorker.dll\""
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /.nuget/packages  \"/app/Product.API.dll\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --stop dotnet"
-      com.microsoft.visual-studio.project-name: "EmailNotification.CronJobWorker"
+      com.microsoft.visual-studio.project-name: "Product.API"
     tty: true

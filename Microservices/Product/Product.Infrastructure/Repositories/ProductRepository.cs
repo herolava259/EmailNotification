@@ -21,7 +21,7 @@ namespace Product.Infrastructure.Repositories
             
             var affectedRow = await
                                 connection.ExecuteAsync
-                                ("INSERT INTO Coupon (ProductName, Price, Quantity) VALUES (@ProductName, @Price, @Quantity)",
+                                ("INSERT INTO Product (ProductName, Price, Quantity) VALUES (@ProductName, @Price, @Quantity)",
                                     new
                                     {
                                         ProductName = entity.ProductName,

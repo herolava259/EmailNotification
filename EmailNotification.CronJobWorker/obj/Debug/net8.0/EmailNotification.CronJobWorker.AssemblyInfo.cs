@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EmailNotification.CronJobWorker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2cc5c3fed14b3b2d89de2c8359d7970789299855")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+52f138ff6476eb02db585bb634d3e497160255ec")]
 [assembly: System.Reflection.AssemblyProductAttribute("EmailNotification.CronJobWorker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EmailNotification.CronJobWorker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -10,7 +10,7 @@ public class CartDBContextFactory: IDesignTimeDbContextFactory<CartDBContext>
     {
         var optionBuilder = new DbContextOptionsBuilder<CartDBContext>();
 
-        optionBuilder.UseSqlServer("Data Source=ProductDb");
+        optionBuilder.UseSqlServer("Data Source=CartDb");
 
         return new CartDBContext(optionBuilder.Options);
     }

@@ -61,7 +61,7 @@ public static class DbExtension
 
         cmd.ExecuteNonQuery();
 
-        cmd.CommandText = "INSERT INTO Coupon(ProductName, Price, Quantity) VALUES('Adidas Quick Force Indoor Badminton Shoes', 1200, 500);";
+        cmd.CommandText = "INSERT INTO Product(ProductName, Price, Quantity) VALUES('Adidas Quick Force Indoor Badminton Shoes', 1200, 500);";
 
 
         cmd.ExecuteNonQuery();

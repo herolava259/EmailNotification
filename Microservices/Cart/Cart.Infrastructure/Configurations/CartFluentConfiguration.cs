@@ -14,7 +14,8 @@ public class CartFluentConfiguration : IEntityTypeConfiguration<CartEntity>
         builder.Property(c => c.CreatedDate).IsRequired();
         builder.Property(c => c.UpdatedDate).IsRequired();
 
-        builder.Property(c => c.TotalPrice).IsRequired();
+        builder.Property(c => c.TotalPrice).HasPrecision(18, 4) // HasColumnType("decimal(18, 4)")
+                                           .IsRequired();
 
         builder.HasMany(c => c.ListItems)
                .WithOne(c => c.Cart)
