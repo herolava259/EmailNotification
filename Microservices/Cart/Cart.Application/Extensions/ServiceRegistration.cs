@@ -1,4 +1,6 @@
 ﻿using Cart.Application.Behaviours;
+using Cart.Application.Services.Behaviours;
+using Cart.Application.Services.Interfaces;
 using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
@@ -11,6 +13,7 @@ public static class ServiceRegistration
 {
     public static IServiceCollection AddApplicationService(this IServiceCollection services)
     {
+        services.AddScoped<ICartService, CartService>();
         services.AddAutoMapper(Assembly.GetExecutingAssembly());
         services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
         services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());

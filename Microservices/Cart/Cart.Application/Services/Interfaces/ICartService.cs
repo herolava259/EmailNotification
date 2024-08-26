@@ -2,11 +2,11 @@
 using Cart.Application.Queries;
 using Cart.Application.Responses;
 
-namespace Cart.API.Services.Interfaces;
+namespace Cart.Application.Services.Interfaces;
 
 public interface ICartService
 {
-    Task<CartResponse> CreateCart(CreateCartCommand command);
+    Task<Guid> CreateCart(CreateCartCommand command);
 
     Task<CartResponse> GetCartById(Guid id);
 

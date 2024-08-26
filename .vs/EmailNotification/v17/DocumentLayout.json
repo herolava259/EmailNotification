@@ -7,6 +7,26 @@
       "RelativeMoniker": "D:0:0:{C4FE7FAC-C6C0-44B9-823F-359F801BF132}|Microservices\\Cart\\Cart.Application\\Cart.Application.csproj|solutionrelative:microservices\\cart\\cart.application\\protos\\product.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C4FE7FAC-C6C0-44B9-823F-359F801BF132}|Microservices\\Cart\\Cart.Application\\Cart.Application.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\cart\\cart.application\\services\\behaviours\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4FE7FAC-C6C0-44B9-823F-359F801BF132}|Microservices\\Cart\\Cart.Application\\Cart.Application.csproj|solutionrelative:microservices\\cart\\cart.application\\services\\behaviours\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76A649B3-791F-454B-984C-E33C929F5541}|Microservices\\Product\\Product.Application\\Product.Application.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\product\\product.application\\protos\\product.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{76A649B3-791F-454B-984C-E33C929F5541}|Microservices\\Product\\Product.Application\\Product.Application.csproj|solutionrelative:microservices\\product\\product.application\\protos\\product.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4FE7FAC-C6C0-44B9-823F-359F801BF132}|Microservices\\Cart\\Cart.Application\\Cart.Application.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\cart\\cart.application\\services\\interfaces\\icartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4FE7FAC-C6C0-44B9-823F-359F801BF132}|Microservices\\Cart\\Cart.Application\\Cart.Application.csproj|solutionrelative:microservices\\cart\\cart.application\\services\\interfaces\\icartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4FE7FAC-C6C0-44B9-823F-359F801BF132}|Microservices\\Cart\\Cart.Application\\Cart.Application.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\cart\\cart.application\\handlers\\getallcartqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4FE7FAC-C6C0-44B9-823F-359F801BF132}|Microservices\\Cart\\Cart.Application\\Cart.Application.csproj|solutionrelative:microservices\\cart\\cart.application\\handlers\\getallcartqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4FE7FAC-C6C0-44B9-823F-359F801BF132}|Microservices\\Cart\\Cart.Application\\Cart.Application.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\cart\\cart.application\\handlers\\additemtocartcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4FE7FAC-C6C0-44B9-823F-359F801BF132}|Microservices\\Cart\\Cart.Application\\Cart.Application.csproj|solutionrelative:microservices\\cart\\cart.application\\handlers\\additemtocartcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1D8B480D-B6CB-4274-ADFF-623837FAC344}|Microservices\\Product\\Product.API\\Product.API.csproj|c:\\users\\admin\\desktop\\emailnotificationrepo\\emailnotification\\microservices\\product\\product.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D8B480D-B6CB-4274-ADFF-623837FAC344}|Microservices\\Product\\Product.API\\Product.API.csproj|solutionrelative:microservices\\product\\product.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -33,8 +53,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 971,
-          "SelectedChildIndex": 7,
+          "DockedWidth": 898,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,33 +70,98 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "product.proto",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\Protos\\product.proto",
+              "RelativeDocumentMoniker": "Microservices\\Product\\Product.Application\\Protos\\product.proto",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\Protos\\product.proto",
+              "RelativeToolTip": "Microservices\\Product\\Product.Application\\Protos\\product.proto",
+              "ViewState": "AgIAABcAAAAAAAAAAAAYwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
+              "WhenOpened": "2024-08-26T06:24:44.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CartService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Cart\\Cart.Application\\Services\\Behaviours\\CartService.cs",
+              "RelativeDocumentMoniker": "Microservices\\Cart\\Cart.Application\\Services\\Behaviours\\CartService.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Cart\\Cart.Application\\Services\\Behaviours\\CartService.cs",
+              "RelativeToolTip": "Microservices\\Cart\\Cart.Application\\Services\\Behaviours\\CartService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T06:17:49.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ICartService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Cart\\Cart.Application\\Services\\Interfaces\\ICartService.cs",
+              "RelativeDocumentMoniker": "Microservices\\Cart\\Cart.Application\\Services\\Interfaces\\ICartService.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Cart\\Cart.Application\\Services\\Interfaces\\ICartService.cs",
+              "RelativeToolTip": "Microservices\\Cart\\Cart.Application\\Services\\Interfaces\\ICartService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T06:17:33.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "product.proto",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Cart\\Cart.Application\\Protos\\product.proto",
               "RelativeDocumentMoniker": "Microservices\\Cart\\Cart.Application\\Protos\\product.proto",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Cart\\Cart.Application\\Protos\\product.proto",
               "RelativeToolTip": "Microservices\\Cart\\Cart.Application\\Protos\\product.proto",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
               "WhenOpened": "2024-08-26T05:50:56.451Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "GetAllCartQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Cart\\Cart.Application\\Handlers\\GetAllCartQueryHandler.cs",
+              "RelativeDocumentMoniker": "Microservices\\Cart\\Cart.Application\\Handlers\\GetAllCartQueryHandler.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Cart\\Cart.Application\\Handlers\\GetAllCartQueryHandler.cs",
+              "RelativeToolTip": "Microservices\\Cart\\Cart.Application\\Handlers\\GetAllCartQueryHandler.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T06:00:09.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddItemToCartCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Cart\\Cart.Application\\Handlers\\AddItemToCartCommandHandler.cs",
+              "RelativeDocumentMoniker": "Microservices\\Cart\\Cart.Application\\Handlers\\AddItemToCartCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Cart\\Cart.Application\\Handlers\\AddItemToCartCommandHandler.cs",
+              "RelativeToolTip": "Microservices\\Cart\\Cart.Application\\Handlers\\AddItemToCartCommandHandler.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T05:56:50.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.API\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "Microservices\\Product\\Product.API\\Controllers\\ProductController.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.API\\Controllers\\ProductController.cs",
               "RelativeToolTip": "Microservices\\Product\\Product.API\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-26T05:30:11.671Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "ApiController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.API\\Controllers\\ApiController.cs",
               "RelativeDocumentMoniker": "Microservices\\Product\\Product.API\\Controllers\\ApiController.cs",
@@ -89,7 +174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.API\\Program.cs",
               "RelativeDocumentMoniker": "Microservices\\Product\\Product.API\\Program.cs",
@@ -102,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "ServiceRegistration.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Application\\Extensions\\ServiceRegistration.cs",
               "RelativeDocumentMoniker": "Microservices\\Product\\Product.Application\\Extensions\\ServiceRegistration.cs",
@@ -115,7 +200,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "Startup.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.API\\Startup.cs",
               "RelativeDocumentMoniker": "Microservices\\Product\\Product.API\\Startup.cs",
@@ -129,7 +214,7 @@
           ]
         },
         {
-          "DockedWidth": 382,
+          "DockedWidth": 454,
           "SelectedChildIndex": -1,
           "Children": [
             {
@@ -143,14 +228,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }
