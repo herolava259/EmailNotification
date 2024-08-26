@@ -92,6 +92,9 @@
             "projectReferences": {
               "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Cart\\Cart.Core\\Cart.Core.csproj": {
                 "projectPath": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Cart\\Cart.Core\\Cart.Core.csproj"
+              },
+              "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Core\\Product.Core.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\EmailNotificationRepo\\EmailNotification\\Microservices\\Product\\Product.Core\\Product.Core.csproj"
               }
             }
           }
@@ -110,6 +113,34 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.27.3, )"
+            },
+            "Grpc.AspNetCore": {
+              "target": "Package",
+              "version": "[2.65.0, )"
+            },
+            "Grpc.AspNetCore.Web": {
+              "target": "Package",
+              "version": "[2.65.0, )"
+            },
+            "Grpc.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.65.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.4.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
