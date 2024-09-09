@@ -1,4 +1,5 @@
 ﻿using Cart.Application.Commands;
+using Cart.Core.Entities;
 using Cart.Core.Repositories;
 using MediatR;
 using System;
@@ -32,13 +33,15 @@ namespace Cart.Application.Handlers
 
             if(choosenItem is null)
             {
-                var newItemId = await _listItemRepository.CreateAsync(new()
+                var newItem = new ListItem
                 {
                     Amount = request.Amount,
                     CartId = request.CartId,
                     ProductId = request.ProductId,
-                });
-
+                };
+                var newItemId = await _listItemRepository.CreateAsync(newItem);
+                currCart.ListItems!.Add(newItem);
+               
                 if (newItemId == Guid.Empty) return false;
 
             }

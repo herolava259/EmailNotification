@@ -27,8 +27,4 @@
     <Using Include="NUnit.Framework" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Cart.Application.Tests\" />
-  </ItemGroup>
-
 </Project>
