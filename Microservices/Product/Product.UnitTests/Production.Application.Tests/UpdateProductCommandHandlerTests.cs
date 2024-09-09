@@ -28,21 +28,15 @@ public class UpdateProductCommandHandlerTests
 
     [Test]
     [TestCase("Niceee Nike",200,1)]
-    [TestCase("Adi Buddie Or Adidas", 1000, 2)]
+    [TestCase("Adida Buddie Or Adidas", 1000, 2)]
     [TestCase("Louis Vuitton or Louis Pham", 1200, 9)]
     public async Task Handle_Should_Return_True_When_InputIsValidProduct(string name, 
                                                                     decimal price, int quantity)
     {
         var cmd = new UpdateProductCommand(Guid.NewGuid(), name, price, quantity);
 
-        _repository.Setup(c => c.UpdateProduct(new()
-        {
-            Id = cmd.Id,
-            Price = cmd.Price,
-            ProductName = cmd.ProductName,
-            Quantity = cmd.Quantity
-        }))
-                   .ReturnsAsync(true);
+        _repository.Setup(c => c.UpdateProduct(It.IsAny<ProductEntity>()))
+                   .Returns(Task.FromResult(true));
 
         _mapper.Setup(c => c.Map<ProductEntity>(cmd))
                .Returns(new ProductEntity
