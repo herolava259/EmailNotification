@@ -13,18 +13,18 @@ namespace Cart.UnitTests.Cart.Application.Tests.Handlers.Tests;
 public class AddItemToCartCommandHandlerTests
 {
     private AddItemToCartCommandHandler _handler;
-    private Mock<IListItemRepository> _listItemRepository;
-    private Mock<ICartRepository> _cartRepository;
+    private Mock<IListItemRepository> _listItemRepositoryMock;
+    private Mock<ICartRepository> _cartRepositoryMock;
 
 
     [SetUp]
     public void SetUp()
     {
-        _listItemRepository = new Mock<IListItemRepository>();
-        _cartRepository = new Mock<ICartRepository>();
+        _listItemRepositoryMock = new Mock<IListItemRepository>();
+        _cartRepositoryMock = new Mock<ICartRepository>();
 
-        _handler = new AddItemToCartCommandHandler(_listItemRepository.Object,
-                                                   _cartRepository.Object);
+        _handler = new AddItemToCartCommandHandler(_listItemRepositoryMock.Object,
+                                                   _cartRepositoryMock.Object);
 
     }
 
@@ -61,17 +61,17 @@ public class AddItemToCartCommandHandlerTests
                               }
                           }
         };
-        _cartRepository.Setup(c => c.GetAsync(It.IsAny<Expression<Func<CartEntity, bool>>>(),
+        _cartRepositoryMock.Setup(c => c.GetAsync(It.IsAny<Expression<Func<CartEntity, bool>>>(),
                               It.IsAny<bool>(),It.IsAny<string>()))
                       .Returns(Task.FromResult<CartEntity?>(currCart));
 
-        _cartRepository.Setup(c => c.PartialUpdateAsync(It.IsAny<CartEntity>(), It.IsAny<List<string>>()))
+        _cartRepositoryMock.Setup(c => c.PartialUpdateAsync(It.IsAny<CartEntity>(), It.IsAny<List<string>>()))
                        .Returns(Task.FromResult(true));
 
-        _listItemRepository.Setup(c => c.UpdateAsync(It.IsAny<ListItem>()))
+        _listItemRepositoryMock.Setup(c => c.UpdateAsync(It.IsAny<ListItem>()))
                            .Returns(Task.FromResult(true));
 
-        _listItemRepository.Setup(c => c.CreateAsync(It.IsAny<ListItem>()))
+        _listItemRepositoryMock.Setup(c => c.CreateAsync(It.IsAny<ListItem>()))
                            .Returns(Task.FromResult(Guid.NewGuid()));
 
 
@@ -79,11 +79,20 @@ public class AddItemToCartCommandHandlerTests
 
         Assert.True(result);
 
-        Assert.That(totalPriceInCart + amount * price, Is.EqualTo(currCart.TotalPrice));
+        _cartRepositoryMock.Verify(c => c.PartialUpdateAsync(It.Is<CartEntity>(c => c.Id == new Guid(cartId)
+                                                                             && c.TotalPrice == totalPriceInCart + amount * price),
+                                                         It.IsAny<List<string>>())
+                              , Times.Once);
 
-        Assert.That(currCart.ListItems.Any(c => c.ProductId == productId), Is.True);
+        _listItemRepositoryMock.Verify(c => c.UpdateAsync(It.Is<ListItem>(c => c.ProductId == productId &&
+                                                                           c.CartId == new Guid(cartId) &&
+                                                                           c.Amount == amount + numItemInCart
+                                                                     )
+                                                      )
+                                  ,Times.Once);
 
-        Assert.That(currCart.ListItems.First(c => c.ProductId == productId).Amount, Is.EqualTo(amount + numItemInCart));
+
+        
     }
 
     [Test]
@@ -112,17 +121,17 @@ public class AddItemToCartCommandHandlerTests
                               }
                           }
         };
-        _cartRepository.Setup(c => c.GetAsync(It.IsAny<Expression<Func<CartEntity, bool>>>(),
+        _cartRepositoryMock.Setup(c => c.GetAsync(It.IsAny<Expression<Func<CartEntity, bool>>>(),
                               It.IsAny<bool>(), It.IsAny<string>()))
                       .Returns(Task.FromResult<CartEntity?>(currCart));
 
-        _cartRepository.Setup(c => c.PartialUpdateAsync(It.IsAny<CartEntity>(), It.IsAny<List<string>>()))
+        _cartRepositoryMock.Setup(c => c.PartialUpdateAsync(It.IsAny<CartEntity>(), It.IsAny<List<string>>()))
                        .Returns(Task.FromResult(true));
 
-        _listItemRepository.Setup(c => c.UpdateAsync(It.IsAny<ListItem>()))
+        _listItemRepositoryMock.Setup(c => c.UpdateAsync(It.IsAny<ListItem>()))
                            .Returns(Task.FromResult(true));
 
-        _listItemRepository.Setup(c => c.CreateAsync(It.IsAny<ListItem>()))
+        _listItemRepositoryMock.Setup(c => c.CreateAsync(It.IsAny<ListItem>()))
                            .Returns(Task.FromResult(Guid.NewGuid()));
 
 
@@ -130,12 +139,67 @@ public class AddItemToCartCommandHandlerTests
 
         Assert.True(result);
 
-        Assert.That(totalPriceInCart + amount * price, Is.EqualTo(currCart.TotalPrice));
+        _cartRepositoryMock.Verify(c => c.PartialUpdateAsync(It.Is<CartEntity>(c => c.Id == new Guid(cartId)
+                                                                             && c.TotalPrice == totalPriceInCart + amount * price),
+                                                         It.IsAny<List<string>>())
+                              , Times.Once);
 
-        Assert.That(currCart.ListItems.Any(c => c.ProductId == productId), Is.True);
+        _listItemRepositoryMock.Verify(c => c.CreateAsync(It.Is<ListItem>(c => c.ProductId == productId &&
+                                                                           c.CartId == new Guid(cartId) &&
+                                                                           c.Amount == amount + numItemInCart
+                                                                     )
+                                                      )
+                                  , Times.Once);
 
-        Assert.That(currCart.ListItems.First(c => c.ProductId == productId).Amount, Is.EqualTo(amount));
+        
     }
+
+    [Test]
+    [TestCase("d4717d44-be8d-462f-af1f-a16e437206e3", "f6fdfaba-da68-491d-a559-07f11c3ff1e2",
+               12, 1200, 3600, 0)]
+    public async Task Handle_Repository_Should_Add_Newly_Item_When_Newly_Item_Selected
+            (string productId, string cartId, int amount, decimal price, decimal totalPriceInCart, int numItemInCart)
+    {
+        var cmd = new AddItemToCartCommand(productId, new Guid(cartId), amount, price);
+
+
+        var currCart = new CartEntity
+        {
+            Id = new Guid(cartId),
+            TotalPrice = totalPriceInCart,
+
+            ListItems = new List<ListItem>
+                          {
+
+                              new ListItem
+                              {
+                                  Id = Guid.NewGuid(),
+                                  ProductId = "736fd89c-c883-4aa8-a55e-a2e246fecf45",
+                                  Amount = 1,
+                                  CartId = new Guid(cartId)
+                              }
+                          }
+        };
+        _cartRepositoryMock.Setup(c => c.GetAsync(It.IsAny<Expression<Func<CartEntity, bool>>>(),
+                              It.IsAny<bool>(), It.IsAny<string>()))
+                      .Returns(Task.FromResult<CartEntity?>(currCart));
+
+        _cartRepositoryMock.Setup(c => c.PartialUpdateAsync(It.IsAny<CartEntity>(), It.IsAny<List<string>>()))
+                       .Returns(Task.FromResult(true));
+
+        _listItemRepositoryMock.Setup(c => c.UpdateAsync(It.IsAny<ListItem>()))
+                           .Returns(Task.FromResult(true));
+
+        _listItemRepositoryMock.Setup(c => c.CreateAsync(It.IsAny<ListItem>()))
+                           .Returns(Task.FromResult(Guid.NewGuid()));
+
+
+        _ = await _handler.Handle(cmd, default);
+
+        _listItemRepositoryMock.Verify(c => c.CreateAsync(It.Is<ListItem>(c => c.ProductId == productId)),
+                                   Times.Once);
+    }
+
 
     [Test]
     [TestCase("d4717d44-be8d-462f-af1f-a16e437206e3", "f6fdfaba-da68-491d-a559-07f11c3ff1e2",
@@ -145,17 +209,17 @@ public class AddItemToCartCommandHandlerTests
     {
         var cmd = new AddItemToCartCommand(productId, new Guid(cartId), amount, price);
 
-        _cartRepository.Setup(c => c.GetAsync(It.IsAny<Expression<Func<CartEntity, bool>>>(),
+        _cartRepositoryMock.Setup(c => c.GetAsync(It.IsAny<Expression<Func<CartEntity, bool>>>(),
                               It.IsAny<bool>(), It.IsAny<string>()))
                       .Returns(Task.FromResult<CartEntity?>(null));
 
-        _cartRepository.Setup(c => c.PartialUpdateAsync(It.IsAny<CartEntity>(), It.IsAny<List<string>>()))
+        _cartRepositoryMock.Setup(c => c.PartialUpdateAsync(It.IsAny<CartEntity>(), It.IsAny<List<string>>()))
                        .Returns(Task.FromResult(true));
 
-        _listItemRepository.Setup(c => c.UpdateAsync(It.IsAny<ListItem>()))
+        _listItemRepositoryMock.Setup(c => c.UpdateAsync(It.IsAny<ListItem>()))
                            .Returns(Task.FromResult(true));
 
-        _listItemRepository.Setup(c => c.CreateAsync(It.IsAny<ListItem>()))
+        _listItemRepositoryMock.Setup(c => c.CreateAsync(It.IsAny<ListItem>()))
                            .Returns(Task.FromResult(Guid.NewGuid()));
 
 
@@ -197,17 +261,17 @@ public class AddItemToCartCommandHandlerTests
                               }
                           }
         };
-        _cartRepository.Setup(c => c.GetAsync(It.IsAny<Expression<Func<CartEntity, bool>>>(),
+        _cartRepositoryMock.Setup(c => c.GetAsync(It.IsAny<Expression<Func<CartEntity, bool>>>(),
                               It.IsAny<bool>(), It.IsAny<string>()))
                       .Returns(Task.FromResult<CartEntity?>(currCart));
 
-        _cartRepository.Setup(c => c.PartialUpdateAsync(It.IsAny<CartEntity>(), It.IsAny<List<string>>()))
+        _cartRepositoryMock.Setup(c => c.PartialUpdateAsync(It.IsAny<CartEntity>(), It.IsAny<List<string>>()))
                        .Returns(Task.FromResult(true));
 
-        _listItemRepository.Setup(c => c.UpdateAsync(It.IsAny<ListItem>()))
+        _listItemRepositoryMock.Setup(c => c.UpdateAsync(It.IsAny<ListItem>()))
                            .Returns(Task.FromResult(false));
 
-        _listItemRepository.Setup(c => c.CreateAsync(It.IsAny<ListItem>()))
+        _listItemRepositoryMock.Setup(c => c.CreateAsync(It.IsAny<ListItem>()))
                            .Returns(Task.FromResult(Guid.NewGuid()));
 
 
@@ -244,17 +308,17 @@ public class AddItemToCartCommandHandlerTests
                               }
                           }
         };
-        _cartRepository.Setup(c => c.GetAsync(It.IsAny<Expression<Func<CartEntity, bool>>>(),
+        _cartRepositoryMock.Setup(c => c.GetAsync(It.IsAny<Expression<Func<CartEntity, bool>>>(),
                               It.IsAny<bool>(), It.IsAny<string>()))
                       .Returns(Task.FromResult<CartEntity?>(currCart));
 
-        _cartRepository.Setup(c => c.PartialUpdateAsync(It.IsAny<CartEntity>(), It.IsAny<List<string>>()))
+        _cartRepositoryMock.Setup(c => c.PartialUpdateAsync(It.IsAny<CartEntity>(), It.IsAny<List<string>>()))
                        .Returns(Task.FromResult(true));
 
-        _listItemRepository.Setup(c => c.UpdateAsync(It.IsAny<ListItem>()))
+        _listItemRepositoryMock.Setup(c => c.UpdateAsync(It.IsAny<ListItem>()))
                            .Returns(Task.FromResult(false));
 
-        _listItemRepository.Setup(c => c.CreateAsync(It.IsAny<ListItem>()))
+        _listItemRepositoryMock.Setup(c => c.CreateAsync(It.IsAny<ListItem>()))
                            .Returns(Task.FromResult(Guid.Empty));
 
 
@@ -298,17 +362,17 @@ public class AddItemToCartCommandHandlerTests
                               }
                           }
         };
-        _cartRepository.Setup(c => c.GetAsync(It.IsAny<Expression<Func<CartEntity, bool>>>(),
+        _cartRepositoryMock.Setup(c => c.GetAsync(It.IsAny<Expression<Func<CartEntity, bool>>>(),
                               It.IsAny<bool>(), It.IsAny<string>()))
                       .Returns(Task.FromResult<CartEntity?>(currCart));
 
-        _cartRepository.Setup(c => c.PartialUpdateAsync(It.IsAny<CartEntity>(), It.IsAny<List<string>>()))
+        _cartRepositoryMock.Setup(c => c.PartialUpdateAsync(It.IsAny<CartEntity>(), It.IsAny<List<string>>()))
                        .Returns(Task.FromResult(false));
 
-        _listItemRepository.Setup(c => c.UpdateAsync(It.IsAny<ListItem>()))
+        _listItemRepositoryMock.Setup(c => c.UpdateAsync(It.IsAny<ListItem>()))
                            .Returns(Task.FromResult(true));
 
-        _listItemRepository.Setup(c => c.CreateAsync(It.IsAny<ListItem>()))
+        _listItemRepositoryMock.Setup(c => c.CreateAsync(It.IsAny<ListItem>()))
                            .Returns(Task.FromResult(Guid.NewGuid()));
 
 
