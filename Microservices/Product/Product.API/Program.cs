@@ -14,6 +14,22 @@ public class Program
         app.Run();*/
 
         var host = CreateHostBuilder(args).Build();
+        /*var builder = WebApplication.CreateBuilder(args);
+        var app = builder.Build();
+
+        app.MapGet("/", () => "Hello World!");
+
+        app.Run();*/
+
+        //host.AddServiceDefaults();
+        /*var builder = WebApplication.CreateBuilder(args);
+        var app = builder.Build();
+
+        app.MapGet("/", () => "Hello World!");
+
+        app.Run();*/
+
+        //host.MapDefaultEndpoints();
 
         host.MigrateDatabase<Program>();
         host.Run();

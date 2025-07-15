@@ -51,7 +51,7 @@ public class CartService : ICartService
         return await _mediator.Send(command);
     }
 
-    private bool ValidateTotalAmoutWareHouseOfItemAvailable(ProductModel product, 
+    private static bool ValidateTotalAmoutWareHouseOfItemAvailable(ProductModel product, 
                                                 AddItemToCartCommand command,
                                                 CartResponse cart)
     {

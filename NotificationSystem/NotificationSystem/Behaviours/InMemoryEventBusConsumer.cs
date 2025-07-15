@@ -58,7 +58,7 @@ internal sealed class InMemoryEventBusConsumer<T> : IConsumer<T>
             return;
         }
 
-        Task.Run(
+        await Task.Run(
             async () => await StartProcessing(handlers, contextAccessor).ConfigureAwait(false),
             _stoppingToken!.Token
         ).ConfigureAwait(false);
@@ -67,7 +67,7 @@ internal sealed class InMemoryEventBusConsumer<T> : IConsumer<T>
     internal async ValueTask StartProcessing(List<IEventHandler<T>> handlers,
                                             IEventContextAccessor<T> contextAccessor)
     {
-        var continuousChannelIterator = _bus.ReadAllAsync(_stoppingToken.Token)
+        var continuousChannelIterator = _bus.ReadAllAsync(_stoppingToken!.Token)
                                             .WithCancellation(_stoppingToken.Token)
                                             .ConfigureAwait(false);
 
