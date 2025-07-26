@@ -10,4 +10,8 @@ public abstract class BaseEntity
     public DateTimeOffset CreatedDate { get; set; }
 
     public DateTimeOffset UpdatedDate { get; set; }
+
+    public bool IsDeleted { get; set; } = false;
+
+
 }

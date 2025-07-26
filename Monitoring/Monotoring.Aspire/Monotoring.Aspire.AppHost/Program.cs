@@ -11,4 +11,6 @@ builder.AddProject<Projects.Monotoring_Aspire_Web>("webfrontend")
     .WithReference(apiService)
     .WaitFor(apiService);
 
+builder.AddProject<Projects.Scheduler_Web>("scheduler-web");
+
 builder.Build().Run();

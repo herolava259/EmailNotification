@@ -1,18 +1,17 @@
 ﻿
+using Cart.Infrastructure.Configurations;
 using Microsoft.EntityFrameworkCore;
 using CartEntity = Cart.Core.Entities.Cart;
 
 namespace Cart.Infrastructure.Config;
 
-public class CartFluentConfiguration : IEntityTypeConfiguration<CartEntity>
+public sealed class CartFluentConfiguration : AbstractEntityBaseFluentConfiguration<CartEntity>
 {
-    public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<CartEntity> builder)
+    public override void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<CartEntity> builder)
     {
         builder.ToTable("Cart");
-        builder.HasKey(c => c.Id);
 
-        builder.Property(c => c.CreatedDate).IsRequired();
-        builder.Property(c => c.UpdatedDate).IsRequired();
+        base.Configure(builder);
 
         builder.Property(c => c.TotalPrice).HasPrecision(18, 4) // HasColumnType("decimal(18, 4)")
                                            .IsRequired();

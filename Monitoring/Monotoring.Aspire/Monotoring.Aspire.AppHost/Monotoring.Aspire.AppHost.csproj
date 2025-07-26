@@ -12,6 +12,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Microservices\DistributedOrchestration\Scheduler.Web\Scheduler.Web.csproj" />
     <ProjectReference Include="..\Monotoring.Aspire.ApiService\Monotoring.Aspire.ApiService.csproj" />
     <ProjectReference Include="..\Monotoring.Aspire.Web\Monotoring.Aspire.Web.csproj" />
   </ItemGroup>

@@ -29,7 +29,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Cart.Application\Cart.Application.csproj" />
     <ProjectReference Include="..\Cart.Core\Cart.Core.csproj" />
-    <ProjectReference Include="..\Cart.Infrastructure\Cart.Infrastructure.csproj" />
+    <ProjectReference Include="..\Cart.Infrastructure\Cart.Infrastructure.ApplicationDB.csproj" />
   </ItemGroup>
 
 </Project>
