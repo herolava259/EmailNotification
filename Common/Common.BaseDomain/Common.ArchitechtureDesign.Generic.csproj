@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="EDA\" />
+    <Folder Include="Utility\Specification\" />
+  </ItemGroup>
+
 </Project>

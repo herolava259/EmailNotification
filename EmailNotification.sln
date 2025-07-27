@@ -25,9 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.BaseService", "Commo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microservices", "Microservices", "{45431AA5-F22A-4CB0-A608-95B703BFD809}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cart", "Cart", "{941C9478-43D5-4B03-AE92-ECCCDCCFACC7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CartService", "CartService", "{941C9478-43D5-4B03-AE92-ECCCDCCFACC7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Product", "Product", "{1BFAC351-F44B-42D4-B88F-CD4516E0EE67}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProductService", "ProductService", "{1BFAC351-F44B-42D4-B88F-CD4516E0EE67}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Product.API", "Microservices\Product\Product.API\Product.API.csproj", "{1D8B480D-B6CB-4274-ADFF-623837FAC344}"
 EndProject
@@ -55,13 +55,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotificationSystem", "Notif
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationSystem.UnitTests", "NotificationSystem\NotificationSystem.UnitTests\NotificationSystem.UnitTests.csproj", "{632A9299-F7C5-4CF8-B1A8-072E25CA0584}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "User", "User", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserService", "UserService", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Payment", "Payment", "{42FCC626-AA2C-44C5-87AE-E78D1A62B813}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PaymentService", "PaymentService", "{42FCC626-AA2C-44C5-87AE-E78D1A62B813}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Order", "Order", "{49D62F5B-5804-49CE-909E-3C4094F3BE25}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OrderService", "OrderService", "{49D62F5B-5804-49CE-909E-3C4094F3BE25}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Rider", "Rider", "{80C5A1B7-DA75-42B0-8278-37DC104C8DBA}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RiderService", "RiderService", "{80C5A1B7-DA75-42B0-8278-37DC104C8DBA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateway", "ApiGateway", "{D3268FD5-9BFB-41D4-A09D-89BA9A07402B}"
 EndProject
@@ -89,15 +89,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order.UnitTests", "Microservices\Order\Order.UnitTests\Order.UnitTests.csproj", "{11DB9690-F905-4DD7-88E6-069BFA33E650}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Delivery", "Delivery", "{E457D8A2-2DFF-421B-A624-4F36091DC7B6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DeliveryService", "DeliveryService", "{E457D8A2-2DFF-421B-A624-4F36091DC7B6}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Merchant", "Merchant", "{28053993-3F41-4057-96BB-25EF2E7E5B5D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MerchantService", "MerchantService", "{28053993-3F41-4057-96BB-25EF2E7E5B5D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{F9513B6B-D4DA-4A42-9CF5-21ADAA225EEF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order.Domain", "Microservices\Order\Order.Core\Order.Domain\Order.Domain.csproj", "{8385869B-350A-42F4-A2EE-37101DADC08D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.BaseDomain", "Common\Common.BaseDomain\Common.BaseDomain.csproj", "{5792CB9D-5032-4E5F-9DA1-0919E0FED444}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.ArchitechtureDesign.Generic", "Common\Common.BaseDomain\Common.ArchitechtureDesign.Generic.csproj", "{5792CB9D-5032-4E5F-9DA1-0919E0FED444}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Orchestration", "Orchestration", "{C56A945C-BB7E-4BA7-AA8F-600ED54B3720}"
 EndProject
@@ -112,6 +112,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cart.Persistence", "Cart.Persistence", "{770CB1BD-06CA-433B-8D64-C648C4B0B371}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order.Infrastructure.EventStore", "Microservices\Order\Order.Infrastructure.EventStore\Order.Infrastructure.EventStore.csproj", "{BFAA4388-BDA2-4883-9634-4135BAAC456E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharedKernel", "SharedKernel", "{0121209E-B44D-4199-9FC3-2E16AD2EB5E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -312,6 +314,7 @@ Global
 		{326C7318-56E7-4C74-AB91-F36BADE3B8DE} = {CE00D1CC-0D57-47C2-8ADB-75FEC1192D0B}
 		{770CB1BD-06CA-433B-8D64-C648C4B0B371} = {941C9478-43D5-4B03-AE92-ECCCDCCFACC7}
 		{BFAA4388-BDA2-4883-9634-4135BAAC456E} = {770CB1BD-06CA-433B-8D64-C648C4B0B371}
+		{0121209E-B44D-4199-9FC3-2E16AD2EB5E6} = {45431AA5-F22A-4CB0-A608-95B703BFD809}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {700D4573-6F29-4AF9-9FF5-454C6376FB81}
