@@ -97,7 +97,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{F9513B6B-D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order.Domain", "Microservices\Order\Order.Core\Order.Domain\Order.Domain.csproj", "{8385869B-350A-42F4-A2EE-37101DADC08D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.BaseDomain", "Common\Common.BaseDomain\Common.BaseDomain.csproj", "{5792CB9D-5032-4E5F-9DA1-0919E0FED444}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Domain.Generic", "Common\Common.BaseDomain\Common.Domain.Generic.csproj", "{5792CB9D-5032-4E5F-9DA1-0919E0FED444}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Orchestration", "Orchestration", "{C56A945C-BB7E-4BA7-AA8F-600ED54B3720}"
 EndProject

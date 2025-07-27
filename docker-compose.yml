@@ -19,6 +19,9 @@ services:
 
   pgdbadmin:
     image: dpage/pgadmin4
+   
+  eventstore:
+    image: eventstore/eventstore:21.6.0-buster-slim
 
   # emailnotification.api:
   #   image: ${DOCKER_REGISTRY-}emailnotification
