@@ -14,8 +14,4 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.7" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\Monitoring\Monotoring.Aspire\Monotoring.Aspire.ServiceDefaults\Monotoring.Aspire.ServiceDefaults.csproj" />
-  </ItemGroup>
-
 </Project>

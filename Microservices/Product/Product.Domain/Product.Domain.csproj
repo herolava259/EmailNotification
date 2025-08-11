@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="BrandContext\" />
+    <Folder Include="ProductComplexContext\Behaviours\" />
+    <Folder Include="ProductComplexContext\Repositories\" />
+    <Folder Include="ProductContext\Repositories\" />
+    <Folder Include="ProductMetadataContext\Behaviours\" />
+    <Folder Include="ProductMetadataContext\Extensions\" />
+    <Folder Include="ProductMetadataContext\Repositories\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Common.BaseDomain\Common.ArchitechtureDesign.Generic.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,12 +1,35 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Diagnostics.CodeAnalysis;
 
 namespace Common.Domain.Generic.DDD;
 
-public abstract class DomainEntity : IEquatable<DomainEntity>
+public enum DomainActivityType: ushort
+{
+    None = 0,
+    Request = 1,
+    Manual = 2,
+    Automatic = 3,
+    Schedule = 4,
+    External = 5,
+    Trigger = 6,
+    CrossDomain = 7,
+}
+
+public sealed record DomainActivityObject(DateTimeOffset OccuredTime, string AgentId = "",
+                                    DomainActivityType Type = DomainActivityType.None)
+{
+    public bool OccuredAfter(DateTimeOffset timeStone)
+        => OccuredTime >= timeStone;
+
+    public bool OccuuredBefore(DateTimeOffset? timeStone)
+    {
+        if(timeStone.HasValue)
+            return OccuredTime <= timeStone.Value;
+        return OccuredTime <= DateTimeOffset.UtcNow;
+    }
+}
+
+
+public abstract partial class DomainEntity 
 {
     public Guid Id { get; protected init; }
 
@@ -16,9 +39,38 @@ public abstract class DomainEntity : IEquatable<DomainEntity>
         Id = id;
     }
 
+    public bool IsDeleted { get; private set; } = false;
+
+    public void SoftDelete()
+    {
+        this.IsDeleted = true;
+    }
+
+    public DomainActivityObject CreationActivity { get; private init; } = new DomainActivityObject(DateTimeOffset.UtcNow);
+
+    public DomainActivityObject ModificationActivity { get; private set; } = new DomainActivityObject(DateTimeOffset.UtcNow);
+
+
+    public virtual void SetModifiedBy(string modifiedBy)
+    {
+        this.ModificationActivity = new DomainActivityObject(DateTimeOffset.UtcNow,  modifiedBy);
+    }
+
+    public bool CreatedAfter(DateTimeOffset timeStone)
+        => CreationActivity.OccuredAfter(timeStone);
+
+    public bool CreatedBefore(DateTimeOffset? timeStone)
+        => CreationActivity.OccuuredBefore(timeStone);
+
+
+
+}
+
+// base behaviours 
+public abstract partial class DomainEntity : IEquatable<DomainEntity>, IEqualityComparer<DomainEntity>
+{
     protected abstract IEnumerable<object> GetEqualityComponets();
 
-    
 
     public static bool operator ==(DomainEntity? left, DomainEntity? right)
     {
@@ -46,4 +98,37 @@ public abstract class DomainEntity : IEquatable<DomainEntity>
         return this.GetEqualityComponets().SequenceEqual(other.GetEqualityComponets());
     }
 
+    protected static int GenerateHashCode(Guid id)
+    {
+        var chain = id.ToString();
+
+        int modK = (1 << 16);
+
+        var hashVal = 0;
+
+        foreach(char c in chain)
+        {
+            if (!Char.IsDigit(c) || !Char.IsLetter(c))
+                continue;
+
+            hashVal += c;
+        }
+
+        return hashVal % modK;
+    }
+
+    public override int GetHashCode()
+    {
+        return GenerateHashCode(this.Id);
+    }
+
+    public bool Equals(DomainEntity? x, DomainEntity? y)
+    {
+        throw new NotImplementedException();
+    }
+
+    public int GetHashCode([DisallowNull] DomainEntity obj)
+    {
+        return obj.GetHashCode();
+    }
 }

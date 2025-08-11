@@ -58,6 +58,7 @@ services:
       - pgadmin_data:/root/.pgadmin
   
   eventstore:
+    container_name: eventstore
     environment:
       - EVENTSTORE_CLUSTER_SIZE=1
       - EVENTSTORE_RUN_PROJECTIONS=ALL
@@ -77,6 +78,24 @@ services:
       - type: volume
         source: eventstore-volume-logs
         target: /var/log/eventstore
+   
+  rabbitmq:
+    container_name: rabbitmq
+    hostname: rabbit-mq
+    volumes:
+      - ./.containers/queue/data/:/var/lib/rabbitmq
+      - ./.containers/queue/log/:/var/lib/rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+        RABBITMQ_DEFAULT_USER: guest
+        RBBITMQ_DEFAULT_PASS: guest
+  
+
+volumes:
+  eventstore-volume-data:
+  eventstore-volume-logs:
     
         
 

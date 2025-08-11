@@ -17,3 +17,5 @@ public interface IDomainEventKeeper<TDomainEvent>
     void RemoveEvent(Guid enventId);
 
 }
+
+

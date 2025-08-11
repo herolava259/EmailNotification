@@ -6,9 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\EmailNotification.Core\EmailNotification.Core.csproj" />
-    <ProjectReference Include="..\EmailNotification.EmailService\EmailNotification.EmailService.csproj" />
+  <ItemGroup>    
+	  <ProjectReference Include="..\..\Common\EmailNotification.EmailService\EmailNotification.EmailService.csproj" />    
+	  <ProjectReference Include="..\EmailNotification.Core\EmailNotification.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>

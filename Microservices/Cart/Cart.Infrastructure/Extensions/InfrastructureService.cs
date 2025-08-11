@@ -6,21 +6,20 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 
-namespace Cart.Infrastructure.Extensions
+namespace Cart.Infrastructure.Extensions;
+
+public static class InfrastructureService
 {
-    public static class InfrastructureService
+    public static IServiceCollection AddInfrastructureService(this IServiceCollection serviceCollection,
+                                                    IConfiguration configuration)
     {
-        public static IServiceCollection AddInfrastructureService(this IServiceCollection serviceCollection,
-                                                        IConfiguration configuration)
-        {
-            serviceCollection.AddDbContext<CartDBContext>(options => options.UseSqlServer(
-                    configuration.GetConnectionString("DatabaseConnectionString")));
+        serviceCollection.AddDbContext<CartDBContext>(options => options.UseSqlServer(
+                configuration.GetConnectionString("DatabaseConnectionString")));
 
-            serviceCollection.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
-            serviceCollection.AddScoped<ICartRepository, CartRepository>();
-            serviceCollection.AddScoped<IListItemRepository, ListItemRepository>();
+        serviceCollection.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
+        serviceCollection.AddScoped<ICartRepository, CartRepository>();
+        serviceCollection.AddScoped<IListItemRepository, ListItemRepository>();
 
-            return serviceCollection;
-        }
+        return serviceCollection;
     }
 }

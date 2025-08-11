@@ -24,34 +24,36 @@ public interface ISwitchState
     ValueTask<bool> SwitchAsync<TEventStore>(TEventStore eventStore, string brachVersion);
 }
 
-public interface IReplayEvent<TStreamEvent>
-    where TStreamEvent: BaseSourcingEvent
+public interface IReplayEvent<TSourcingEvent>
+    where TSourcingEvent: BaseSourcingEvent
 {
     bool Replay();
-    bool Replay(IEnumerable<TStreamEvent> events);
+    bool Replay(IEnumerable<TSourcingEvent> events);
 
     ValueTask<bool> ReplayAsync<TEventStore>(TEventStore eventStore, string branchVersion)
-        where TEventStore : IEventStore<TStreamEvent>;
+        where TEventStore : IEventStore<TSourcingEvent>;
 }
 
-public interface IApplyEvent<in TStreamEvent>
-    where TStreamEvent: BaseSourcingEvent
+public interface IApplyEvent
 {
-    bool Apply(TStreamEvent @event);
+    bool Apply<TStreamEvent>(TStreamEvent @event)
+      where TStreamEvent : BaseSourcingEvent;
 
 }
 
-public interface IRejectEvent
+public interface IRevertEvent
 {
-    bool RejectAll();
+    bool RevertAll();
 
-    bool RejectFrom(string brachVersion, ulong versionNo);
+    bool RevertFrom(string brachVersion, ulong versionNo);
 
-    bool RejectFrom(ulong versionNo);
+    bool RevertFrom(ulong versionNo);
 }
+
+
 
 public interface IVersioningEntity<TStreamEvent> : IEventLoader<TStreamEvent>, ICommitEvent<TStreamEvent>, ISwitchState,
-    IReplayEvent<TStreamEvent>, IApplyEvent<TStreamEvent>
+    IReplayEvent<TStreamEvent>, IApplyEvent
     where TStreamEvent: BaseSourcingEvent
 {
     public IReadOnlyCollection<TStreamEvent> AppliedEvents { get; }

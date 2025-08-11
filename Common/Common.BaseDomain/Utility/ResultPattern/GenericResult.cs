@@ -33,33 +33,33 @@ public class Result<TResponse>
 
     public bool IsSuccess { get; private init; }
 
-    public bool IsError { get; private init; } = false;
+    public bool HasError { get; private init; } = false;
 
     public Error? Error { get; private init; } = default;
 
     public string? Message { get; private init; } = null;
 
-    private Result(TResponse? response = default, bool isSuccess = true, bool isError = false, Error? error = null,
+    private Result(TResponse? response = default, bool isSuccess = true, bool hasError = false, Error? error = null,
         string? message = null)
     {
         this.Response = response;
         this.IsSuccess = isSuccess;
-        this.IsError = isError;
+        this.HasError = hasError;
         this.Error = error;
         this.Message = message;
     }
 
 
     public Result<TResponse> Success(TResponse? response = default, string? message = null)
-        => new Result<TResponse>(response: response, isSuccess: true, isError: false, message: message);
+        => new Result<TResponse>(response: response, isSuccess: true, hasError: false, message: message);
 
     public Result<TResponse> Failure(TResponse? response = default, string? message = null, Error? error = default)
-        => new Result<TResponse>(response: response, isSuccess: false, isError: error is null, message: message, error: error);
+        => new Result<TResponse>(response: response, isSuccess: false, hasError: error is null, message: message, error: error);
 
     public Result<TResponse> WithError(Error? error = default)
-        => new Result<TResponse>(error: error, isError: true, isSuccess: false);
+        => new Result<TResponse>(error: error, hasError: true, isSuccess: false);
 
     public Result<TResponse> WithException(Exception e)
-        => new Result<TResponse>(error: Error.WithException(e), isError: true, isSuccess: false);
+        => new Result<TResponse>(error: Error.WithException(e), hasError: true, isSuccess: false);
 
 }
