@@ -4,9 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Product.Domain.ProductMetadataContext
+namespace Common.DDD.Support.CRUD;
+
+public interface ICRUDRepository
 {
-    internal class ProductTypeEntity
-    {
-    }
 }

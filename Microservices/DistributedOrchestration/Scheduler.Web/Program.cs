@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Hosting;
 using Scheduler.Web.Components;
 using Scheduler.Web.Components.Account;
 using Scheduler.Web.Data;

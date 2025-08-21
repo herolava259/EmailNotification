@@ -5,9 +5,9 @@ namespace Product.Domain.ProductMetadataContext.Enumerations;
 
 public class PriceCurrencyType : Enumeration<PriceCurrencyType>
 {
-    public static readonly PriceCurrencyType USD = new(100_000_001, nameof(USD));
+    public static readonly PriceCurrencyType USD = new USDCurrency();
     public static readonly PriceCurrencyType VND = new VNDCurrency();
-    public static readonly PriceCurrencyType ETH = new(100_000_003, nameof(ETH));
+    public static readonly PriceCurrencyType ETH = new ETHCurrency();
 
     private PriceCurrencyType(uint value, string name)
         : base(value, name)

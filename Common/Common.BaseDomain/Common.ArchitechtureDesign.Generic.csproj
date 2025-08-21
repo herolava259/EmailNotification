@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="DDD\Variants\" />
     <Folder Include="Utility\Specification\" />
   </ItemGroup>
 

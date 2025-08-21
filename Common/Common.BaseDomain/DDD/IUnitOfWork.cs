@@ -17,6 +17,4 @@ public interface IUnitOfWork<in TAggregateRoot>
 
     void SaveChange(TAggregateRoot aggregateRoot);
 
-
-
 }

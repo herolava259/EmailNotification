@@ -6,6 +6,6 @@ using System.Threading.Tasks;
 
 namespace Product.Domain.ProductMetadataContext;
 
-public sealed record ProductCommonPropertyValueObject
+public sealed record ProductCommonPropertyValueObject(string Title, string Value, string Description)
 {
 }

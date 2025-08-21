@@ -1,4 +1,6 @@
 
+using Microsoft.Extensions.Hosting;
+
 namespace Order.API;
 
 public class Program

@@ -7,10 +7,10 @@ public sealed partial class ProductPropertyEntity
 
     public string Name { get; set; }
 
-    public Guid PropetyGroupId { get; private init; } = Guid.Empty;
+    public Guid PropertyGroupId { get; private init; } = Guid.Empty;
 
-    public IReadOnlySet<PropertyAttributeObject> Attributes { get => _properties; }
-    private readonly HashSet<PropertyAttributeObject> _properties = new HashSet<PropertyAttributeObject>();
+    public IReadOnlySet<PropertyAttributeObject> Attributes { get => _attributes; }
+    private readonly HashSet<PropertyAttributeObject> _attributes = new HashSet<PropertyAttributeObject>();
 
     public IReadOnlyList<PropertyMediaMetadataEntity> MediaMetadatas { get => _mediaMetadatas; }
     private readonly List<PropertyMediaMetadataEntity> _mediaMetadatas = new();

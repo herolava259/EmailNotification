@@ -7,10 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\" />
-    <Folder Include="Bases\" />
-    <Folder Include="DomainEvents\" />
-    <Folder Include="ValueObjects\" />
+    <Folder Include="OrderContext\Behaviours\" />
+    <Folder Include="OrderContext\Enumerations\" />
+    <Folder Include="OrderContext\Repositories\" />
+    <Folder Include="Extensions\" />
   </ItemGroup>
 
 </Project>

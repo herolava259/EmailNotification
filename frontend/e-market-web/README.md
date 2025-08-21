@@ -54,17 +54,6 @@ ng e2e
 
 Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
-## Setting up and using with tailwind
-1. Install 
-```bash
-npm install -D tailwindcss @tailwindcss/postcss postcss autoprefixer
-```
-2. Configure PostCSS Plugins 
-- Create a '**.poscssrc.json**' file in root of your project and add the '**@tailwindcss/postcss** plugin to your PostCSS configuration
-
-3. Import TailwindCSS
-- Add an  '**@import** to './src/styles.scss' that import Tailwind CSS
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-[Setting-up-tailwin-into-Angular-19](https://dev.to/manthanank/setting-up-tailwind-css-40-in-angular-v191-a-step-by-step-guide-258m)

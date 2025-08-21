@@ -8,5 +8,5 @@ namespace Product.Domain.ProductMetadataContext;
 
 public sealed partial class ProductPriceRuleEntity
 {
-
+    
 }
