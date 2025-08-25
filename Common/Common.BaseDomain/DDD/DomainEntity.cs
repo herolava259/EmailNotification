@@ -20,7 +20,7 @@ public sealed record DomainActivityObject(DateTimeOffset OccuredTime, string Age
     public bool OccuredAfter(DateTimeOffset timeStone)
         => OccuredTime >= timeStone;
 
-    public bool OccuuredBefore(DateTimeOffset? timeStone)
+    public bool OccuredBefore(DateTimeOffset? timeStone)
     {
         if(timeStone.HasValue)
             return OccuredTime <= timeStone.Value;
@@ -60,7 +60,7 @@ public abstract partial class DomainEntity
         => CreationActivity.OccuredAfter(timeStone);
 
     public bool CreatedBefore(DateTimeOffset? timeStone)
-        => CreationActivity.OccuuredBefore(timeStone);
+        => CreationActivity.OccuredBefore(timeStone);
 
 
 

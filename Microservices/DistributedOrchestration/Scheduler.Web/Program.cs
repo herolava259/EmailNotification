@@ -5,6 +5,7 @@ using Microsoft.Extensions.Hosting;
 using Scheduler.Web.Components;
 using Scheduler.Web.Components.Account;
 using Scheduler.Web.Data;
+using Scheduler.Web.Features;
 
 namespace Scheduler.Web;
 
@@ -33,8 +34,12 @@ public class Program
 
         var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
         builder.Services.AddDbContext<ApplicationDbContext>(options =>
-            options.UseSqlServer(connectionString));
+            options.UseNpgsql(connectionString));
         builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+
+
+        builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+                        .AddEntityFrameworkStores<ApplicationDbContext>();
 
         builder.Services.AddIdentityCore<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
             .AddEntityFrameworkStores<ApplicationDbContext>()
@@ -59,6 +64,8 @@ public class Program
             app.UseHsts();
         }
 
+        // Minimal apis 
+        RegisterUser.MapEndpoint(app);
         app.UseHttpsRedirection();
 
         app.UseAntiforgery();
@@ -69,6 +76,7 @@ public class Program
 
         // Add additional endpoints required by the Identity /Account Razor components.
         app.MapAdditionalIdentityEndpoints();
+
 
         app.Run();
     }

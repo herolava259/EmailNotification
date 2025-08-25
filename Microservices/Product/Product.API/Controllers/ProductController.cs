@@ -1,5 +1,5 @@
 ﻿namespace Product.API.Controllers;
 
-public class ProductController
+public class BaseApiController
 {
 }

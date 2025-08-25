@@ -11,6 +11,7 @@ namespace Common.Domain.Generic.EventSourcing
         Trigger = 0,
         Request = 1,
         Schedule = 2,
+        Consequence = 3,
 
     }
 }
