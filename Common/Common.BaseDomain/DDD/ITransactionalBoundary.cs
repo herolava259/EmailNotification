@@ -9,11 +9,13 @@ namespace Common.Domain.Generic.DDD;
 
 
 
-public interface IDomainCheckPoint<out TAggregateRoot>
+public interface IDomainCheckPoint<TAggregateRoot>
     where TAggregateRoot : AggregateRoot
 {
     public string Name { get; }
     IMemento<TAggregateRoot> GetSnapshot();
+
+    public void Catch(TAggregateRoot boundedContext);
 }
 
 
@@ -35,7 +37,7 @@ public interface IAsyncTransactionalBoundary
 public interface ITransactionalBoundary<TAggregateRoot>: IDisposable, ITransactionalBoundary
     where TAggregateRoot : AggregateRoot
 {
-    TAggregateRoot GetRoot();
+    TAggregateRoot GetCurrentBoundedContext();
     
 
     IDomainCheckPoint<TAggregateRoot> CreateCheckPoint(string checkPointName);
@@ -48,7 +50,7 @@ public interface ITransactionalBoundary<TAggregateRoot>: IDisposable, ITransacti
 public interface IAsyncTransactionalBoundary<TAggregateRoot> : IAsyncDisposable, IAsyncTransactionalBoundary
     where TAggregateRoot : AggregateRoot
 {
-    TAggregateRoot GetRoot();
+    TAggregateRoot GetCurrentBoundedContext();
 
 
     IDomainCheckPoint<TAggregateRoot> CreateCheckPoint(string checkPointName);
