@@ -3,7 +3,7 @@
 namespace Common.EventSourcing.Kernel.Generic;
 
 
-public interface IEventStream: IAsyncDisposable, IDisposable, ICloneable
+public interface IEventStream: IAsyncDisposable, IDisposable, IQueryable
 {
     public bool CanSeek { get; }
     public bool CanRead { get; }
@@ -12,16 +12,38 @@ public interface IEventStream: IAsyncDisposable, IDisposable, ICloneable
 
     public ulong Length { get; }
 
+    public ulong WindowSize { get; set; }
 
-    Task<IEnumerable<StreamEvent>> ReadAsync();
+    public ulong Position { get; set; }
 
-    Task WriteAsync(IEnumerable<StreamEvent> events);
 
-    Task WriteAsync(StreamEvent @event);
+    public bool JumptoAsync();
+
+    Task<IEnumerable<IStreamEvent>> ReadAsync();
+
+    Task AppendAsync(IEnumerable<IStreamEvent> events);
+
+    Task AppendAsync(IStreamEvent @event);
+
+    Task WirteAsyncIntoEvent(string eventId, object data);
+
+
+    IQueryable<TEventStream> AsQueryable<TEventStream>()
+        where TEventStream: IEventStream;
 }
 
-public interface IEventStreamBuilder<TEventStream>
+public interface IEventStreamBuilder<TEventStream>: IQueryable<TEventStream>
     where TEventStream: IEventStream
 {
-    Task<TEventStream> BuildAsync();
+    IEventStreamBuilder<TEventStream> HasAggreagteId(string aggregateId);
+
+    IEventStreamBuilder<TEventStream> From(string eventId);
+
+    IEventStreamBuilder<TEventStream> To(string eventId);
+
+    IEventStreamBuilder<TEventStream> ShouldReverse();
+
+
+
+    Task<TEventStream> Build();
 }

@@ -1,19 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Common.EventSourcing.Kernel.Core;
+﻿namespace Common.EventSourcing.Kernel.Core;
 
 public enum BranchPointType
 {
     Parallel = 0,
     Stale = 1,
     Effective = 2,
-
+    Current = 3
 }
-
+/*
+ * What is a BranchPoint?
+ * 
+ */
 public sealed partial class BranchPoint
 {
     public Guid Id { get; set; }
@@ -24,7 +21,7 @@ public sealed partial class BranchPoint
 
     public ulong VersionCounter { get; set; } = 0;
 
-    public uint BranchCounter { get; set; } = 0; 
+    public ulong PrevBranchCounter { get; set; } = 0; 
 
     public Guid? ParentBranchPointId { get; set; }
 

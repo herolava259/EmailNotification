@@ -10,14 +10,18 @@ public abstract class AggregateRoot: IBoundedContext
         public bool IsSuccess { get; set; }
 
         public string? Message { get; set; }
+
+        public bool HasNew { get; set; } = false;
+
     }
 
     public abstract TResult Apply<TEvent, TResult>(TEvent @event)
         where TResult: DomainResult
         where TEvent: IDomainEvent;
 
-    public abstract void Apply<TStreamEvent>(TStreamEvent @event) 
-        where TStreamEvent : StreamEvent;
+    public abstract void Apply<TDomainEvent>(TDomainEvent @event) 
+        where TDomainEvent : IDomainEvent;
+
     public Guid Id { get; protected init; } = Guid.Empty;
 
     public Guid AppliedEventId { get; set; } = Guid.Empty;

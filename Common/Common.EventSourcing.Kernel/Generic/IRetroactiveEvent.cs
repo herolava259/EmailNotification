@@ -8,4 +8,5 @@ namespace Common.EventSourcing.Kernel.Generic;
 
 public interface IRetroactiveEvent: IStreamEvent
 {
+
 }

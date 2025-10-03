@@ -10,8 +10,15 @@
     <Folder Include="MaterializedView\" />
     <Folder Include="Extensions\" />
     <Folder Include="BehaviourExtensions\" />
+    <Folder Include="DependencyInjection\" />
+    <Folder Include="Sagas\" />
     <Folder Include="Support\" />
     <Folder Include="Replacement\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.66" />
+    <PackageReference Include="Npgsql" Version="9.0.3" />
   </ItemGroup>
 
 </Project>

@@ -3,7 +3,7 @@
 namespace Common.EventSourcing.Kernel.Generic;
 
 public interface IEventReversible<out TReverseEvent>
-    where TReverseEvent: StreamEvent
+    where TReverseEvent: BaseStreamEvent
 {
     public TReverseEvent Reverse();
 }

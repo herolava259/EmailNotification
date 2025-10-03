@@ -51,6 +51,8 @@ public static class ServiceRegistration
             await consumer.Start().ConfigureAwait(false);
         }
 
+        //await Task.WhenAll(consumers.Select(cs => cs.Start().AsTask()));
+
         return serviceProvider;
     }
 

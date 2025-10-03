@@ -1,18 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Order.Domain.OrderContext;
+﻿namespace Order.Domain.OrderContext;
 
 public sealed partial class OrderAggregate
 {
     public string OrderNo { get; private init; } = "001";
 
-    public uint Amount { get; private set; } = 1;
-
     public DateTimeOffset OrderDate { get; private set; } = DateTimeOffset.UtcNow;
 
+    public DateTimeOffset EstimatedDeliveryTime { get; set; } = DateTimeOffset.UtcNow;
 
+    public IReadOnlyCollection<LineItemEntity> LineItems { get; set; } = new List<LineItemEntity>();
+
+    public Guid MechantId { get; set; } = Guid.Empty;
+
+    public decimal TotalPrice { get; }
 }

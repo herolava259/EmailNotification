@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Common.EventSourcing.Kernel.Generic;
 
 namespace Common.EventSourcing.Kernel.Core;
 
 public interface IBoundedContext
 {
-    public void Apply<TStreamEvent>(TStreamEvent @event)
-        where TStreamEvent : StreamEvent;
+    public void Apply<TDomainEvent>(TDomainEvent @event)
+        where TDomainEvent : IDomainEvent;
 }
 
 
@@ -19,7 +15,7 @@ public interface IBoundedContext
 public abstract class AggregateSnapshot<TBoundedContext>
     where TBoundedContext: IBoundedContext
 {
-    public StreamEvent? CurrentEvent { get; set; }
+    public IDomainEvent? CurrentEvent { get; set; }
 
     public BranchVersion Version { get; private set; } = BranchVersion.Empty;
 

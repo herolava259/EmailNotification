@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace NotificationSystem.Behaviours
 {
-    internal sealed class InMemoryEventBusProducer<T> : IProducer<T>
+    public sealed class InMemoryEventBusProducer<T> : IProducer<T>
     {
         private readonly ChannelWriter<Event<T>> _bus;
 

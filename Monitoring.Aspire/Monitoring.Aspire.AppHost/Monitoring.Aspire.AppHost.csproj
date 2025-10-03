@@ -11,12 +11,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Infrastructures\IdentityServer\IAM.Authentication.API\IAM.Authentication.API.csproj" />
+    <ProjectReference Include="..\..\Infrastructures\IdentityServer\IAM.Authorization.API\IAM.Authorization.API.csproj" />
+    <ProjectReference Include="..\..\Infrastructures\IdentityServer\IAM.Web\IAM.Web\IAM.Web.csproj" />
     <ProjectReference Include="..\Monitoring.Aspire.ApiService\Monitoring.Aspire.ApiService.csproj" />
     <ProjectReference Include="..\Monitoring.Aspire.Web\Monitoring.Aspire.Web.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Aspire.Hosting.AppHost" Version="9.3.1" />
+    <PackageReference Include="Aspire.Hosting.Dapr" Version="9.1.0" />
     <PackageReference Include="Aspire.Hosting.Docker" Version="9.3.1-preview.1.25305.6" />
     <PackageReference Include="Aspire.Hosting.Redis" Version="9.3.1" />
   </ItemGroup>

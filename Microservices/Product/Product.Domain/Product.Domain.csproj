@@ -10,6 +10,7 @@
     <Folder Include="ManufacturerWarrantyContext\" />
     <Folder Include="Extensions\" />
     <Folder Include="ProductMetadataContext\Constants\" />
+    <Folder Include="ProductSimpleContext\Behaviours\" />
     <Folder Include="ShippingInsuranceContext\" />
     <Folder Include="ProductComplexContext\Behaviours\" />
     <Folder Include="ProductComplexContext\Repositories\" />

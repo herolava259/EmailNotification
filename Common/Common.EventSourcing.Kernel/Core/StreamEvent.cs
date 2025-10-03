@@ -13,12 +13,20 @@ public enum StreamEventState: ushort
 }
 
 
+public enum StreamEventType: ushort
+{
+    Original = 0, 
+    ManualRevision = 1,
+    AutomaticRevision = 2,
+}
+
+
 // read only model 
 public sealed partial class StreamEvent<TDomainEvent>: BaseStreamEvent
     where TDomainEvent: IDomainEvent
 {
     public TDomainEvent? DomainEvent { get; set; } = default;
-
+    public StreamEventType Type { get; set; } = StreamEventType.Original;
 
 }
 

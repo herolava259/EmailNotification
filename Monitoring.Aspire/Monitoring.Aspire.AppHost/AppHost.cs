@@ -13,4 +13,10 @@ builder.AddProject<Projects.Monitoring_Aspire_Web>("webfrontend")
     .WithReference(apiService)
     .WaitFor(apiService);
 
+builder.AddProject<Projects.IAM_Web>("iam-web");
+
+builder.AddProject<Projects.IAM_Authentication_API>("iam-authentication-api");
+
+builder.AddProject<Projects.IAM_Authorization_API>("iam-authorization-api");
+
 builder.Build().Run();

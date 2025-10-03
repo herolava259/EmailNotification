@@ -6,14 +6,14 @@ public enum ErrorType : ushort
 {
     Unknown = 0,
     None = 1,
-    ClassicalException = 2,
+    ApplicationException = 2,
     DomainException = 3,
 }
 public record Error
 {
-    private Error(ErrorType type = ErrorType.None, string message = "")
+    private Error(ErrorType type = ErrorType.None, string message = "", Exception? exception = null)
     {
-        Type = type; Message = message;
+        Type = type; Message = message; Exception = exception;
     }
 
     public static Error Create(ErrorType type, string message)
@@ -21,10 +21,12 @@ public record Error
 
     public static Error WithException<TException>(TException exception)
         where TException : Exception
-        => new(type: ErrorType.ClassicalException, message: exception.ToString());
+        => new(type: ErrorType.ApplicationException, message: exception.ToString());
     public ErrorType Type { get; private init; } = ErrorType.Unknown;
 
     public string Message { get; private init; } = String.Empty;
+
+    public Exception? Exception { get; private init; } = null;
 }
 
 public class Result<TResponse>

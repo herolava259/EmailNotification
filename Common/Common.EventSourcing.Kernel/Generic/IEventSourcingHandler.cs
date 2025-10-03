@@ -7,14 +7,15 @@ namespace Common.EventSourcing.Kernel.Generic;
 // has business logic
 // For ingress event, the event as behavior logic
 // process business logic 
-public interface IEventSourcingHandler<in TStreamEvent>
-    where TStreamEvent: StreamEvent
+public interface IEventSourcingHandler<in TStreamEvent, out TResult>
+    where TStreamEvent: IStreamEvent
 {
-    void Handle(TStreamEvent @event);
+    TResult Handle(TStreamEvent @event);
 }
 
-public interface IAsyncEventSourcingHandler<in TStreamEvent>
-    where TStreamEvent : StreamEvent
+public interface IAsyncEventSourcingHandler<in TStreamEvent, TResult>
+    where TStreamEvent : IStreamEvent
 {
-    Task HandleAsync(TStreamEvent @event);
+
+    Task<TResult> HandleAsync(TStreamEvent @event);
 }

@@ -1,0 +1,154 @@
+import { Component, effect, inject, OnInit, PLATFORM_ID } from '@angular/core';
+import { CartService } from '../cart.service';
+import { Oauth2Service } from '../../../auth/oauth2.service';
+import { ToastService } from '../../shared/services/toast.service';
+import { CartItem, CartItemAdd, StripeSession } from '../../shared/models/cart.model';
+import { injectMutation, injectQuery } from '@tanstack/angular-query-experimental';
+import { lastValueFrom } from 'rxjs';
+import { isPlatformBrowser } from '@angular/common';
+import { StripeService } from 'ngx-stripe';
+
+@Component({
+  selector: 'emartket-cart',
+  standalone: false,
+  templateUrl: './cart.component.html',
+  styleUrl: './cart.component.scss'
+})
+export class CartComponent implements OnInit {
+  
+  cartService = inject(CartService);
+  oauth2Service = inject(Oauth2Service);
+  toastService = inject(ToastService);
+  stripeService = inject(StripeService);
+
+  cart: Array<CartItem> = [];
+
+  labelCheckout = "Login to checkout";
+
+  action: 'Login' | 'Checkout' = 'Login';
+
+  platformId = inject(PLATFORM_ID);
+
+  isInitPaymentSessionLoading = false;
+
+  cartQuery = injectQuery(() => ({
+    queryKey: ['cart'],
+    queryFn: () => lastValueFrom(this.cartService.getCartDetail())
+  })
+  );
+
+  initPaymentSession = injectMutation(() => ({
+    mutationFn: (cart: Array<CartItemAdd>) =>
+      lastValueFrom(this.cartService.initPaymentSession(cart)),
+    onSuccess: (result: StripeSession) => this.onSessionCreateSuccess(result),
+  }));
+
+  constructor() {
+    this.extractListToUpdate();
+    this.checkUserLoggedIn();
+  }
+
+  private extractListToUpdate() : void {
+    effect(() => {
+      if(this.cartQuery.isSuccess()) {
+        this.cart = this.cartQuery.data().products;
+      }
+    });
+  }
+
+  private checkUserLoggedIn() {
+    const connectedUserQuery = this.oauth2Service.connectedUserQuery;
+
+    if(connectedUserQuery?.isError()){
+      this.labelCheckout = "Login to checkout";
+      this.action = 'Login';
+    }
+    else if(connectedUserQuery?.isSuccess()){
+      this.labelCheckout = 'Checkout';
+      this.action = 'Checkout';
+    }
+  }
+
+  ngOnInit(): void {
+    this.cartService.addedToCart.subscribe(cart => this.updateQuantity(cart));
+  }
+
+  private updateQuantity(cartUpdated: Array<CartItemAdd>) : void {
+    for(const cartItemToUpdate of this.cart){
+      const itemToUpdate = cartUpdated.find(item => item.publicId === cartItemToUpdate.publicId);
+      if(itemToUpdate) {
+        cartItemToUpdate.quantity = itemToUpdate.quantity;
+      } else {
+        this.cart.splice(this.cart.indexOf(cartItemToUpdate), 1);
+      }
+    }
+  }
+
+  public addQuantityToCart(publicId: string): void {
+    this.cartService.addToCart(publicId, 'add');
+  }
+
+  public removeQuantityToCart(publicId: string, quantity: number): void {
+    if(quantity > 1) {
+      this.cartService.addToCart(publicId, 'remove');
+    }
+  }
+
+  public removeItem(publicId: string): void {
+    const itemToRemoveIndex = this.cart.findIndex(item => item.publicId === publicId);
+
+    if(itemToRemoveIndex){
+      this.cart.splice(itemToRemoveIndex, 1);
+    }
+
+    this.cartService.removeFromCart(publicId);
+
+  }
+
+  computeTotal() {
+    return this.cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
+  }
+
+  public checkIfEmptyCart() : boolean {
+    if(isPlatformBrowser(this.platformId)) {
+      return (
+        this.cartQuery.isSuccess() && 
+        this.cartQuery.data().products.length === 0
+      );
+    } else {
+      return false;
+    }
+  }
+
+  public checkout() : void {
+    if (this.action === 'Login')
+    {
+      this.oauth2Service.login();
+    }
+    else if(this.action === 'Checkout')
+    {
+      this.isInitPaymentSessionLoading = true;
+
+      const cartItemsAdd = this.cart.map(
+        (item) => ({
+          publicId: item.publicId,
+          quantity: item.quantity
+        }) as CartItemAdd
+      );
+
+      this.initPaymentSession.mutate(cartItemsAdd);
+    }
+  }
+
+  private onSessionCreateSuccess(sessionId: StripeSession) : void {
+    this.cartService.storeSessionId(sessionId.id);
+
+    this.stripeService
+      .redirectToCheckout({ sessionId: sessionId.id })
+      .subscribe((results) => {
+        if (results.error) {
+          this.toastService.show(`Order error ${results.error.message}`, 'ERROR');
+        }
+      });
+  }
+}

@@ -1,5 +1,5 @@
 import {IconDefinition, IconPack} from '@fortawesome/angular-fontawesome';
-import { faCartShopping, faTruckFast, faUser} from "@fortawesome/free-solid-svg-icons";
+import { faCartShopping, faCheck, faCircle, faCircleCheck, faShoppingCart, faTruckFast, faUser, faXmark} from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faYoutube, faTwitter} from '@fortawesome/free-brands-svg-icons';
 
 
@@ -15,5 +15,9 @@ export const fontAwesomeIconsAny: any[] = [
     faTruckFast,
     faYoutube,
     faFacebook,
-    faTwitter
+    faTwitter,
+    faXmark,
+    faCheck,
+    faShoppingCart,
+    faCircleCheck
 ];

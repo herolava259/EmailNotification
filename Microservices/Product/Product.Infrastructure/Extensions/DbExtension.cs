@@ -24,7 +24,7 @@ public static class DbExtension
             try
             {
                 logger.LogInformation("Product DB Migration Started.");
-                ApllyMigrations(config);
+                ApplyMigrations(config);
                 logger.LogInformation("Product DB Migration Completed");
             }
             catch (Exception ex)
@@ -37,7 +37,7 @@ public static class DbExtension
         return host;
     }
 
-    private static void ApllyMigrations(IConfiguration config)
+    private static void ApplyMigrations(IConfiguration config)
     {
         var connection = new NpgsqlConnection(config.GetValue<string>("DatabaseSettings:ConnectionString"));
 
@@ -66,5 +66,7 @@ public static class DbExtension
 
         cmd.ExecuteNonQuery();
 
+
+        connection.Close();
     }
 }

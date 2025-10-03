@@ -18,4 +18,8 @@
     <ProjectReference Include="..\..\..\Monitoring.Aspire\Monitoring.Aspire.ServiceDefaults\Monitoring.Aspire.ServiceDefaults.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
 </Project>

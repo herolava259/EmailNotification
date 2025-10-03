@@ -24,9 +24,9 @@ public class EmailNotificationController: ApiController
     public async Task<ActionResult<RemindChangePasswordResponse>> RemindChangePassword(string simulateTime)
     {
         simulateTime = HttpUtility.UrlDecode(simulateTime);
-        var check = DateTimeOffset.TryParse(simulateTime, out var expiredDate);
+        
 
-        if(!check)
+        if(!DateTimeOffset.TryParse(simulateTime, out var expiredDate))
         {
             _logger.LogError("parameter query is invalid");
             return BadRequest(new RemindChangePasswordResponse { Result = false, TotalOfReminder = 0 });

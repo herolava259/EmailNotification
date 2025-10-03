@@ -13,6 +13,17 @@ import { CreateCategoryComponent } from './examples/admin/category/create-catego
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdminProductComponent } from './examples/admin/admin-product/admin-product.component';
 import { CreateProductComponent } from './examples/admin/create-product/create-product.component';
+import { FeaturedComponent } from './examples/home/featured/featured.component';
+import { HomeComponent } from './examples/home/home.component';
+import { ProductCardComponent } from './examples/market/product-card/product-card.component';
+import { ProductDetailsComponent } from './examples/market/product-details/product-details.component';
+import { ProductsComponent } from './examples/market/products/products.component';
+import { ProductsFilterComponent } from './examples/market/products-filter/products-filter.component';
+import { CartComponent } from './examples/market/cart/cart.component';
+import { CartSuccessComponent } from './examples/market/cart-success/cart-success.component';
+import { UserOrdersComponent } from './examples/user/user-orders/user-orders.component';
+import { AdminOrdersComponent } from './examples/admin/admin-orders/admin-orders.component';
+
 
 
 @NgModule({
@@ -23,7 +34,17 @@ import { CreateProductComponent } from './examples/admin/create-product/create-p
     AdminCategoryComponent,
     CreateCategoryComponent,
     AdminProductComponent,
-    CreateProductComponent
+    CreateProductComponent,
+    FeaturedComponent,
+    HomeComponent,
+    ProductCardComponent,
+    ProductDetailsComponent,
+    ProductsComponent,
+    ProductsFilterComponent,
+    CartComponent,
+    CartSuccessComponent,
+    UserOrdersComponent,
+    AdminOrdersComponent
   ],
   imports: [
     BrowserModule,
