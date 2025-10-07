@@ -28,9 +28,9 @@ public static class MigrationWebhookStoreExtensions
 
             try
             {
-                logger.LogInformation("Product DB Migration Started.");
+                logger.LogInformation("Webhook DB Migration Started.");
                 ApplyMigrations(config);
-                logger.LogInformation("Product DB Migration Completed");
+                logger.LogInformation("Webhook DB Migration Completed");
             }
             catch (Exception ex)
             {
@@ -52,7 +52,7 @@ public static class MigrationWebhookStoreExtensions
             Connection = connection
         };
 
-
+        // excuting create sql schema db below
         cmd.CommandText = PostgresqlScript.SubscriptionTableCreationScript;
 
         cmd.ExecuteNonQuery();

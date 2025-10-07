@@ -40,9 +40,9 @@ public sealed record WebhookDeliveryAttempt(Guid Id,
     public WebhookDeliveryAttempt RecreateAfterFailure(HttpStatusCode statusCode)
         => Recreate(statusCode, isSuccess: false);
 
-    public WebhookDeliveryAttempt FailureDueException()
+    public WebhookDeliveryAttempt FailureDueToException()
         => Recreate(statusCode: null, isSuccess: false);
 
     public WebhookDeliveryAttempt TerminateAfterSuccess(HttpStatusCode statusCode)
-        => Recreate(statusCode, isSuccess: false);
+        => Recreate(statusCode, isSuccess: true);
 }

@@ -5,5 +5,5 @@ public class ParallelEvent<TEvent>: BaseStreamEvent
     where TEvent: BaseStreamEvent, new()
 {
 
-    public TEvent Event { get; set; }
+    public TEvent? Event { get; set; }
 }
