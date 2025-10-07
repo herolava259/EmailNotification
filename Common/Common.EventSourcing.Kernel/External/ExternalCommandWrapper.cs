@@ -1,4 +1,10 @@
-﻿namespace Common.EventSourcing.Kernel.External;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Common.EventSourcing.Kernel.External;
 
 public interface IExternalCommand
 { }
