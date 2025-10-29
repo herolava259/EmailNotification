@@ -5,6 +5,22 @@ namespace Playground.Application.Example.A2A.Agent;
 public record AgentResponse;
 
 public record AgentMessage;
+
+public class A2AResponseMessage : A2AResponse
+{
+    public A2AResponseMessage() : base("Client Response")
+    {
+    }
+
+    public string MessageId { get; set; }
+
+    public string? ContextId { get; set; }
+
+    public MessageRole Role { get; set; }
+
+    public TextPart[] Parts { get; set; } = [];
+}
+
 public abstract class AgentBase
 {
     public void Attach(ITaskManager taskManager)

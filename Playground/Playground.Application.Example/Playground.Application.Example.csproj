@@ -7,9 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="A2A\Client\" />
-    <Folder Include="A2A\Server\" />
     <Folder Include="Domain\" />
+    <Folder Include="MCP\Resources\" />
+    <Folder Include="MCP\Prompts\" />
+    <Folder Include="MCP\Tools\" />
   </ItemGroup>
 
   <ItemGroup>
