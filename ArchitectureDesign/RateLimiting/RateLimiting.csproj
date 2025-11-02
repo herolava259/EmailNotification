@@ -10,6 +10,7 @@
     <Folder Include="DI.Extensions\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Middlewares\" />
+    <Folder Include="MinimalAPI\" />
   </ItemGroup>
 
   <ItemGroup>

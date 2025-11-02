@@ -1,10 +1,11 @@
-﻿using System;
+﻿using IAM.Identity.Core.Account.Request;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IAM.Identity.Core.Account;
+namespace IAM.Identity.Core.Account.Domain;
 
 
 public abstract class AccountBase<TKey>
@@ -29,5 +30,5 @@ public abstract class AccountBase<TKey>
 
     public ICollection<string> PaswordHashRecordHistories { get; set; }
 
-    public ICollection<ChangeAccountEvent> Changes { get; set; }
+    public ICollection<ChangeAccountRequest> Changes { get; set; }
 }

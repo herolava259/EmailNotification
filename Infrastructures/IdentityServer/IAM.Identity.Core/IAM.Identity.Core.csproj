@@ -7,7 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Policy\" />
+    <Folder Include="Account\Event\Base\" />
+    <Folder Include="Account\Mapper\" />
+    <Folder Include="Account\Response\" />
+    <Folder Include="MultiFactor\" />
+    <Folder Include="Account\Store\" />
   </ItemGroup>
 
 </Project>

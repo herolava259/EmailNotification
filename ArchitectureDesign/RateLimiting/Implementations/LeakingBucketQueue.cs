@@ -14,7 +14,7 @@ public class LeakingBucketQueue : ILeakingBucketQueue
 {
     private readonly LeakingBucketSetting _settings;
 
-    private readonly Logger<ILeakingBucketQueue> _logger;
+    private readonly ILogger<ILeakingBucketQueue> _logger;
 
 
     private readonly ConcurrentQueue<(string, ManualResetEventSlim)> _queue = new();
@@ -30,6 +30,8 @@ public class LeakingBucketQueue : ILeakingBucketQueue
         {
             _availableSlots.Enqueue(new ManualResetEventSlim(false, settings.SpinCount));
         }
+
+        _logger = loggerFactory.CreateLogger<ILeakingBucketQueue>();
     }
 
     public IEnumerable<string> DequeueThenSignal(int window = 0, CancellationToken ct = default)

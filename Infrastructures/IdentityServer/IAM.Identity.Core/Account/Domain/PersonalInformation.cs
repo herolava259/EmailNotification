@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IAM.Identity.Core.Account;
+namespace IAM.Identity.Core.Account.Domain;
 
 public sealed record PersonalInformation(string Email, string LastName, string FirstName, string PhoneNumber, string? Address)
 {
+
 }

@@ -6,4 +6,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="MultiConsensus\" />
+    <Folder Include="ACL\" />
+    <Folder Include="ABAC\" />
+    <Folder Include="RBAC\" />
+    <Folder Include="Policy\" />
+  </ItemGroup>
+
 </Project>
