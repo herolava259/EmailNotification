@@ -29,6 +29,7 @@ public class SlidingWindowLogLimiter : ISlidingWindowLogLimiter
             if(_lock.TryEnter(TimeSpan.FromMilliseconds(timeoutMillisecond)))
             {
                 numRmv = base.RemoveWhere(match);
+                _lock.Exit();
             }
 
             return numRmv;
