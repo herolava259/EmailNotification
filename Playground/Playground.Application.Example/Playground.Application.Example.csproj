@@ -11,7 +11,10 @@
     <Folder Include="MCP\Resources\" />
     <Folder Include="MCP\Prompts\" />
     <Folder Include="MCP\Tools\" />
-    <Folder Include="SemanticKernel\Core\" />
+    <Folder Include="SemanticKernel\Models\" />
+    <Folder Include="SemanticKernel\Connectors\" />
+    <Folder Include="SemanticKernel\Services\" />
+    <Folder Include="SemanticKernel\Storage\SqlLite\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,6 +25,7 @@
     <PackageReference Include="MassTransit.MongoDb" Version="8.5.5" />
     <PackageReference Include="MassTransit.RabbitMQ" Version="8.5.5" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.0-rc.2.25502.107" />
+    <PackageReference Include="Microsoft.SemanticKernel" Version="1.67.1" />
     <PackageReference Include="ModelContextProtocol" Version="0.4.0-preview.3" />
     <PackageReference Include="ModelContextProtocol.AspNetCore" Version="0.4.0-preview.3" />
     <PackageReference Include="ModelContextProtocol.Core" Version="0.4.0-preview.3" />

@@ -137,8 +137,6 @@ public sealed class FixedWindowCounter : IFixedWindowCounter
             curWindow = curWindow.Next;
         }
 
-
-
         if (counter <= _setting.WindowKeepUnit - 1)
             return curWindow;
 
