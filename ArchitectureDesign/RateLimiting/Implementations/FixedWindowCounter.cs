@@ -1,11 +1,5 @@
 ﻿using RateLimiting.Generic;
 using RateLimiting.Models;
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RateLimiting.Implementations;
 
@@ -49,7 +43,10 @@ public sealed class FixedWindowCounter : IFixedWindowCounter
         public void AddNextWindow(TimeSpan interval, DateTime overlappedTime)
         {
             if (Next != null)
+            {
                 Next.AddNextWindow(interval, overlappedTime);
+                return;
+            }
             var curWindow = this;
 
             while(overlappedTime > curWindow.TimeStart + interval)
@@ -105,14 +102,14 @@ public sealed class FixedWindowCounter : IFixedWindowCounter
         return false;
 
     }
-
+    // lazy or cron job doing 
     public void IncreaseWindow(DateTime? timeStone = null)
     {
         timeStone ??= DateTime.UtcNow;
 
         if(_lock.TryEnter(100))
         {
-            var tail = PruneWindow();
+            var tail = PruneWindowThenGetLast();
             if(tail == null)
             {
                 _head = new TimelineWindow { TimeStart = timeStone.Value };
@@ -126,7 +123,7 @@ public sealed class FixedWindowCounter : IFixedWindowCounter
 
     }
 
-    private TimelineWindow? PruneWindow()
+    private TimelineWindow? PruneWindowThenGetLast()
     {
         if (_head == null)
             return null;

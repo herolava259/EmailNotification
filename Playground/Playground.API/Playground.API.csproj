@@ -18,4 +18,8 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Playground.Application.Example\Playground.Application.Example.csproj" />
+  </ItemGroup>
+
 </Project>
