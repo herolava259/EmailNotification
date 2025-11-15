@@ -8,12 +8,17 @@
 
   <ItemGroup>
     <Folder Include="Domain\" />
+    <Folder Include="Kafka\Core\InventoryDomain\" />
+    <Folder Include="Kafka\Core\OrderDomain\Events\" />
     <Folder Include="Kafka\Core\SharedKernel\" />
-    <Folder Include="Kafka\Core\OrderDomain\" />
+    <Folder Include="Kafka\Core\UserDomain\Events\" />
+    <Folder Include="Kafka\Core\UserDomain\Enumerations\" />
     <Folder Include="Kafka\CQRS\" />
     <Folder Include="Kafka\DI.Extensions\" />
     <Folder Include="Kafka\Interfaces\" />
-    <Folder Include="Kafka\RelationalDb\" />
+    <Folder Include="Kafka\IntergrationEvents\" />
+    <Folder Include="Kafka\Configurations\" />
+    <Folder Include="Kafka\RelationalDb\Data\" />
     <Folder Include="Kafka\Services\Consumers\" />
     <Folder Include="Kafka\Services\Producers\" />
     <Folder Include="MCP\Resources\" />

@@ -8,4 +8,5 @@ namespace Playground.Application.Example.Kafka.Core.UserDomain;
 
 public class UserAggregateRoot: EntityBase, IAggregateRoot
 {
+    public DateTimeOffset LastActive { get; set; }
 }

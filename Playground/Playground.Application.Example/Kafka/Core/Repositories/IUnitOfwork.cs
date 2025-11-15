@@ -13,6 +13,8 @@ public interface ICheckpoint
 
     string Version { get; }
 
+
+
 }
 
 public interface IBoundedContextTransaction:IDisposable, IAsyncDisposable

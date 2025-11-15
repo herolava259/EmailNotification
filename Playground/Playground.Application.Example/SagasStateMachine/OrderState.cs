@@ -14,5 +14,7 @@ public class OrderState : SagaStateMachineInstance, ISagaVersion
 
     public DateTimeOffset OrderStartDate { get; set; }
 
-    public string CurrentState { get; set; }
+    public string CurrentState { get; set; } = String.Empty;
+
+
 }

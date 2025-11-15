@@ -11,10 +11,10 @@ public static class ClaimPrincipleExtension
         return userName;
     }
 
-    public static int GetUserId(this ClaimsPrincipal user)
+    public static Guid GetUserId(this ClaimsPrincipal user)
     {
 
-        if (int.TryParse(user.FindFirstValue(ClaimTypes.NameIdentifier), out var userId))
+        if (Guid.TryParse(user.FindFirstValue(ClaimTypes.NameIdentifier), out var userId))
             throw new InvalidOperationException("Cannot get username from token");
 
         return userId;

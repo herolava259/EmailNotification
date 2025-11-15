@@ -12,5 +12,7 @@ public sealed partial class OrderAggregate
 
     public Guid MechantId { get; set; } = Guid.Empty;
 
+    public Guid CustomerId { get; set; }
+
     public decimal TotalPrice { get; }
 }

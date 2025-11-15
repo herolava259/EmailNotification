@@ -13,7 +13,7 @@ public interface IGenericRepository
 public interface IGenericRepository<TEntity>
     where TEntity: EntityBase
 {
-    public Task<TEntity> FindAsync(Guid id);
+    public Task<TEntity?> FindAsync(Guid id);
 
-    public Task<TEntity?> CreateAsync(Guid id);
+    public Task<(bool, TEntity?)> CreateAsync(Guid id);
 }
