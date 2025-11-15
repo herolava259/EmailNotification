@@ -1,0 +1,4 @@
+﻿TODO:
+- Setup efcore with sql lite (for demo) ----------------------> Status: Pending
+- Register Producer-Cosumer Service (both services interact with kafka) ---------> Pending => partial done continue with detail.
+- Write Order-Api-Endpoint  ---------------------------> Status: Pending
