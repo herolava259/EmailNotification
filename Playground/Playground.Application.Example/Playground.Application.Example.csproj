@@ -8,11 +8,19 @@
 
   <ItemGroup>
     <Folder Include="Domain\" />
-    <Folder Include="EDA\Kafka\" />
-    <Folder Include="EDA\RabbitMQ\" />
+    <Folder Include="Kafka\Core\SharedKernel\" />
+    <Folder Include="Kafka\Core\OrderDomain\" />
+    <Folder Include="Kafka\CQRS\" />
+    <Folder Include="Kafka\DI.Extensions\" />
+    <Folder Include="Kafka\Interfaces\" />
+    <Folder Include="Kafka\RelationalDb\" />
+    <Folder Include="Kafka\Services\Consumers\" />
+    <Folder Include="Kafka\Services\Producers\" />
     <Folder Include="MCP\Resources\" />
     <Folder Include="MCP\Prompts\" />
     <Folder Include="MCP\Tools\" />
+    <Folder Include="MinimalApis\" />
+    <Folder Include="HealthCheck\" />
     <Folder Include="SemanticKernel\Connectors\" />
     <Folder Include="SemanticKernel\Services\" />
     <Folder Include="SemanticKernel\Storage\Minio\" />
