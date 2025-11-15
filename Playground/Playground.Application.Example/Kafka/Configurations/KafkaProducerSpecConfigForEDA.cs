@@ -13,7 +13,7 @@ public enum IdempotenceStyle: ushort
 
 
 // configuration for application operation following eda style
-public sealed record KafkaProducerSpecConfiguration(
+public sealed record KafkaProducerSpecConfigForEDA(
     string Server,
     string ClientId,
     Partitioner RoutingType,
@@ -45,7 +45,7 @@ public sealed record KafkaProducerSpecConfiguration(
             _ => throw new NotImplementedException()
         };
 
-    public string TransactionId
+    public string TransactionalId
         => IdempotenceStyle switch
         {
             IdempotenceStyle.ExtractlyOnce => TransactionalName,

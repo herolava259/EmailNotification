@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace Playground.Application.Example.Kafka.Services.Bases;
 
-public abstract class BaseKafkaConsumer<TInCommingEvent>
+public abstract class BaseKafkaConsumer<TInCommingEvent>: IAsyncDisposable
     where TInCommingEvent: BaseIntergrationEvent
 {
     protected readonly IConsumer<Ignore, string> _kafkaConsumer;
@@ -35,13 +35,18 @@ public abstract class BaseKafkaConsumer<TInCommingEvent>
 
     // TODO: declare abstract function pre-start, post-end later
 
+    public async Task StartConsumeAsync(CancellationToken ct = default)
+    {
+        _kafkaConsumer.Subscribe(_topic);
+        await LoopAsync(ct);
+        _kafkaConsumer.Close();
+    }
 
-
-    protected virtual async Task ExecuteAsync(CancellationToken ct = default)
+    protected virtual async Task LoopAsync(CancellationToken ct = default)
     {
         _logger.LogInformation("Begin Execute async for {topic}", _topic);
         // log that cosumer subscribe which topic. write later 
-        _kafkaConsumer.Subscribe(_topic);
+        
         while(!ct.IsCancellationRequested)
         {
             // need to log
@@ -61,8 +66,18 @@ public abstract class BaseKafkaConsumer<TInCommingEvent>
 
             await ConsumeAsync(@event, ct);
         }
+
+        
     }
 
     protected abstract Task ConsumeAsync(TInCommingEvent @event, CancellationToken cancellationToken = default);
-    
+
+    public ValueTask StopAsync()
+        => DisposeAsync();
+
+    public ValueTask DisposeAsync()
+    {
+        _kafkaConsumer.Close();
+        return ValueTask.CompletedTask;
+    }
 }

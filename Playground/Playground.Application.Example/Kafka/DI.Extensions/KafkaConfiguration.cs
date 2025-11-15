@@ -55,7 +55,7 @@ public static class KafkaConfigurationAbstraction
     }
 }
 
-public static class KafkaConfigurationDetail
+public static class KafkaConfigurationForServiceDetail
 {
     #region config channel for order service
 
