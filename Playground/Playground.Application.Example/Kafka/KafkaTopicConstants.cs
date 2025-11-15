@@ -10,5 +10,7 @@ public static class KafkaTopicConstants
 {
     public const string OrderTopic = "place-order-event";
 
+    public const string SendEmailOrderTopic = "order-email-topic";
 
+    public const string Default = "default-topic";
 }

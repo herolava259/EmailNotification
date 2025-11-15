@@ -1,19 +1,21 @@
 ﻿using Confluent.Kafka;
+using Microsoft.AspNetCore.DataProtection.KeyManagement;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using static MongoDB.Driver.WriteConcern;
 
 namespace Playground.Application.Example.Kafka.DI.Extensions;
 
 
 public static class KafkaConfigurationAbstraction
 {
-    public static IServiceCollection ConfigKafkaConsumer(this IServiceCollection serviceCollection, Func<ConsumerConfig> configFactory)
-        => serviceCollection.AddSingleton(new ConsumerBuilder<string, string>(configFactory()).Build());
+    public static IServiceCollection ConfigKafkaConsumer<TKey, TValue>(this IServiceCollection serviceCollection, Func<ConsumerConfig> configFactory)
+        => serviceCollection.AddSingleton(new ConsumerBuilder<TKey, TValue>(configFactory()).Build());
 
     public static IServiceCollection ConfigKafkaConsumer<TKey, TValue>(this IServiceCollection serviceCollection, Func<ConsumerBuilder<TKey, TValue>> builderFactory)
         => serviceCollection.AddSingleton(builderFactory().Build());
 
-    public static IServiceCollection ConfigKafkaConsumer(this IServiceCollection serviceCollection, IConfiguration _configuration,
+    public static IServiceCollection ConfigKafkaConsumer<TKey, TValue>(this IServiceCollection serviceCollection, IConfiguration _configuration,
                                                         string groupId, AutoOffsetReset autoOffsetReset = AutoOffsetReset.Earliest)
     {
         var consumerConfig = new ConsumerConfig
@@ -23,16 +25,16 @@ public static class KafkaConfigurationAbstraction
             AutoOffsetReset = autoOffsetReset
         };
 
-        return serviceCollection.AddSingleton(new ConsumerBuilder<string, string>(consumerConfig).Build());
+        return serviceCollection.AddSingleton(new ConsumerBuilder<TKey, TValue>(consumerConfig).Build());
     }
 
-    public static IServiceCollection ConfigKafkaProducer(this IServiceCollection serviceCollection, Func<ProducerConfig> configFactory)
-        => serviceCollection.AddSingleton(new ProducerBuilder<string, string>(configFactory()).Build());
+    public static IServiceCollection ConfigKafkaProducer<TKey, TValue>(this IServiceCollection serviceCollection, Func<ProducerConfig> configFactory)
+        => serviceCollection.AddSingleton(new ProducerBuilder<TKey, TValue>(configFactory()).Build());
 
     public static IServiceCollection ConfigKafkaProducer<TKey, TValue>(this IServiceCollection serviceCollection, Func<ProducerBuilder<TKey, TValue>> builderFactory)
         => serviceCollection.AddSingleton(builderFactory().Build());
 
-    public static IServiceCollection ConfigKafkaProducer(this IServiceCollection serviceCollection, IConfiguration _configuration,
+    public static IServiceCollection ConfigKafkaProducer<TKey, TValue>(this IServiceCollection serviceCollection, IConfiguration _configuration,
                                                         string clientId)
     {
         var producerConfig = new ProducerConfig
@@ -41,7 +43,7 @@ public static class KafkaConfigurationAbstraction
             ClientId = clientId
         };
 
-        return serviceCollection.AddSingleton(new ProducerBuilder<string, string>(producerConfig).Build());
+        return serviceCollection.AddSingleton(new ProducerBuilder<TKey, TValue>(producerConfig).Build());
     }
 }
 
