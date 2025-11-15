@@ -25,6 +25,20 @@ services:
     
   rabbitmq:
     image: rabbitmq:3-management
+   
+  # <------------------- BEGIN | Apache solutions ----------------->
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.3.2
+  
+  kafka:
+    image: confluentinc/cp-kafka:7.3.2
+    ports:
+      - "9092:9092"
+      
+
+
+
+  # <---------------- END | Apache solutions ----------------->
 
   # emailnotification.api:
   #   image: ${DOCKER_REGISTRY-}emailnotification

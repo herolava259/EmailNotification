@@ -1,0 +1,28 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Playground.Application.Example.SemanticKernel.Models.Dtos;
+
+public class BookDto: DtoBase
+{
+    public string Name { get; set; } = String.Empty;
+
+    public string Description { get; set; } = String.Empty;
+
+    public string? Title { get; set; } = String.Empty;
+
+    public DateTimeOffset PublishedDate { get; set; }
+
+    public string Publisher { get; set; } = String.Empty;
+
+    public string Language { get; set; } = String.Empty;
+
+    public int? PageCount { get; set; }
+
+
+
+
+}
