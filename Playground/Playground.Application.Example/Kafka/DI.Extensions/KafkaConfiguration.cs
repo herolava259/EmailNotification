@@ -35,12 +35,20 @@ public static class KafkaConfigurationAbstraction
         => serviceCollection.AddSingleton(builderFactory().Build());
 
     public static IServiceCollection ConfigKafkaProducer<TKey, TValue>(this IServiceCollection serviceCollection, IConfiguration _configuration,
-                                                        string clientId)
+                                                        string clientId, Partitioner partitioner = Partitioner.ConsistentRandom, 
+                                                        int batchNumMessage = 50_000, CompressionType compressionType = CompressionType.None,
+                                                        bool needIdempotence = true, int messageQueueSize = 100_000, string transactionalId = "")
     {
         var producerConfig = new ProducerConfig
         {
             BootstrapServers = _configuration["ConnectionString:Kafka:BootstrapServers"],
-            ClientId = clientId
+            ClientId = clientId,
+            Partitioner = partitioner,
+            BatchNumMessages = batchNumMessage,
+            CompressionType = compressionType,
+            EnableIdempotence = needIdempotence,
+            QueueBufferingMaxMessages = messageQueueSize,
+            TransactionalId = transactionalId
         };
 
         return serviceCollection.AddSingleton(new ProducerBuilder<TKey, TValue>(producerConfig).Build());

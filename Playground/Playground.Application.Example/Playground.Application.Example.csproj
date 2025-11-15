@@ -14,13 +14,10 @@
     <Folder Include="Kafka\Core\UserDomain\Events\" />
     <Folder Include="Kafka\Core\UserDomain\Enumerations\" />
     <Folder Include="Kafka\Interfaces\" />
-    <Folder Include="Kafka\Configurations\" />
     <Folder Include="Kafka\Mappers\" />
     <Folder Include="Kafka\Models\Notification\" />
     <Folder Include="Kafka\Models\Order\" />
     <Folder Include="Kafka\Notification\" />
-    <Folder Include="Kafka\RelationalDb\Data\" />
-    <Folder Include="Kafka\Services\Consumers\" />
     <Folder Include="MCP\Resources\" />
     <Folder Include="MCP\Prompts\" />
     <Folder Include="MCP\Tools\" />

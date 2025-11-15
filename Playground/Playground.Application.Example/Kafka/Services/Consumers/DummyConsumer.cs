@@ -20,7 +20,7 @@ internal sealed class DummyConsumer : BaseKafkaConsumer<DummyEvent>
     protected override async Task ConsumeAsync(DummyEvent @event, CancellationToken cancellationToken = default)
     {
         _logger.LogInformation($"Don't talk: '{@event.Speak()}'");
-        Task.Delay(TimeSpan.FromMinutes(1), cancellationToken);
+        await Task.Delay(TimeSpan.FromMinutes(1), cancellationToken);
 
     }
 }

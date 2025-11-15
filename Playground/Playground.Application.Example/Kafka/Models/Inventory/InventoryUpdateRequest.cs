@@ -14,5 +14,5 @@ public sealed class InventoryUpdateRequest: BaseRequest
 
     public int Quantity { get; set; }
 
-    // TODO: brainstorm use case and declare business logic prop later
+    // TODO: brainstorm use case and declare business logic props later
 }
