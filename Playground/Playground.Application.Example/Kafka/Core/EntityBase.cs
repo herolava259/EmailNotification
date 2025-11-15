@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Playground.Application.Example.Kafka.Core;
 
-internal abstract class EntityBase
+public abstract class EntityBase
 {
+    public Guid Id { get; set; }
 }

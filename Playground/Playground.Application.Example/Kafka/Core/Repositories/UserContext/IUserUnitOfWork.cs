@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Playground.Application.Example.Kafka.Core.Repositories.UserContext;
 
-public interface IUserUnitOfWork
+public interface IUserUnitOfWork : IUnitOfWork
 {
+    public IUserRepository UserRepository { get; }
 }

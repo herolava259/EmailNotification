@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace Playground.Application.Example.Kafka.Core.Repositories;
 
-internal interface IGenericRepository
+public interface IGenericRepository
 {
 }
 
-internal interface IGenericRepository<TEntity>
+public interface IGenericRepository<TEntity>
     where TEntity: EntityBase
 {
+    public Task<TEntity> FindAsync(Guid id);
 
+    public Task<TEntity?> CreateAsync(Guid id);
 }

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.Filters;
 using Playground.API.Extensions;
-using Playground.Application.Example.Kafka.Core.Repositories;
+using Playground.Application.Example.Kafka.Core.Repositories.UserContext;
 
 namespace Playground.API.Filters;
 
@@ -15,6 +15,9 @@ public class LogUserActivity : IAsyncActionFilter
 
         var userId = resultContext.HttpContext.User.GetUserId();
 
-        var uow = resultContext.HttpContext.RequestServices.GetRequiredService<IUnitOfwork>
+        var uow = resultContext.HttpContext.RequestServices.GetRequiredService<IUserUnitOfWork>();
+
+        var user = await uow.UserRepository.
+
     }
 }
