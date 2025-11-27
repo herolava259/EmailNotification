@@ -26,7 +26,7 @@ services:
   rabbitmq:
     image: rabbitmq:3-management
    
-  # <------------------- BEGIN | Apache solutions ----------------->
+# <------------------- BEGIN | Apache solutions ----------------->
   zookeeper:
     image: confluentinc/cp-zookeeper:7.3.2
   
@@ -34,11 +34,15 @@ services:
     image: confluentinc/cp-kafka:7.3.2
     ports:
       - "9092:9092"
-      
+# <---------------- END | Apache solutions ----------------->
 
 
+# <----------------- START | File/Object Storage ---------------------->
+  minio:
+    image: minio/minio:latest
+    
 
-  # <---------------- END | Apache solutions ----------------->
+# <------------------ END | File/Object Storage ----------------------->
 
   # emailnotification.api:
   #   image: ${DOCKER_REGISTRY-}emailnotification

@@ -21,14 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Core\Cart\" />
-    <Folder Include="Core\Role\" />
-    <Folder Include="Core\ProductSpecification\" />
-    <Folder Include="Core\User\" />
-    <Folder Include="Core\ProductItem\" />
     <Folder Include="Infrastructure\ApplicationStorage\" />
-    <Folder Include="Infrastructure\Agent\" />
-    <Folder Include="Modules\" />
     <Folder Include="Models\" />
     <Folder Include="Assets\" />
   </ItemGroup>

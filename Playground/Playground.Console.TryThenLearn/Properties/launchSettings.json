@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Playground.Console.TryThenLearn": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

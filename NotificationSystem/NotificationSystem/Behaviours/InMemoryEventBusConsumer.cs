@@ -13,7 +13,7 @@ internal sealed class InMemoryEventBusConsumer<T> : IConsumer<T>
     private readonly ChannelReader<Event<T>> _bus;
     private readonly IServiceScopeFactory _scopeFactory;
     private readonly ILogger<InMemoryEventBusConsumer<T>> _logger;
-    private CancellationTokenSource? _stoppingToken;
+    private CancellationTokenSource? _tokenSource;
 
     public InMemoryEventBusConsumer(ChannelReader<Event<T>> bus,
                                     IServiceScopeFactory scopeFactory,
@@ -26,17 +26,17 @@ internal sealed class InMemoryEventBusConsumer<T> : IConsumer<T>
 
     private void EnsureStoppingTokenIsCreated(CancellationToken token = default)
     {
-        if (_stoppingToken is not null && !_stoppingToken.IsCancellationRequested)
+        if (_tokenSource is not null && !_tokenSource.IsCancellationRequested)
         {
-            _stoppingToken.Cancel();
+            _tokenSource.Cancel();
         }
 
-        _stoppingToken = token.CanBeCanceled ? CancellationTokenSource.CreateLinkedTokenSource(token) : new CancellationTokenSource();
+        _tokenSource = token.CanBeCanceled ? CancellationTokenSource.CreateLinkedTokenSource(token) : new CancellationTokenSource();
     }
 
     public ValueTask DisposeAsync()
     {
-        _stoppingToken?.Cancel();
+        _tokenSource?.Cancel();
 
         return ValueTask.CompletedTask;
     }
@@ -60,24 +60,24 @@ internal sealed class InMemoryEventBusConsumer<T> : IConsumer<T>
 
         await Task.Run(
             async () => await StartProcessing(handlers, contextAccessor).ConfigureAwait(false),
-            _stoppingToken!.Token
+            _tokenSource!.Token
         ).ConfigureAwait(false);
     }
 
     internal async ValueTask StartProcessing(List<IEventHandler<T>> handlers,
                                             IEventContextAccessor<T> contextAccessor)
     {
-        var continuousChannelIterator = _bus.ReadAllAsync(_stoppingToken!.Token)
-                                            .WithCancellation(_stoppingToken.Token)
+        var continuousChannelIterator = _bus.ReadAllAsync(_tokenSource!.Token)
+                                            .WithCancellation(_tokenSource.Token)
                                             .ConfigureAwait(false);
 
         await foreach(var task in continuousChannelIterator)
         {
 
-            if (_stoppingToken.IsCancellationRequested)
+            if (_tokenSource.IsCancellationRequested)
                 break;
 
-            await Parallel.ForEachAsync(handlers, _stoppingToken.Token,
+            await Parallel.ForEachAsync(handlers, _tokenSource.Token,
                             async (handler, scopedToken) =>
                                 await ExcuteHandler(handler, task, contextAccessor, scopedToken)
                                     .ConfigureAwait(false))

@@ -1,12 +1,17 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Playground.Application.Example.Kafka.RelationalDb.Data
+namespace Playground.Application.Example.Kafka.RelationalDb.Data;
+
+public class KafkaExampleDbContext: DbContext
 {
-    internal class KafkaExampleDbContext
+
+    public KafkaExampleDbContext()
     {
+        
     }
 }

@@ -72,8 +72,10 @@ public abstract class BaseKafkaConsumer<TInCommingEvent>: IAsyncDisposable
 
     protected abstract Task ConsumeAsync(TInCommingEvent @event, CancellationToken cancellationToken = default);
 
-    public ValueTask StopAsync()
-        => DisposeAsync();
+    public async ValueTask StopAsync(CancellationToken ct = default)
+    {
+        await DisposeAsync().ConfigureAwait(false);
+    }
 
     public ValueTask DisposeAsync()
     {

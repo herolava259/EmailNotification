@@ -59,7 +59,7 @@ public static class KafkaConfigurationForServiceDetail
 {
     #region config channel for order service
 
-    // consumer config 
+    // TODO: consumer config 
 
     // producer config
 

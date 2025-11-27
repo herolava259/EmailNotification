@@ -50,4 +50,4 @@ public abstract class SelfRelationshipEntity<TSelfEntity> : RelationshipEntity<T
     }
 }
 
-public abstract class One2OneRelationshipEntity<TFromEntity, TToEntity>
+//public abstract class One2OneRelationshipEntity<TFromEntity, TToEntity>

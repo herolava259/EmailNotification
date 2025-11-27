@@ -109,11 +109,36 @@ services:
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
 
   # <---------------- END | Apache solutions ------------------->
-  
 
+  # <---------------- START | File/Object Storage --------------------------->
+  minio:
+    container_name: minio
+    environment:
+      - MINIO_ROOT_USER=abcd
+      - MINIO_ROOT_PASSWORD=abcd2345
+      - MINIO_DEFAULT_BUCKETS=buck1
+    networks:
+      mynet:
+        aliases:
+          - minio-localhost
+    volumes:
+      - minio_data:/data
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+  
+  # <---------------- END | File/Object Storage ----------------------------->
+
+  
 volumes:
   eventstore-volume-data:
   eventstore-volume-logs:
+  minio_data:
+    driver: local
+
+networks:
+  minio-localhost:
+    driver: local
    
         
 

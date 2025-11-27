@@ -1,0 +1,35 @@
+﻿
+namespace Playground.JobFinder.Hosts;
+
+public class ServerLifetimeEventHostedService : IHostedLifecycleService
+{
+    public Task StartAsync(CancellationToken cancellationToken)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task StartedAsync(CancellationToken cancellationToken)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task StartingAsync(CancellationToken cancellationToken)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task StopAsync(CancellationToken cancellationToken)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task StoppedAsync(CancellationToken cancellationToken)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task StoppingAsync(CancellationToken cancellationToken)
+    {
+        throw new NotImplementedException();
+    }
+}

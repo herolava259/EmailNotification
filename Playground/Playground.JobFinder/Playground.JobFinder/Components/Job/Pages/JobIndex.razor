@@ -1,0 +1,22 @@
+﻿@page "/Job/Index"
+@using Playground.JobFinder.Models.DTOs
+@rendermode InteractiveServer
+
+<PageTitle>Jobs List</PageTitle>
+
+<div class="job-grid-cards container-fluid">
+    <div class="row row-cols-auto">
+
+    </div>
+</div>
+
+
+@code {
+
+    private readonly IEnumerable<JobDto> jobPages;
+    
+    protected override Task OnInitializedAsync()
+    {
+        return base.OnInitializedAsync();
+    }
+}
