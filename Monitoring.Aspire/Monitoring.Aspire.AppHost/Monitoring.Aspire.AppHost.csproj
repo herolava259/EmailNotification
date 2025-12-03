@@ -23,6 +23,7 @@
     <PackageReference Include="Aspire.Hosting.AppHost" Version="9.3.1" />
     <PackageReference Include="Aspire.Hosting.Dapr" Version="9.1.0" />
     <PackageReference Include="Aspire.Hosting.Docker" Version="9.3.1-preview.1.25305.6" />
+    <PackageReference Include="Aspire.Hosting.PostgreSQL" Version="13.0.1" />
     <PackageReference Include="Aspire.Hosting.Redis" Version="9.3.1" />
   </ItemGroup>
 
