@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Playground.Application.Example.SemanticKernel.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace Playground.Application.Example.SemanticKernel.Storage.SqlLite;
 
 public class BookLibraryDbContext : DbContext
 {
-
+    public DbSet<BookAggregate> BookDomains { get; set; }
     public BookLibraryDbContext(DbContextOptions<BookLibraryDbContext> options):
         base(options)
     {

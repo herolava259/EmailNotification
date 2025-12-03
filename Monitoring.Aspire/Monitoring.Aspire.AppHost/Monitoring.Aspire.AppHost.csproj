@@ -14,6 +14,7 @@
     <ProjectReference Include="..\..\Infrastructures\IdentityServer\IAM.Authentication.API\IAM.Authentication.API.csproj" />
     <ProjectReference Include="..\..\Infrastructures\IdentityServer\IAM.Authorization.API\IAM.Authorization.API.csproj" />
     <ProjectReference Include="..\..\Infrastructures\IdentityServer\IAM.Web\IAM.Web\IAM.Web.csproj" />
+    <ProjectReference Include="..\..\Playground\Playground.API\Playground.API.csproj" />
     <ProjectReference Include="..\Monitoring.Aspire.ApiService\Monitoring.Aspire.ApiService.csproj" />
     <ProjectReference Include="..\Monitoring.Aspire.Web\Monitoring.Aspire.Web.csproj" />
   </ItemGroup>

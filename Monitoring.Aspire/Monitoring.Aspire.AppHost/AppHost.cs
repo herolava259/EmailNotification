@@ -19,4 +19,6 @@ builder.AddProject<Projects.IAM_Authentication_API>("iam-authentication-api");
 
 builder.AddProject<Projects.IAM_Authorization_API>("iam-authorization-api");
 
+builder.AddProject<Projects.Playground_API>("playground-api");
+
 builder.Build().Run();

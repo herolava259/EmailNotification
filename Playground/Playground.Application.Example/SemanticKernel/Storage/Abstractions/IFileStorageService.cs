@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Playground.Application.Example.SemanticKernel.Storage.Abstractions;
 
-public interface IStorageProvider
+public interface IFileStorageService
 {
-    
+    Task UploadAsync(string filePath, Stream data);
+
+    Task<byte[]> DownloadAsync(string filePath);
+
+
 }

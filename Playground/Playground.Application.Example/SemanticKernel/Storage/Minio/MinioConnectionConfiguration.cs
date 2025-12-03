@@ -11,3 +11,6 @@ public sealed record MinioConnectionConfiguration(string Endpoint, string Access
     public static MinioConnectionConfiguration Default
         => new(Endpoint: "http://localhost:9000", AccessKey: "minioadmin", SecretKey: "minioadmin");
 }
+
+
+public sealed record MinioSettings(string Endpoint, string AccessKey, string SecretKey, bool UseSSL, string Bucket) { }

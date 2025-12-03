@@ -4,9 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Playground.Application.Example.SemanticKernel.Storage.Abstractions;
+namespace Playground.Application.Example.SemanticKernel.Storage.Minio;
 
-public interface IStorageProvider
+public sealed class MinioDocumentService
 {
-    
 }
