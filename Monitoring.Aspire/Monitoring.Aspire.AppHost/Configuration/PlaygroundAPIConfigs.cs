@@ -13,10 +13,16 @@ public static class PlaygroundAPIConfigs
     {
         var db = builder.AddPostgres("postgres")
                         .AddDatabase("distributed-locking");
+
+        var redis = builder.AddRedis("redis");
+
+
         return builder.AddProject<Projects.Playground_API>("playground-api")
                                    .WithHttpEndpoint(5001, name: "public")
                                    .WithReference(db)
-                                   .WaitFor(db);
+                                   .WithReference(redis)
+                                   .WaitFor(db)
+                                   .WaitFor(redis);
 
     }
 }
