@@ -44,6 +44,13 @@ services:
 
 # <------------------ END | File/Object Storage ----------------------->
 
+
+# <------------------ START | Vector Database ------------------------->
+# pg-vector db 
+  pg_vector:
+    image: pgvector/pgvector:pg16
+# <------------------ END | Vector Database --------------------------->
+
   # emailnotification.api:
   #   image: ${DOCKER_REGISTRY-}emailnotification
   #   build:

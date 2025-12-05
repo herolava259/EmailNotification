@@ -229,6 +229,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground.Console.TryThenL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistributedLocking", "ArchitectureDesign\DLocking\DistributedLocking.csproj", "{480E975D-0AAE-4B3C-90B1-6CC573F94F6C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "postgres", "postgres", "{632031FD-6DF2-4C00-A924-6F7B1681BCCE}"
+	ProjectSection(SolutionItems) = preProject
+		postgres_scripts\pg_schema.sql = postgres_scripts\pg_schema.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

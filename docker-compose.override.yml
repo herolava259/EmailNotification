@@ -130,11 +130,28 @@ services:
   
   # <---------------- END | File/Object Storage ----------------------------->
 
+  # <---------------- START | Vector Database ------------------------------->
+  pg_vector:
+    restart: always
+    environment:
+      POSTGRES_DB: ${PG_DB_NAME}
+      POSTGRES_USER: ${PG_DB_USER}
+      POSTGRES_PASSWORD: ${PG_DB_PASSWORD}
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+      - ./postgres_scripts/pg_schema.sql:/docker-entrypoint-initdb.d/schema.sql:ro
+  
+  # <---------------- END | Vector Database --------------------------------->
+
   
 volumes:
   eventstore-volume-data:
   eventstore-volume-logs:
   minio_data:
+    driver: local
+  pg_data:
     driver: local
 
 networks:
