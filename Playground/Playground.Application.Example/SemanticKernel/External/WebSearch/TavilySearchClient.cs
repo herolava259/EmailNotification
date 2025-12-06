@@ -3,11 +3,11 @@ using Microsoft.Extensions.Options;
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using Playground.Application.Example.SemanticKernel.External.Settings;
 
 using Microsoft.Extensions.Logging;
 using System.Text.Json.Nodes;
 using System.Net;
+using Playground.Application.Example.SemanticKernel.External.WebSearch.Settings;
 
 
 namespace Playground.Application.Example.SemanticKernel.External.WebSearch;
@@ -138,7 +138,9 @@ public sealed class TavilySearchClient: ISearchClient<TavilyParamsQuery, TavilyR
 
         SetContent(request, query);
 
-        var resp = await httpClient.SendAsync(request);
+        // timeout for long request 
+        using var cts = new CancellationTokenSource(TimeSpan.FromMilliseconds((double)timeout));
+        var resp = await httpClient.SendAsync(request, cts.Token);
 
         if (resp.StatusCode == System.Net.HttpStatusCode.OK)
         {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Playground.Application.Example.SemanticKernel.External.Settings;
+namespace Playground.Application.Example.SemanticKernel.External.WebSearch.Settings;
 
 public sealed class TavilySettings
 {

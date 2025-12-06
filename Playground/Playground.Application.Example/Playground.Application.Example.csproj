@@ -23,6 +23,7 @@
     <Folder Include="MCP\Tools\" />
     <Folder Include="MinimalApiEndpoints\" />
     <Folder Include="HealthCheck\" />
+    <Folder Include="Redis\WithIdempotence\" />
     <Folder Include="SemanticKernel\Connectors\" />
     <Folder Include="SemanticKernel\External\WebSearch\Models\" />
     <Folder Include="SemanticKernel\Storage\Milvus\" />

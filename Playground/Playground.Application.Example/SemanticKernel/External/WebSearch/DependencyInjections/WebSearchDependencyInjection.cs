@@ -1,13 +1,13 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Playground.Application.Example.SemanticKernel.External.Settings;
+using Playground.Application.Example.SemanticKernel.External.WebSearch.Settings;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Playground.Application.Example.SemanticKernel.External.WebSearch;
+namespace Playground.Application.Example.SemanticKernel.External.WebSearch.DependencyInjections;
 
 public static class WebSearchDependencyInjection
 {
@@ -27,4 +27,5 @@ public static class WebSearchDependencyInjection
 
         return services;
     }
+
 }
