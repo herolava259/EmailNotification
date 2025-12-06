@@ -1,22 +1,16 @@
-﻿using MassTransit.Configuration;
+﻿
 using Microsoft.Extensions.Options;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using Playground.Application.Example.SemanticKernel.External.Settings;
+
+using Microsoft.Extensions.Logging;
+using System.Text.Json.Nodes;
+using System.Net;
+
 
 namespace Playground.Application.Example.SemanticKernel.External.WebSearch;
-
-
-public sealed class TavilySettings
-{
-    public string ApiKey { get; set; } = string.Empty;
-
-    public string DomainUrl { get; set; } = "https://api.tavily.com";
-}
 
 public sealed class TavilyParamsQuery: IWebSearchQuery
 {
@@ -116,20 +110,18 @@ public sealed class TavilySearchClient: ISearchClient<TavilyParamsQuery, TavilyR
     }
 
     private readonly IHttpClientFactory _clientFactory;
+    private readonly ILogger<TavilySearchClient> _logger;
     private readonly TavilySettings _settings;
 
-    public TavilySearchClient(IOptions<TavilySettings> settingOptions, IHttpClientFactory clientFactory)
+    public TavilySearchClient(IOptions<TavilySettings> settingOptions, IHttpClientFactory clientFactory, ILogger<TavilySearchClient> logger)
     {
         this._clientFactory = clientFactory;
+        this._logger = logger;
         this._settings = settingOptions.Value!;
     }
 
-    public Task<TavilyResult> SearchAsync(TavilyParamsQuery query, ulong timeout = 100)
+    public async Task<TavilyResult> SearchAsync(TavilyParamsQuery query, ulong timeout = 100)
     {
-        static void SetApiKey(HttpRequestMessage _requestMessage, string bearerKey)
-        {
-            _requestMessage.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", bearerKey);
-        }
 
         static void SetContent(HttpRequestMessage _requestMessge, TavilyParamsQuery _query)
         {
@@ -140,8 +132,52 @@ public sealed class TavilySearchClient: ISearchClient<TavilyParamsQuery, TavilyR
 
         // create httpclient with address = taivily-domain + "search"
 
-        using var httpClient = _clientFactory.CreateClient();
-        httpClient.BaseAddress = new Uri(Path.Combine(this._settings.DomainUrl, TavilyPath.Search));
+        using var httpClient = _clientFactory.CreateClient("tavily");
 
+        var request = new HttpRequestMessage(HttpMethod.Post, Path.Combine(_settings.DomainUrl, TavilyPath.Search));
+
+        SetContent(request, query);
+
+        var resp = await httpClient.SendAsync(request);
+
+        if (resp.StatusCode == System.Net.HttpStatusCode.OK)
+        {
+            _logger.LogInformation("Search with with Tavily is succeed!");
+            var jsonObj = JsonSerializer.Deserialize<JsonObject>(await resp.Content.ReadAsStringAsync()) 
+                                ?? throw new NullReferenceException("No content response");
+
+            
+
+            if(!jsonObj.TryGetPropertyValue("results", out _))
+            {
+                jsonObj["results"] = new JsonArray();
+            }
+            return jsonObj.Deserialize<TavilyResult>()!;
+        }
+        else if (resp.StatusCode == HttpStatusCode.TooManyRequests)
+        {
+            var errorDetail = "Too Many requests!!!";
+            try
+            {
+                errorDetail = JsonSerializer.Deserialize<JsonObject>(await resp.Content.ReadAsStringAsync())!["detail"]!["error"]!.ToJsonString();
+            }
+            catch(Exception ex)
+            {
+                _logger.LogError(message:"Parse Error:detail failed", exception:ex);
+            }
+
+            _logger.LogWarning("Too many requests to tavily search!!!. Error: {@errorDetail}", errorDetail);
+
+            throw new HttpRequestException(HttpRequestError.SecureConnectionError, message: errorDetail, statusCode: HttpStatusCode.TooManyRequests);
+        }
+        else if (resp.StatusCode == HttpStatusCode.Unauthorized)
+        {
+
+            _logger.LogWarning("ApiKey is not corrected. HttpStatusCode: Unauthorized-401");
+
+            throw new HttpRequestException(HttpRequestError.SecureConnectionError, statusCode: HttpStatusCode.Unauthorized);
+        }
+        else
+            throw new HttpRequestException(HttpRequestError.Unknown);
     }
 }

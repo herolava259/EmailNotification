@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Playground.Application.Example.SemanticKernel.External.Settings;
 
-public class TavilySettings
+public sealed class TavilySettings
 {
+    public string ApiKey { get; set; } = string.Empty;
+
+    public string DomainUrl { get; set; } = "https://api.tavily.com";
 }
