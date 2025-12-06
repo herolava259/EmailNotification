@@ -234,6 +234,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "postgres", "postgres", "{63
 		postgres_scripts\pg_schema.sql = postgres_scripts\pg_schema.sql
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground.UnitTests", "Playground\Playground.UnitTests\Playground.UnitTests.csproj", "{3D484E80-0EBD-48D4-BCFB-F4ECF9980F11}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -504,6 +506,10 @@ Global
 		{480E975D-0AAE-4B3C-90B1-6CC573F94F6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{480E975D-0AAE-4B3C-90B1-6CC573F94F6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{480E975D-0AAE-4B3C-90B1-6CC573F94F6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D484E80-0EBD-48D4-BCFB-F4ECF9980F11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D484E80-0EBD-48D4-BCFB-F4ECF9980F11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D484E80-0EBD-48D4-BCFB-F4ECF9980F11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D484E80-0EBD-48D4-BCFB-F4ECF9980F11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -610,6 +616,7 @@ Global
 		{7200E522-7344-4759-93FA-A60F5CB2472C} = {A3A8F348-9AA2-4044-900B-E8F7D24E9B7D}
 		{2CBBB5B1-56A8-4AC5-8C73-AD650E41F548} = {6ACDAE53-3341-4749-BBC8-8F2AB17C9103}
 		{480E975D-0AAE-4B3C-90B1-6CC573F94F6C} = {FFD7195C-8943-44AB-A14C-E71E70F0ABAB}
+		{3D484E80-0EBD-48D4-BCFB-F4ECF9980F11} = {6ACDAE53-3341-4749-BBC8-8F2AB17C9103}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {700D4573-6F29-4AF9-9FF5-454C6376FB81}

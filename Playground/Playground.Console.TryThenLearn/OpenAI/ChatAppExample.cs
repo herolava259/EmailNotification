@@ -40,7 +40,7 @@ namespace Playground.Console.TryThenLearn.OpenAI
 
             string modelName = config["ModelName"]!;
 
-            string key = config["OpenAIKey"];
+            string key = config["OpenAIKey"]!;
 
             this._chatClient = new OpenAIClient(key)
                                         .GetChatClient(modelName).AsIChatClient();

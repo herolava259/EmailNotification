@@ -12,5 +12,5 @@ public class BookChapterOverview : EntityBase
 
     public string Summary { get; set; }
 
-
+    public Guid BookId { get; set; }
 }

@@ -25,10 +25,12 @@
     <Folder Include="HealthCheck\" />
     <Folder Include="SemanticKernel\Connectors\" />
     <Folder Include="SemanticKernel\External\WebSearch\Models\" />
-    <Folder Include="SemanticKernel\UseCases\" />
+    <Folder Include="SemanticKernel\Storage\Milvus\" />
     <Folder Include="SemanticKernel\Services\" />
     <Folder Include="SemanticKernel\Storage\Blob\" />
     <Folder Include="SemanticKernel\Storage\S3\" />
+    <Folder Include="SemanticKernel\UseCases\Agents\" />
+    <Folder Include="SemanticKernel\UseCases\Proccess\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -53,6 +55,7 @@
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.0-rc.2.25502.107" />
     <PackageReference Include="Microsoft.SemanticKernel" Version="1.67.1" />
+    <PackageReference Include="Milvus.Client" Version="2.2.2-preview.6" />
     <PackageReference Include="Minio" Version="7.0.0" />
     <PackageReference Include="Minio.AspNetCore" Version="6.0.1" />
     <PackageReference Include="ModelContextProtocol" Version="0.4.0-preview.3" />
