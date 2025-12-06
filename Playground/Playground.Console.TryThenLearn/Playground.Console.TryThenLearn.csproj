@@ -23,4 +23,8 @@
     <PackageReference Include="OpenAI" Version="2.7.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Milvus\" />
+  </ItemGroup>
+
 </Project>

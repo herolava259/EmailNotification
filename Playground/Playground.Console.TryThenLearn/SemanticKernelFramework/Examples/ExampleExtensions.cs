@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Configuration;
+using Microsoft.SemanticKernel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Playground.Console.TryThenLearn.SemanticKernelFramework.Examples;
+
 
 public static class ExampleExtensions
 {
@@ -28,4 +30,17 @@ public static class ExampleExtensions
 
         return (config["OpenAIKey"]!, config["ModelName"]!);
     }
+
+    public static Kernel CreateKernelWithOpenAI(this IExample example)
+    {
+        var (modelId, apiKey) = example.GetDefaultOpenAISettings();
+
+        IKernelBuilder builder = Kernel.CreateBuilder();
+
+        builder.AddOpenAIChatClient(modelId, apiKey);
+
+        return builder.Build();
+
+    }
+
 }
