@@ -9,7 +9,7 @@ namespace Monitoring.Aspire.AppHost.Configuration;
 public static class PlaygroundAPIConfigs
 {
 
-    public static IResourceBuilder<ProjectResource> ConfigMonitoringPlaygroundAPI(this  IDistributedApplicationBuilder builder)
+    public static IResourceBuilder<ProjectResource> ConfigMonitoringPlaygroundAPI(this IDistributedApplicationBuilder builder)
     {
         var db = builder.AddPostgres("postgres")
                         .AddDatabase("distributed-locking");

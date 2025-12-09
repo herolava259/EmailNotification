@@ -8,11 +8,11 @@ namespace Playground.API.Endpoints;
 
 public static class BookStoreApiEndpoints
 {
-    public sealed record UpdateDescriptionBooModel(Guid BookId, string Description)
+    public sealed record UpdateDescriptionBookModel(Guid BookId, string Description)
     { }
     public static IEndpointRouteBuilder MapBookStoreEndpoint(this IEndpointRouteBuilder routeBuilder)
     {
-        routeBuilder.MapPost("book/update/description", ([FromBody] UpdateDescriptionBooModel bookUpdate,BookLibraryDbContext dbContext, ILogger<Program> logger) =>
+        routeBuilder.MapPost("book/update/description", ([FromBody] UpdateDescriptionBookModel bookUpdate,BookLibraryDbContext dbContext, ILogger<Program> logger) =>
         {
             var book = dbContext.BookDomains.Find(bookUpdate.BookId);
 
@@ -24,7 +24,7 @@ public static class BookStoreApiEndpoints
             book.Description = bookUpdate.Description;
 
             var entry = dbContext.Entry<BookAggregate>(book);
-            entry.State = EntityState.Detached;
+            entry.State = EntityState.Modified;
             entry.Property(nameof(book.Description)).IsModified = true;
 
 

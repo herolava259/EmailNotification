@@ -12,6 +12,7 @@ public static class DemoDistributedLockingEndpoints
     // how to posgresql provide distributed locking : https://medium.com/thefreshwrites/advisory-locks-in-postgres-1f993647d061
     public const string PostgresqlAdvisoryLockingRoute = "locking-demo/advisory-lock-postgres";
     public const string DistributedLockWithPostgresProviderRoute = "locking-demo/distributed-lock/postgres";
+    public const string DistributedLockWithRedisProviderRoute = "locking-demo/distributed-lock/redis";
 
     public static RouteHandlerBuilder MapDistributedLockingOnlyAdvisoryLockingOfPostgreql(this IEndpointRouteBuilder routeBuilder)
         => routeBuilder.MapPost(PostgresqlAdvisoryLockingRoute, async (NpgsqlDataSource dataSource) =>
@@ -49,7 +50,7 @@ public static class DemoDistributedLockingEndpoints
 
     public static RouteHandlerBuilder MapDemoWithDistributedLockAndPostgresProvider(this IEndpointRouteBuilder routeBuilder)
         => routeBuilder.MapGet(DistributedLockWithPostgresProviderRoute,
-                                async (IDistributedLockProvider distributedLockProvider) =>
+                                async ([FromKeyedServices("postgres")]IDistributedLockProvider distributedLockProvider) =>
                                 {
                                     static Task DoWork() => Task.Delay(5000);
 
@@ -61,6 +62,28 @@ public static class DemoDistributedLockingEndpoints
                                     }
 
                                     using(distributedLock)
+                                    {
+                                        await DoWork();
+                                    }
+
+                                    return Results.Ok();
+
+                                });
+
+    public static RouteHandlerBuilder MapDemoWithDistributedLockWithRedisProvider(this IEndpointRouteBuilder routeBuilder)
+        => routeBuilder.MapGet(DistributedLockWithPostgresProviderRoute,
+                                async ([FromKeyedServices("redis")] IDistributedLockProvider distributedLockProvider) =>
+                                {
+                                    static Task DoWork() => Task.Delay(5000);
+
+                                    var distributedLock = distributedLockProvider.TryAcquireLock("borrow-book");
+
+                                    if (distributedLock is null)
+                                    {
+                                        return Results.Conflict("Acquiring lock is failure");
+                                    }
+
+                                    using (distributedLock)
                                     {
                                         await DoWork();
                                     }
