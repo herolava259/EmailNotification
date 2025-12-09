@@ -1,5 +1,5 @@
 ﻿using Playground.Application.Example.Kafka.Core;
-using Playground.Application.Example.Kafka.Services.Bases;
+using Playground.Application.Example.Kafka.Services.Abstractions.Bases;
 using Playground.Application.Example.Kafka.Services.IntergrationEvents;
 
 namespace Playground.Application.Example.Kafka.Services.Producers;

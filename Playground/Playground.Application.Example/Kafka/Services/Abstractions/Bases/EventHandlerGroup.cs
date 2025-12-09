@@ -1,21 +1,17 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Playground.Application.Example.Kafka.Interfaces;
+using Playground.Application.Example.Kafka.Services.Abstractions.Bases;
 using Playground.Application.Example.Kafka.Services.IntergrationEvents;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Playground.Application.Example.Kafka.Services.Bases;
 
-public sealed class EventHandlerGroup<TEvent> : BaseEventHandler<TEvent>
+public class EventHandlerGroup<TEvent> : BaseEventHandler<TEvent>
 	where TEvent: BaseIntergrationEvent
 {
 	private readonly IServiceScopeFactory _scopeFactory;
 	private readonly ILogger<EventHandlerGroup<TEvent>> _logger;
-	private CancellationTokenSource? _tokenSource;
+	protected CancellationTokenSource? _tokenSource;
 
     public string Name { get; private init; }
 
@@ -43,10 +39,41 @@ public sealed class EventHandlerGroup<TEvent> : BaseEventHandler<TEvent>
 
 		var handlers = scope.ServiceProvider.GetServices<IExecutionHandler<TEvent>>().ToList();
 
+		await StartProcessing(handlers,@event, cancellationToken);
+
 	}
 
-	internal async ValueTask StartProcessing(List<IExecutionHandler<TEvent>> eventHandlers, CancellationToken cancellationToken)
+	internal virtual async ValueTask StartProcessing(List<IExecutionHandler<TEvent>> eventHandlers,TEvent @event, CancellationToken cancellationToken)
 	{
 		// TODO: implement how it work later 
+
+		EnsureStoppingTokenIsCreated(cancellationToken);
+
+		if (!eventHandlers.Any())
+		{
+			_logger.LogDebug("No handlers defined for event of {type}", typeof(TEvent).Name);
+			return;
+		}
+
+		await Parallel.ForEachAsync(eventHandlers, _tokenSource!.Token,
+									async (handler, scopedToken) => 
+										await handler.ExecuteAsync(@event, cancellationToken))
+					  .ConfigureAwait(false);
+
 	}
+
+
+	internal virtual async ValueTask StopProcessing(CancellationToken token = default)
+	{
+		await DisposeAsync().ConfigureAwait(false);
+	}
+
+    public override async ValueTask DisposeAsync()
+    {
+		if (_tokenSource is null)
+			return;
+		await _tokenSource.CancelAsync();
+		_tokenSource?.Dispose();
+
+    }
 }

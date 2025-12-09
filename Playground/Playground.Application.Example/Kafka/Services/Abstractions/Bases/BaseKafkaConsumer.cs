@@ -11,7 +11,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace Playground.Application.Example.Kafka.Services.Bases;
+namespace Playground.Application.Example.Kafka.Services.Abstractions.Bases;
 
 public abstract class BaseKafkaConsumer<TInCommingEvent>: IAsyncDisposable
     where TInCommingEvent: BaseIntergrationEvent

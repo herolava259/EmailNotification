@@ -1,8 +1,8 @@
 ﻿
 using Microsoft.Extensions.DependencyInjection;
-using Playground.Application.Example.Kafka.Services.Bases;
 using Playground.Application.Example.Kafka.Services.IntergrationEvents;
 using Microsoft.Extensions.Logging;
+using Playground.Application.Example.Kafka.Services.Abstractions.Bases;
 
 namespace Playground.Application.Example.Kafka.Services.Consumers;
 

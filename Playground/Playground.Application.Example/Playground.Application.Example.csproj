@@ -9,6 +9,7 @@
   <ItemGroup>
     <Folder Include="Domain\" />
     <Folder Include="Kafka\Core\InventoryDomain\" />
+    <Folder Include="Kafka\Core\DeliveryDomain\" />
     <Folder Include="Kafka\Core\PaymentDomain\" />
     <Folder Include="Kafka\Core\OrderDomain\Events\" />
     <Folder Include="Kafka\Core\SharedKernel\" />
@@ -36,7 +37,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Kafka\Services\Bases\EventHandlerGroup.cs" />
+    <None Include="Kafka\Services\Abstractions\Bases\EventHandlerGroup.cs" />
   </ItemGroup>
 
   <ItemGroup>

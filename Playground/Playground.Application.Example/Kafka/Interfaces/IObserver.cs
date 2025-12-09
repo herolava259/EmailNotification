@@ -6,7 +6,7 @@ public interface IObserver
 {
 }
 
-public interface IObserver<TEvent>: IObserver
+public interface IObserver<TEvent>: IObserver, IAsyncDisposable
     where TEvent : BaseIntergrationEvent
 {
     void Subscribe(ISubscriable<TEvent> subject);

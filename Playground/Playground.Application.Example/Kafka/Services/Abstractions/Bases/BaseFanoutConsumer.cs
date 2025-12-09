@@ -3,7 +3,7 @@ using Microsoft.Extensions.Logging;
 using Playground.Application.Example.Kafka.Interfaces;
 using Playground.Application.Example.Kafka.Services.IntergrationEvents;
 
-namespace Playground.Application.Example.Kafka.Services.Bases;
+namespace Playground.Application.Example.Kafka.Services.Abstractions.Bases;
 
 public abstract class BaseFanoutConsumer<TEvent> : BaseKafkaConsumer<TEvent>, ISubscriable<TEvent>
     where TEvent : BaseIntergrationEvent
