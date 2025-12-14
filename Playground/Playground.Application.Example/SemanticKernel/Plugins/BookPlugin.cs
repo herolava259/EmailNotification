@@ -15,7 +15,7 @@ namespace Playground.Application.Example.SemanticKernel.Plugins;
 public class BookPlugin(IBookRepository _bookRepository, ILogger<BookPlugin> _logger, IMapper _mapper)
 {
     [KernelFunction("get_book_by_id")]
-    [Description("Gets a list of booka following by name of book")]
+    [Description("Gets a list of books following by name of book")]
     public async Task<List<BookDto>> GetBookDtosByName(string name)
     {
         _logger.LogInformation("Running GetBookDtosByName with name: {name}", name);

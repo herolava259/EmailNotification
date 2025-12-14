@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using Playground.JobFinder.Models.DTOs;
+using Playground.JobFinder.Modules.JobDomain;
 
 namespace Playground.JobFinder.Models.Mappers
 {
@@ -6,7 +8,7 @@ namespace Playground.JobFinder.Models.Mappers
     {
         public JobMapperConfiguration()
         {
-            
+            CreateMap<Job, JobDto>().ReverseMap();
         }
     }
 }

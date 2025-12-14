@@ -6,6 +6,6 @@ using System.Threading.Tasks;
 
 namespace Playground.Application.Example.SemanticKernel.Storage.Minio;
 
-public sealed class MinioDocumentService
+public sealed class MinioObjectService
 {
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MongoDB.Bson.Serialization.IdGenerators;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,8 +10,26 @@ namespace Playground.Application.Example.SemanticKernel.External.WebSearch;
 
 #region models
 
+public sealed class ArxivSearchQuery: IWebSearchQuery
+{
+    [JsonPropertyName("query")]
+    public string Query { get; set; }
 
-public sealed class ArxivSearchResult: IWebSearchQuery
+    [JsonPropertyName("id_list")]
+    public List<string> Ids { get; set; }
+
+    [JsonPropertyName("max_results")]
+    public int? MaxResults { get; set; }
+
+    [JsonPropertyName("sort_by")]
+    public string SortBy { get; set; } = SortCriterion.Relevance;
+
+    [JsonPropertyName("sort_order")]
+    public string SortOrderBy { get; set; } = SortOrder.Ascending;
+}
+
+
+public sealed class ArxivSearchResult: IWebSearchResult
 {
     [JsonPropertyName("entry_id")]
     public string EntryId { get; set; }
@@ -52,12 +71,48 @@ public sealed class ArxivSearchResult: IWebSearchQuery
     [JsonPropertyName("pdf_url")]
     public string PdfUrl { get; set; } = string.Empty;
 
+
+    public sealed class Author
+    {
+        public string Name { get; set; }
+
+
+    }
+
+    public sealed class Link
+    {
+        public string Href { get; set; }
+
+        public string? Title { get; set; }
+
+        public string Rel { get; set; }
+
+        public string ContentType { get; set; }
+    }
+
+    public class MissingFieldException: Exception
+    {
+        public MissingFieldException(string missingField): base("Entry from arXiv missing required info")
+        {
+            
+        }
+    }
+
 }
 
 public static class SortCriterion
 {
     public const string Relevance = "relevance";
+    public const string LastUpdateData = "lastUpdatedDate";
+    public const string SubmittedDate = "submittedDate";
 }
+
+public static class SortOrder
+{
+    public const string Ascending = "ascending";
+    public const string Descending = "descending";
+}
+
 
 #endregion
 

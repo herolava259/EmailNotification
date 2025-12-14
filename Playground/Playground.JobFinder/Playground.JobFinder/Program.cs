@@ -42,6 +42,8 @@ builder.Services.AddIdentityCore<ApplicationAccount>(options => options.SignIn.R
 
 builder.Services.AddSingleton<IEmailSender<ApplicationAccount>, IdentityNoOpEmailSender>();
 
+builder.Services.AddBlazorBootstrap();
+
 var app = builder.Build();
 
 //app.MigrateApplicationDatabase();

@@ -1,22 +1,146 @@
 ﻿@page "/Job/Index"
+@using AutoMapper
 @using Playground.JobFinder.Models.DTOs
+@using Playground.JobFinder.Modules.JobDomain
+
+@inject IJobRepository _repository
+@inject IMapper _mapper
 @rendermode InteractiveServer
 
 <PageTitle>Jobs List</PageTitle>
 
 <div class="job-grid-cards container-fluid">
     <div class="row row-cols-auto">
-
+        @foreach(var item in jobItems)
+        {
+            <div class="col card">
+                <img src="#" alt="Alternate Text" class="card-img-top"/>
+                <div class="card-body">
+                    <h4 class="card-title">@item.Title</h4>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">@item.DecriptionView</li>
+                        <li class="list-group-item">@item.EmploymentType.ToString()</li>
+                        <li class="list-group-item">@item.Location</li>
+                        <li class="list-group-item">@item.RangeSalaryView</li>
+                        <li class="list-group-item">Expires At: @item.ExpiresAt.ToString("dd/MM/yyyy HH:mm")</li>
+                        @if(item.Applications.Count > 0)
+                        {
+                            <li class="list-group-item">Total Applied: @item.Applications.Count applications</li>
+                        }
+                        @if(item.Recruiter is not null)
+                        {
+                            <li class="list-group-item">Company: @item.Recruiter.Company</li>
+                        }
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <a href="job/detail?detail=@(item.Id)">View Details</a>
+                </div>
+            </div>
+        }
     </div>
+
+    <nav aria-label="..." class="row">
+        <button class="col page-item @(CurrentPageNumber == 1 ? "disabled" : string.Empty)" @onclick="OnPreviousPageAsync"
+                disabled="@(CurrentPageNumber == 1)">
+            &lt;&lt;Previous
+        </button>
+        <ul class="col pagination">
+            @foreach(var item in PageRange())
+            {
+                <li class="page-item @(item == "..." ? "disabled":"")">
+                    <button class="@(int.Parse(item) == CurrentPageNumber ? "disabled, active" : string.Empty)"
+                        @onclick="() => OnTargetPageAsync(item)">
+                        @item
+                    </button>
+                </li>
+            }
+        </ul>
+        <button class="col page-item @(CurrentPageNumber == TotalPage ? "disabled" : string.Empty)" @onclick="OnPreviousPageAsync"
+                disabled="@(CurrentPageNumber == TotalPage)">
+            &lt;&lt;Previous
+        </button>
+    </nav>
+    
 </div>
 
 
 @code {
 
-    private readonly IEnumerable<JobDto> jobPages;
-    
-    protected override Task OnInitializedAsync()
+    private IEnumerable<JobDtoView> jobItems = new List<JobDtoView>();
+
+    private const int PageSize = 10;
+    private int CurrentPageNumber = 1;
+
+    private int TotalItems = 0;
+
+    private int TotalPage 
+        => (int)Math.Ceiling(TotalItems / (double)PageSize);
+
+
+
+    private IEnumerable<string> PageRange(int numPage = 5, int minPageNumber = 1)
     {
-        return base.OnInitializedAsync();
+        var lowerPageSplit = 2 * numPage / 3;
+        var upperPageSplit = numPage - lowerPageSplit;
+
+        for(int i = minPageNumber; i <= lowerPageSplit; ++i)
+        {
+            yield return i.ToString();
+        }
+
+        yield return "...";
+
+
+        for(int i = TotalPage-upperPageSplit +1; i <= TotalPage; i++)
+        {
+            yield return i.ToString();
+        }
+    }
+
+    protected async override Task OnInitializedAsync()
+    {
+        var jobEntities = (await _repository.GetAllAsync(pageSize: PageSize, pageNumber: CurrentPageNumber));
+
+        jobItems = _mapper.Map<IEnumerable<JobDtoView>>(jobEntities);
+
+        TotalItems = await _repository.Count();
+
+        await base.OnInitializedAsync();
+    }
+
+    private async Task<IEnumerable<JobDtoView>> GetPageAsync()
+    {
+        return _mapper.Map<IEnumerable<JobDtoView>>(await _repository.GetAllAsync(pageSize: PageSize, pageNumber: CurrentPageNumber));
+    }
+
+    private async Task OnPreviousPageAsync()
+    {
+        if (CurrentPageNumber == 0)
+            return;
+        CurrentPageNumber--;
+
+        jobItems = await GetPageAsync();
+    }
+
+    private async Task OnNextPageAsync()
+    {
+        if (CurrentPageNumber >= TotalPage)
+            return;
+
+        CurrentPageNumber++;
+
+        jobItems = await GetPageAsync();
+    }
+
+    private async Task OnTargetPageAsync(string pageIndex)
+    {
+        if(pageIndex == "...")
+            return;
+
+        CurrentPageNumber = int.Parse(pageIndex);
+
+        jobItems = await GetPageAsync();
+
     }
 }

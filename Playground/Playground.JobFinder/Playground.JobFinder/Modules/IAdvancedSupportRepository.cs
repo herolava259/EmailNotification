@@ -3,12 +3,12 @@ using System.Linq.Expressions;
 
 namespace Playground.JobFinder.Modules;
 
-public interface ISupportRepository
+public interface IAdvancedSupportRepository
 {
     Task<bool> SaveChangeAsync(); 
 }
 
-public interface ISupportRepository<TEntity>
+public interface IAdvancedSupportRepository<TEntity>
     where TEntity: EntityBase
 {
     Task<(bool, TEntity?)> Add(TEntity dto, bool refresh = false);
@@ -21,7 +21,7 @@ public interface ISupportRepository<TEntity>
 
     Task<IEnumerable<TEntity>> FindAll(Expression<Func<TEntity, bool>>? condExpr = null);
 
-    Task<IEnumerable<TData>> GetPartial<TData>(Expression<Func<TEntity, bool>>? condExpr = null, Expression<Func<TEntity, TData>>? selector = null);
+    Task<IEnumerable<TData>> GetAllTransform<TData>(Expression<Func<TEntity, bool>>? condExpr = null, Expression<Func<TEntity, TData>>? selector = null);
 
 
     Task<bool> Exists(Guid id);

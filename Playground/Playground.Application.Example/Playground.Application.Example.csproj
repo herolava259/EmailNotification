@@ -27,7 +27,6 @@
     <Folder Include="Redis\WithIdempotence\" />
     <Folder Include="SemanticKernel\Connectors\" />
     <Folder Include="SemanticKernel\External\WebSearch\Models\" />
-    <Folder Include="SemanticKernel\External\WebSearch\Exceptions\" />
     <Folder Include="SemanticKernel\Storage\Milvus\" />
     <Folder Include="SemanticKernel\Services\" />
     <Folder Include="SemanticKernel\Storage\Blob\" />
