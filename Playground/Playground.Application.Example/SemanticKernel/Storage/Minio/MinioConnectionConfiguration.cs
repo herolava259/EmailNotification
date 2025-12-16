@@ -13,4 +13,4 @@ public sealed record MinioConnectionConfiguration(string Endpoint, string Access
 }
 
 
-public sealed record MinioSettings(string Endpoint, string AccessKey, string SecretKey, bool UseSSL, string Bucket) { }
+public sealed record MinioSettings(string Endpoint, string AccessKey, string SecretKey, bool UseSSL, string Bucket, string DefaultLocation="us-east-1") { }

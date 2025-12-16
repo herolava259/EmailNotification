@@ -14,10 +14,12 @@ public interface IObjectStorageService
     Task<(string, byte[])> DownloadAsync(string objectName);
 
 
-    Task<bool> MakeBucketAsync(string buckeName);
+    Task MakeBucketAsync(string buckeName);
 
     Task<bool> ExistObjectAsync(string objectName);
 
 
     Task<bool> ExistBucketAsync(string buckeName);
+
+    // later: clear obj none/retention, copy obj, 
 }

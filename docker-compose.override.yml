@@ -113,7 +113,7 @@ services:
   # <---------------- START | File/Object Storage --------------------------->
   minio:
     container_name: minio
-    command: server /data --console-address ":9001"
+    command: minio server /data --console-address ":9001"
     environment:
       - MINIO_ROOT_USER=abcd
       - MINIO_ROOT_PASSWORD=abcd2345
@@ -123,10 +123,16 @@ services:
         aliases:
           - minio-localhost
     volumes:
-      - minio_data:/data
+      - ./volumes/minio_data:/data
     ports:
       - "9000:9000" # API
       - "9001:9001" # Web UI
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/helth/live"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+    
   
   # <---------------- END | File/Object Storage ----------------------------->
 
@@ -142,7 +148,48 @@ services:
     volumes:
       - pg_data:/var/lib/postgresql/data
       - ./postgres_scripts/pg_schema.sql:/docker-entrypoint-initdb.d/schema.sql:ro
+
+
+  # milvus 
+  milvus-etcd:
+    container_name: milvus-etcd
+    environment:
+      - ETCD_AUTO_COMPACTION_MODE=revision
+      - ETCD_AUTO_COMPACTION_RETENTION=1000
+      - ETCD_QUOTA_BACKEND_BYTES=4294967296
+      - ETCD_SNAPSHOT_COUNT=50000
+    volumes:
+      - ./volumes/etcd:/etcd
+    command: etcd -advertise-client-urls=http://etcd:2379 -listen-client-urls http://0.0.0.0:2379 --data-dir /etcd
+    healthcheck:
+      test: ["CMD", "etcdctl", "endpoint", "health"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
   
+  milvus-standalone:
+    container_name: milvus-standalone
+    command: ["milvus", "run", "standalone"]
+    security_opt:
+      - seccomp:unconfined
+    environment:
+      ETCD_ENDPOINTS: etcd:2379
+      MINIO_ADDRESS: minio:9000
+      MQ_TYPE: woodpecker
+    volumes:
+      - ./volumes/milvus:/var/lib/milvus
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9091/healthz"]
+      interval: 30s
+      start_period: 90s
+      timeout: 20s
+      retries: 3
+    ports:
+      - "19530:19530"
+      - "9091:9091"
+    depends_on:
+      - "etcd"
+      - "minio"
   # <---------------- END | Vector Database --------------------------------->
 
   

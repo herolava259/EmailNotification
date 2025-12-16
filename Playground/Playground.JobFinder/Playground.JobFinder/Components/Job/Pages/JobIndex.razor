@@ -7,7 +7,7 @@
 @inject IMapper _mapper
 @rendermode InteractiveServer
 
-<PageTitle>Jobs List</PageTitle>
+<PageTitle>Jobs World</PageTitle>
 
 <div class="job-grid-cards container-fluid">
     <div class="row row-cols-auto">
@@ -50,7 +50,7 @@
             {
                 <li class="page-item @(item == "..." ? "disabled":"")">
                     <button class="@(int.Parse(item) == CurrentPageNumber ? "disabled, active" : string.Empty)"
-                        @onclick="() => OnTargetPageAsync(item)">
+                        @onclick="async () => await OnTargetPageAsync(item)">
                         @item
                     </button>
                 </li>
@@ -106,12 +106,14 @@
 
         TotalItems = await _repository.Count();
 
+
         await base.OnInitializedAsync();
     }
 
     private async Task<IEnumerable<JobDtoView>> GetPageAsync()
     {
-        return _mapper.Map<IEnumerable<JobDtoView>>(await _repository.GetAllAsync(pageSize: PageSize, pageNumber: CurrentPageNumber));
+        var entities = await _repository.GetAllAsync(pageSize: PageSize, pageNumber: CurrentPageNumber);
+        return _mapper.Map<IEnumerable<JobDtoView>>(entities);
     }
 
     private async Task OnPreviousPageAsync()

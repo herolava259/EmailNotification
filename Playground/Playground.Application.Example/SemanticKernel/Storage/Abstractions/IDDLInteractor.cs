@@ -21,7 +21,7 @@ public interface IDDLInteractor<TSchema>
 
     Task RenameSchemaAsync(string schemaName, string newName);
 
-    Task CreatePArtitionAsync(string partitionName);
+    Task CreatePartitionAsync(string partitionName);
 
 
 }

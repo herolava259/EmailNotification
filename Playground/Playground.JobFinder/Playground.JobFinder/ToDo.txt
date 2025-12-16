@@ -1,0 +1,5 @@
+﻿# Todo
+- build ui (raw, no bootstrap package) for job. include:
+	- job detail: permission: applicant, hr  
+	- job edit/create: permission: only hr
+- build ui (using bootstrap package) for applicant, applicant profile, applicant process(only hr),

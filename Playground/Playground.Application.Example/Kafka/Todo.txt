@@ -2,3 +2,36 @@
 - Setup efcore with sql lite (for demo) ----------------------> Status: Pending
 - Register Producer-Cosumer Service (both services interact with kafka) ---------> Pending => partial done, continue with detail.
 - Write Order-Api-Endpoint  ---------------------------> Status: Pending
+- use-case:
+	1. when a order request's sent to the sys:
+		- order-service receive a request and process:
+			1. validate a order
+				- check duplicate
+				- check stock that available products
+				- check balance/wallet of the user 
+				- check dilivery/ address 
+				- ...
+			2. if pass validation step then:
+				- send a accepted-order event to kafka broker => all side will receive a event and proceed the event
+			3. The admin/ shopper process:
+				- check the order 
+				- make a decision whether the order can be forwarded next step
+				- if pass, the sys will save and emit a event : shopper-validated-order 
+
+			4. The Inventory/stock service will process event:
+				- validate the event
+				- if pass validation step, process by: keep some unit for the order 
+				- if fail send back the order service a event: stock-mark-fail-order
+			5. The voucher/discount service check 
+				- ...
+			6. The payment service process the event: {order-created,shopped-validated-order}
+				- check payment method
+					- check exists
+					- case: 
+						- when e-wallet: check balance
+						- when credit-card: call api to bank-side or external payment service
+						- when cash: no action
+						- ...: ...
+				- process payment case: -> save state, publish a event  
+			7. The delivery service process
+				- ...
