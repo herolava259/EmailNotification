@@ -1,11 +1,9 @@
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Playground.JobFinder.Client.Pages;
 using Playground.JobFinder.Components;
 using Playground.JobFinder.Components.Account;
 using Playground.JobFinder.Data;
-using Playground.JobFinder.DependencyInjections;
 
 var builder = WebApplication.CreateBuilder(args);
 

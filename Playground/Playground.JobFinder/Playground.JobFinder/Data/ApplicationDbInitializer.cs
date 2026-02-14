@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using Playground.JobFinder.Modules.EmployerDomain;
-using Playground.JobFinder.Modules.JobDomain;
-using Playground.JobFinder.Modules.JobSeekerDomain;
+using Playground.JobFinder.Modules.Employer.EmployerDomain;
+using Playground.JobFinder.Modules.Job.Domain;
+using Playground.JobFinder.Modules.JobSeeker.Domain;
 
 namespace Playground.JobFinder.Data;
 

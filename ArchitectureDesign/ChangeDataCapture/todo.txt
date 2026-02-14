@@ -4,10 +4,29 @@
 - override SaveChangeAsync to capture data change or using interceptor of efcore (similar to outbox pattern)
 - two ways to save change data events:
 	- save to app db (no scale)
-	- using kafka to publish event. and other workers save to other databases (optimize for storing data is event and stream, not reduce performance app db for foreground task: rec=> time-series db, columnar-db)
+	- using kafka to publish event. and other workers save to other databases (optimize for storing data is event and stream, not reduce performance app. db for foreground task: rec=> time-series db, columnar-db)
 	- or using redis pub/sub to publish change data events
 
 - design capture-event-model include:
 	- state of entity: added-update-remove
 	- data changes: key-value. key is field-name, value is value
 	- save to json format (dependent to kind of persistence store)
+
+- todo: 
+	- declare mechanisms for publish data change events
+		+ using masstransit 
+		+ using Channel of Threading class 
+	- design data flow 
+		+ send the events to on of the following db: postgresql or cassandra or tsdb or message broker(kafka/Rabbit-MQ)
+		+ Event Trigger: When App-DB-Context do save app-data to app-db: SaveChanges
+	- if failure using outbox mechanism to replay again publishing event
+
+
+
+	general flow:
+		- Client ---send-req--> System --compute-save-and-send-back-resp--> Data Change Events --> Publisher --send-data--> Data-Sink/Lake-house/Dest
+	- About: Publisher: 
+		- role: publish data change event
+		- can be: 
+			+ PublishEndpoint of Masstransit
+			+ Writer of Channel => send data to background service => do a task: save like outbox event to can replay 

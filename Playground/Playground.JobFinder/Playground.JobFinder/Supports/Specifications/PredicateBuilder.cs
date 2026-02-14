@@ -56,7 +56,7 @@ public static class PredicateBuilder
         var type = typeof(List<object>);
         var methodInfo = type.GetMethod("Contains", new[] { typeof(object) });
         var list = Expression.Constant(objValues);
-        var body = Expression.Call(list, methodInfo, left);
+        var body = Expression.Call(list, methodInfo!, left);
         return body;
     }
 

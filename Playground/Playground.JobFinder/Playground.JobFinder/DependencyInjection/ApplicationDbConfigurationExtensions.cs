@@ -9,7 +9,7 @@ public static class ApplicationDbConfigurationExtensions
     public static IServiceCollection AddDataAccessService(this IServiceCollection services)
     {
         services.AddDbContext<ApplicationDbContext>(options => options.UseSqlite("Data Source=app.db"));
-        services.AddScoped<IDbInitializer, IDbInitializer>();
+        services.AddScoped<IDbInitializer, ApplicationDbInitializer>();
 
         return services;
     }

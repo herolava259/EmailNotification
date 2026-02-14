@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Playground.JobFinder.Modules.EmployerDomain;
-using Playground.JobFinder.Modules.JobSeekerDomain;
+using Playground.JobFinder.Modules.JobSeeker.Domain;
 
 namespace Playground.JobFinder.Data.FluentConfigurations;
 

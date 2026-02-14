@@ -24,7 +24,7 @@ public static class BookStoreApiEndpoints
             book.Description = bookUpdate.Description;
 
             var entry = dbContext.Entry<BookAggregate>(book);
-            entry.State = EntityState.Modified;
+            entry.State = EntityState.Unchanged;
             entry.Property(nameof(book.Description)).IsModified = true;
 
 

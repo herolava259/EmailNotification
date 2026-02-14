@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Playground.JobFinder.Bases;
 using Playground.JobFinder.Data;
-using Playground.JobFinder.Modules;
 using System.Linq.Expressions;
 
 namespace Playground.JobFinder.Supports.Repositories;

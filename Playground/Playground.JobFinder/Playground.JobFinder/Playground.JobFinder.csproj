@@ -20,10 +20,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\Views\" />
-    <Folder Include="Models\Responses\" />
-    <Folder Include="Models\Requests\" />
     <Folder Include="Middlewares\" />
+    <Folder Include="Modules\Employer\Interfaces\" />
+    <Folder Include="Modules\Employer\Repositories\" />
+    <Folder Include="Modules\Employer\ViewModels\" />
+    <Folder Include="Modules\Employer\UseCases\" />
+    <Folder Include="Modules\JobSeeker\Interfaces\" />
+    <Folder Include="Modules\JobSeeker\ViewModels\" />
+    <Folder Include="Modules\JobSeeker\Repositories\" />
+    <Folder Include="Modules\Job\ViewModels\" />
+    <Folder Include="Modules\Job\Repositories\" />
     <Folder Include="Supports\Repositories\" />
     <Folder Include="wwwroot\assets\" />
   </ItemGroup>

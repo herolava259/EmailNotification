@@ -10,6 +10,17 @@ namespace Playground.Application.Example.SemanticKernel.External.WebSearch;
 
 #region models
 
+public sealed class ArxivClientArguments
+{
+    public string QueryUrlFormat { get; set; } = "https://export.arxiv.org/api/query?{}";
+
+    public int PageSize { get; set; } = 100;
+
+    public double DelaySconds { get; set; } = 3.0;
+
+    public int MaxRetries { get; set; } = 3
+}
+
 public sealed class ArxivSearchQuery: IWebSearchQuery
 {
     [JsonPropertyName("query")]
@@ -81,13 +92,13 @@ public sealed class ArxivSearchResult: IWebSearchResult
 
     public sealed class Link
     {
-        public string Href { get; set; }
+        public string Href { get; set; } = string.Empty;
 
-        public string? Title { get; set; }
+        public string? Title { get; set; } = string.Empty;
 
-        public string Rel { get; set; }
+        public string Rel { get; set; } = string.Empty;
 
-        public string ContentType { get; set; }
+        public string ContentType { get; set; } = "text/json";
     }
 
     public class MissingFieldException: Exception

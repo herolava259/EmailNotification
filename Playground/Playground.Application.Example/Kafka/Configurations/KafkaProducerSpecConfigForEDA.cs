@@ -8,7 +8,7 @@ public enum IdempotenceStyle: ushort
 {
     AtMostOnce = 0,
     AtLeastOnce = 1,
-    ExtractlyOnce = 2,
+    ExactlyOnce = 2,
 }
 
 
@@ -30,7 +30,7 @@ public sealed record KafkaProducerSpecConfigForEDA(
     public int MessageSendMaxRetires
         => IdempotenceStyle switch
         {
-            IdempotenceStyle.ExtractlyOnce => Int32.MaxValue,
+            IdempotenceStyle.ExactlyOnce => Int32.MaxValue,
             IdempotenceStyle.AtMostOnce => 0,
             IdempotenceStyle.AtLeastOnce => Int32.MaxValue,
             _ => throw new NotImplementedException()
@@ -39,7 +39,7 @@ public sealed record KafkaProducerSpecConfigForEDA(
     public bool EnableIdempotence
         => IdempotenceStyle switch
         {
-            IdempotenceStyle.ExtractlyOnce => true,
+            IdempotenceStyle.ExactlyOnce => true,
             IdempotenceStyle.AtMostOnce => true,
             IdempotenceStyle.AtLeastOnce => false,
             _ => throw new NotImplementedException()
@@ -48,7 +48,7 @@ public sealed record KafkaProducerSpecConfigForEDA(
     public string TransactionalId
         => IdempotenceStyle switch
         {
-            IdempotenceStyle.ExtractlyOnce => TransactionalName,
+            IdempotenceStyle.ExactlyOnce => TransactionalName,
             IdempotenceStyle.AtMostOnce => string.Empty,
             IdempotenceStyle.AtLeastOnce => string.Empty,
             _ => throw new NotImplementedException()
