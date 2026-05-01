@@ -1,10 +1,5 @@
 ﻿using MassTransit;
 using Microsoft.Extensions.Configuration;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ChangeDataCapture.SourceTrigger.Initiators;
 
@@ -35,8 +30,9 @@ public sealed class AttachTriggerContextConsumeObserver(ITriggerContext _trigger
         var sourceType = context.Headers.Get<string>(TriggerConstantKeys.SourceTypeKey)
                             ?? TriggerSourceType.None.ToString();
 
-        _triggerContext.Initialize(Enum.Parse(typeof(TriggerSourceType), sourceType),
-                                   TriggerType.MesageBroker)
+        _triggerContext.Initialize(Enum.Parse<TriggerSourceType>(sourceType),
+                                   TriggerType.MesageBroker,
+                                   agentId);
         
         return Task.CompletedTask;
     }
